@@ -1,6 +1,34 @@
 .superParent {
   overflow: hidden;
   overflow-x: hidden;
+  background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_bottom_ap5ova.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/bg_events_jaapi_sltivi.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg");
+  background-blend-mode: luminosity, normal, normal, normal, normal, normal, normal;
+  background-position:
+    bottom right,
+    125% 0%,
+    20% 100%,
+    -20% bottom,
+    -22% 0%,
+    75% top,
+    30% center,
+    155% 0%;
+  background-size:
+    75% 75%,
+    50% 100%,
+    20% 20%,
+    50% 50%,
+    40% 40%,
+    30% 30%,
+    60% 60%,
+    60% 60%;
+  background-repeat: no-repeat;
   min-height: 100vh;
 
   .parent {
@@ -22,14 +50,14 @@
       row-gap: 2.5rem;
 
       .heading {
-        font-size: 4rem;
+        font-size: 3rem;
         font-family: "DM Serif Text", sans-serif;
         font-weight: 400;
         font-style: normal;
       }
 
       .description {
-        font-size: 1.5rem;
+        font-size: 1rem;
         font-family: "Alata", sans-serif;
         font-weight: 100;
         font-style: normal;
