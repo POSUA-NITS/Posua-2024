@@ -1,18 +1,40 @@
 import { useState } from "react";
 import styles from "./Events.module.scss";
-
-const ExtendedView = ({ mode }) => {
+import data from "../../assets/Events.json";
+const ExtendedView = ({ mode, current, setCurrent }) => {
   return (
     <div
       className={styles.ExtendedView}
       style={{ transform: `translateX(${mode * 100}vw)`, transition: "ease 1000ms" }}
     >
-      ExtendedView
+      <div>
+        <h1 className={styles.h1}>{data[current - 1].name}</h1>
+        <p className={styles.description}>{data[current - 1].description}</p>
+        <div className={styles.sliderBtnCont}>
+          {current < data.length && (
+            <button onClick={() => setCurrent(current + 1)} className={styles.sliderBtn}>
+              <img
+                src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773641/posua/arrow_btn_left_jtj4x2.svg"
+                alt="slide to left"
+              />
+            </button>
+          )}
+          {current > 1 && (
+            <button onClick={() => setCurrent(current - 1)} className={styles.sliderBtn}>
+              <img
+                src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773630/posua/arrow_btn_right_c3iviw.svg"
+                alt="slide to right"
+              />
+            </button>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
 const Events = () => {
   const [extended, setExtended] = useState(1);
+  const [current, setCurrent] = useState(1);
   return (
     <div className={styles.superParent}>
       <div className={styles.parent}>
@@ -40,7 +62,7 @@ const Events = () => {
           </div>
         </div>
       </div>
-      <ExtendedView mode={extended} />
+      <ExtendedView mode={extended} current={current} setCurrent={setCurrent} />
     </div>
   );
 };
