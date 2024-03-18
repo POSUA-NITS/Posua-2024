@@ -1,0 +1,21 @@
+.text {
+  color: rgb(109, 12, 12);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 15%;
+  height: 20%;
+  margin-left: 10rem;
+  margin-top: -7rem;
+}
+.ParentClass {
+  background-color: rgb(228, 197, 156);
+  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
+    url(./sideFlower.svg);
+  background-position: right, left;
+  background-repeat: no-repeat;
+}
