@@ -5,29 +5,48 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
   return (
     <div
       className={styles.ExtendedView}
-      style={{ transform: `translateX(${mode * 100}vw)`, transition: "ease 1000ms" }}
+      style={{
+        transform: `translateX(${mode * 100}vw)`,
+        transition: "ease 1000ms",
+        backgroundImage: `url('${data[current - 1].src}')`,
+      }}
     >
-      <div>
-        <h1 className={styles.h1}>{data[current - 1].name}</h1>
-        <p className={styles.description}>{data[current - 1].description}</p>
-        <div className={styles.sliderBtnCont}>
-          {current < data.length && (
-            <button onClick={() => setCurrent(current + 1)} className={styles.sliderBtn}>
-              <img
-                src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773641/posua/arrow_btn_left_jtj4x2.svg"
-                alt="slide to left"
-              />
-            </button>
-          )}
-          {current > 1 && (
-            <button onClick={() => setCurrent(current - 1)} className={styles.sliderBtn}>
-              <img
-                src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773630/posua/arrow_btn_right_c3iviw.svg"
-                alt="slide to right"
-              />
-            </button>
-          )}
+      <div className={styles.innerFilter}>
+        <div className={styles.writtenContent}>
+          <h1 className={styles.h1}>{data[current - 1].name}</h1>
+          <p className={styles.description}>{data[current - 1].description}</p>
+          <div className={styles.sliderBtnCont}>
+            {current < data.length && (
+              <button
+                onClick={() => setCurrent(current + 1)}
+                className={styles.sliderBtn}
+              >
+                <img
+                  src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773641/posua/arrow_btn_left_jtj4x2.svg"
+                  alt="slide to left"
+                />
+              </button>
+            )}
+            {current > 1 && (
+              <button
+                onClick={() => setCurrent(current - 1)}
+                className={styles.sliderBtn}
+              >
+                <img
+                  src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710773630/posua/arrow_btn_right_c3iviw.svg"
+                  alt="slide to right"
+                />
+              </button>
+            )}
+          </div>
         </div>
+        {/* <div className={styles.carouselParent}>
+          {
+            data.map((item) => {
+              <h1>hello{item.id}</h1>
+            })
+          }
+        </div> */}
       </div>
     </div>
   );

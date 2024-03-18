@@ -1,5 +1,4 @@
 .superParent {
-  overflow: hidden;
   overflow-x: hidden;
   background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
@@ -72,5 +71,42 @@
     min-height: 100%;
     min-width: 100vw;
     color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    .innerFilter {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      min-height: 100vh;
+
+      .writtenContent {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        width: 30%;
+        margin: 25vh 4rem;
+
+        .h1 {
+          font-family: "Abril Fatface", sans-serif;
+          font-weight: 400;
+          font-size: 3.2rem;
+        }
+
+        .description {
+          font-family: "Alata", sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+      }
+
+      .carouselParent {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: red;
+      }
+    }
   }
 }
