@@ -1,4 +1,10 @@
+.superParent{
+  min-height: 100vh;
+}
 .text {
+  position: relative;
+  left: 30%;
+  top: 10%;
   color: rgb(109, 12, 12);
   font-family: "Alata", sans-serif;
   font-weight: 400;
@@ -9,8 +15,7 @@
   text-align: center;
   width: 15%;
   height: 20%;
-  margin-left: 10rem;
-  margin-top: -7rem;
+  min-height: 100vh;
 }
 .ParentClass {
   background-color: rgb(228, 197, 156);

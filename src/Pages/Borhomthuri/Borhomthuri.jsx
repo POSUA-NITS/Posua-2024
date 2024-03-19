@@ -1,12 +1,14 @@
 import Pepa from "./Pepa";
 import styles from "./Borhomthuri.module.scss";
 import Film from "./Films";
+// import FrontCover from "./FrontCover";
 const Borhomthuri = () => {
   return (
-    <div>
+    <div className={styles.superParent}>
       <div className={styles.ParentClass}>
         <Pepa />
         <Film />
+        {/* <FrontCover/> */}
         <div className={styles.text}>
           Borhomthuri is the annual souvenir of POSUA.It enfolds indispensable parts of
           Assamese Culture and also the emotions of students in the form of enthralling
