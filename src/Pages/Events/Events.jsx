@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { React, useState } from "react";
 import styles from "./Events.module.scss";
 import data from "../../assets/Events.json";
 const ExtendedView = ({ mode, current, setCurrent }) => {
@@ -7,7 +7,8 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
       className={styles.ExtendedView}
       style={{
         transform: `translateX(${mode * 100}vw)`,
-        transition: "ease 1000ms",
+        transition: "linear 10ms",
+        transitionDelay: "500ms",
         backgroundImage: `url('${data[current - 1].src}')`,
       }}
     >
@@ -40,13 +41,22 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
             )}
           </div>
         </div>
-        {/* <div className={styles.carouselParent}>
-          {
-            data.map((item) => {
-              <h1>hello{item.id}</h1>
-            })
-          }
-        </div> */}
+        <div className={styles.carouselParent}>
+          {data.map((item) => (
+            <img
+              key={item.id}
+              src={item.src}
+              alt={item.name}
+              style={{
+                transform: `translateX(${-(current - 1) * 30}%)`,
+                transition: "linear 1000ms",
+                opacity: `${current === item.id ? 0 : 1}`,
+                scale: `${current === item.id ? 20 : 1}`,
+              }}
+              className={styles.eachItem}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
