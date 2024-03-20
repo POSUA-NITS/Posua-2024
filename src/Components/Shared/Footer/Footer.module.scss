@@ -1,0 +1,95 @@
+// @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.Container {
+  // font-family: 'Philosopher', sans-serif;
+  bottom: 0;
+  background-color: beige;
+  background-image: url(https://res.cloudinary.com/dclhahfvz/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710923131/footer_final_mj5rba.jpg?_s=public-apps);
+  width: 100vw;
+  //height: 50vh;
+  //position: relative;
+  //top: '100%',
+  //   left: '457px',
+  gap: 20px; // Add gap between containers
+  //   opacity: '0px',
+  text-align: center; // Center align content
+  display: flex; // Use flexbox layout
+  justify-content: center; // Center align items horizontally
+  align-items: center; // Center align items vertically
+}
+
+.content p {
+  font-family: "Philosopher", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  //   font-family: Roboto;
+  font-weight: 650;
+  color: rgb(255, 255, 255);
+  //flex: 3rem;
+  padding-right: 7rem;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+/* Footer.module.scss */
+
+.Contact p,
+.address p,
+.socialmedia p,
+.mail p {
+  font-size: 1em; /* Adjust the font size as needed */
+  display: inline; /* Ensure all paragraphs appear on the same line */
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .Contact p,
+  .address p,
+  .socialmedia p,
+  .mail p {
+    font-size: 1.2em; /* Adjust the font size for larger screens */
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height:100%;
+  width: 20%;
+  gap: 1rem;
+}
+.main img {
+  padding-top: 0.2rem;
+  margin-top: 0.1rem;
+}
+.Contact {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: clamp(12px, 5vw, 16px);
+}
+.address {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: 16px;
+}
+.socialmedia {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: 16px;
+}
+.mail {
+  display: flex;
+  min-width: 100px;
+  flex-direction: column;
+  font-size: 16px;
+}
