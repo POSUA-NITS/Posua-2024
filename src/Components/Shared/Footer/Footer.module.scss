@@ -1,0 +1,70 @@
+.Container {
+  bottom: 0;
+  background-color: beige;
+  background-image: url(https://res.cloudinary.com/dclhahfvz/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710923131/footer_final_mj5rba.jpg?_s=public-apps);
+  width: 100vw;
+  //height: 50vh;
+  //position: relative;
+  //top: '100%',
+  //   left: '457px',
+  gap: 20px; // Add gap between containers
+  //   opacity: '0px',
+  text-align: center; // Center align content
+  display: flex; // Use flexbox layout
+  justify-content: center; // Center align items horizontally
+  align-items: center; // Center align items vertically
+}
+
+.content p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: Roboto;
+  font-weight: 400;
+  color: white;
+  //flex: 3rem;
+  padding-right: 5rem;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  //height:100%;
+  width: 100%;
+  gap: 5rem;
+}
+.main img {
+  padding-top: 2.5rem;
+}
+.Contact {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: clamp(12px, 5vw, 16px);
+}
+.address {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: 16px;
+}
+.socialmedia {
+  display: flex;
+  min-width: 200px;
+  flex-direction: column;
+  font-size: 16px;
+}
+.mail {
+  display: flex;
+  min-width: 100px;
+  flex-direction: column;
+  font-size: 16px;
+}
