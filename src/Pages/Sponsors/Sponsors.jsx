@@ -1,5 +1,8 @@
 const Sponsors = () => {
-  return <div></div>;
+  return 
+  (<div>
+    You haver eached the sponsors page
+  </div>);
 };
 
 export default Sponsors;
