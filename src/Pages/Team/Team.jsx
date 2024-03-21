@@ -68,7 +68,7 @@ const Team = () => {
   return (
     <div
       className="flex flex-col justify-center items-center m-0 p-0"
-      style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
+      style={{ background: "linear-gradient(130deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
     >
       {/* <div
         style={{ fontFamily: "Abril Fatface" }}
@@ -86,7 +86,7 @@ const Team = () => {
       <div className="w-[100%]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
-      <div className="w-[100%] md:h-[11rem] mb-[5rem] relative bottom-[.4rem] md:bottom-[1.3rem]">
+      <div className="w-[100%] md:h-[11rem] mb-[2rem] md:mb-[5rem] relative bottom-[.4rem] md:bottom-[1.3rem]">
         <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
       </div>
       <div
