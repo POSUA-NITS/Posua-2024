@@ -17,7 +17,7 @@ const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
         alt="teampagecard"
         className="absolute"
       />
-      <div className="absolute  left-[2.6rem] top-[3rem] w-[10rem] h-[10rem]">
+      <div className="absolute  left-[2.6rem] top-[3rem] w-[10rem] h-[10rem] z-[130]">
         <img
           src={photoLink}
           alt="hero"
@@ -27,21 +27,21 @@ const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
         <div
           className={`transition-all duration-500 ease-in-out mx-auto flex justify-center gap-[1rem] ${hover ? "opacity-100" : "opacity-0"} mt-[.5rem]`}
         >
-          <a href={github} className="w-[1.8rem] h-[1.8rem]">
+          <a href={github} className="w-[1.8rem] h-[1.8rem] z-[130]" target="_blank">
             <img
               src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876324/pickjnwr5e23ommeghr9.jpg?_s=public-apps"
               alt="github"
               className="w-full h-full object-cover"
             />
           </a>
-          <a href={facebook} className="w-[1.8rem] h-[1.8rem]">
+          <a href={facebook} className="w-[1.8rem] h-[1.8rem] z-[130]" target="_blank">
             <img
               src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876323/fnoakp6rpiutts7pcvhw.jpg?_s=public-apps"
               alt="github"
               className="w-full h-full object-cover"
             />
           </a>
-          <a href={linkedin} className="w-[1.8rem] h-[1.8rem]">
+          <a href={linkedin} className="w-[1.8rem] h-[1.8rem] z-[130]" target="_blank">
             <img
               src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/moqbrsovcdpdzpsqsgyi.jpg?_s=public-apps"
               alt="github"

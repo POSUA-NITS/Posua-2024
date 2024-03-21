@@ -3,7 +3,7 @@ import PatronCard from "../../Components/TeamPageUI/PatronCard";
 
 const Team = () => {
   const teamTopLogo =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711024474/Group_2608570_tr75j3.jpg?_s=public-apps";
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037538/team_fyxmgg.jpg?_s=public-apps";
   const topImage =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711024939/magh_bihu_1_2_t4nl8t.jpg?_s=public-apps";
   const unionBodyImg =
@@ -12,6 +12,11 @@ const Team = () => {
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711025427/Frame_2608666_in8fmz.jpg?_s=public-apps";
   const techTeamImg =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711025427/Frame_2608668_xnvc5t.jpg?_s=public-apps";
+  const flower =
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037169/Group1_edn1zl.jpg?_s=public-apps";
+  // const jaapi = "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711016549/Group_2608542_ylhq2y.jpg?_s=public-apps";
+  const jaapi2 =
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711053903/OBJECTS_1_gvgj7g.jpg?_s=public-apps";
   const developerData = [
     {
       id: 1,
@@ -67,7 +72,7 @@ const Team = () => {
 
   return (
     <div
-      className="flex flex-col justify-center items-center m-0 p-0"
+      className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden"
       style={{ background: "linear-gradient(130deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
     >
       {/* <div
@@ -83,14 +88,30 @@ const Team = () => {
           className="w-full object-contain"
         />
       </div> */}
-      <div className="w-[100%]">
+      <div className="w-[100%] z-[2]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
-      <div className="w-[100%] md:h-[11rem] mb-[2rem] md:mb-[5rem] relative bottom-[.4rem] md:bottom-[1.3rem]">
+      <div className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem]  z-[2]">
         <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
+        <div className="absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
+          <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem]">
+            <img
+              src={jaapi2}
+              alt="jaapi1"
+              className="w-full h-full object-fill animate-spin animation-duration-[10s] animation-timing-[linear]"
+            />
+          </div>
+          <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem] ">
+            <img
+              src={jaapi2}
+              alt="jaapi2"
+              className="w-full h-full object-fill animate-spin animation-duration-[10s] animation-timing-[linear]"
+            />
+          </div>
+        </div>
       </div>
       <div
-        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[10rem]  md:px-[18rem]"
+        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[7rem]  md:px-[10rem] z-[2] font-semibold"
         style={{ color: "#9B2125", fontFamily: "Alata" }}
       >
         With the arrival of spring and the departure of winter days, our Mother Nature
@@ -101,7 +122,7 @@ const Team = () => {
         into its circle of gaiety and also ensures of breaking all the barriers among the
         crowd and bringing everyone together.
       </div>
-      <div className="mt-[7rem] sm:mt-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
+      <div className="mt-[7rem] sm:mt-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
         {patronData.map((profile, i) => {
           return <PatronCard key={profile.id} {...profile} index={i} />;
         })}
@@ -109,7 +130,7 @@ const Team = () => {
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={unionBodyImg} alt="Union Body" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -117,7 +138,7 @@ const Team = () => {
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={coreTeamImg} alt="Core Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -125,11 +146,27 @@ const Team = () => {
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={techTeamImg} alt="Tech Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
+
+      {/** *********flower section ************* */}
+
+      <div className="absolute z-[1] md:top-[45rem] md:left-[-25rem] w-[40rem] h-[40rem]">
+        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+      </div>
+      <div className="absolute z-[1] md:top-[140rem] md:left-[-9rem] w-[20rem] h-[20rem]">
+        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+      </div>
+      <div className="absolute z-[1] md:top-[150rem] md:right-[-10rem] w-[25rem] h-[25rem]">
+        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+      </div>
+      <div className="absolute z-[1] md:top-[180rem] md:left-[-10rem] w-[30rem] h-[30rem]">
+        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+      </div>
+      {/** *********flower section ************* */}
     </div>
   );
 };
