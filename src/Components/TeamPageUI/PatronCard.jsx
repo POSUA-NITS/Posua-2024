@@ -14,11 +14,11 @@ const PatronCard = ({ name, email, photoLink }) => {
       }}
     >
       <img
-        className="absolute z-[-2]"
+        className="absolute z-[2]"
         src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711014245/Group_n51goy.jpg?_s=public-apps"
         alt="Patron Frame"
       />
-      <div className="absolute w-full h-full flex flex-col items-center justify-end bottom-[3.6rem] leading-4">
+      <div className="absolute w-full h-full flex flex-col items-center justify-end bottom-[3.6rem] leading-4 z-[4]">
         <div
           className="text-[1.1rem] font-semibold"
           style={{ color: "#BC0404", fontFamily: "DM Serif Display" }}
@@ -30,12 +30,12 @@ const PatronCard = ({ name, email, photoLink }) => {
         </div>
       </div>
       <div
-        className={`absolute w-full h-full flex flex-col items-center justify-end text-[.65rem] transition-all duration-500 ease-in-out text-orange-500 ${hover ? "opacity-100 bottom-[1.9rem]" : "opacity-0 bottom-[2.4rem]"}`}
+        className={`absolute w-full h-full flex flex-col items-center justify-end text-[.65rem] transition-all duration-500 ease-in-out text-orange-500 ${hover ? "opacity-100 bottom-[1.9rem]" : "opacity-0 bottom-[2.4rem]"} z-[10]`}
       >
         EMAIL : {email}
       </div>
       <div
-        className={`absolute transition-all duration-500 ease-in-out ${hover ? "w-[9rem] h-[9rem] left-[4.5rem] top-[4rem]" : "left-[2.55rem] top-[2.5rem] w-[10rem] h-[10rem]"}`}
+        className={`absolute transition-all duration-500 ease-in-out ${hover ? "w-[9rem] h-[9rem] left-[4.5rem] top-[4rem]" : "left-[2.55rem] top-[2.5rem] w-[10rem] h-[10rem]"} z-[5]`}
       >
         <img
           src={photoLink}
@@ -45,7 +45,7 @@ const PatronCard = ({ name, email, photoLink }) => {
         />
       </div>
       <div
-        className={`absolute w-full h-full justify-center z-[-1] transition-all duration-500 ease-in-out ${hover ? "top-[1.7rem] left-[-.5rem]" : " top-[2.6rem]"}`}
+        className={`absolute w-full h-full justify-center z-[3] transition-all duration-500 ease-in-out ${hover ? "top-[1.7rem] left-[-.5rem]" : " top-[2.6rem]"}`}
       >
         <img
           src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711016549/Group_2608542_ylhq2y.jpg?_s=public-apps"

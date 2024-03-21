@@ -66,7 +66,10 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center m-0 p-0">
+    <div
+      className="flex flex-col justify-center items-center m-0 p-0"
+      style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
+    >
       {/* <div
         style={{ fontFamily: "Abril Fatface" }}
         className="text-[2rem] md:text-[2.5rem] relative left-[1rem] md:left-[1.5rem] font-semibold"
@@ -83,10 +86,13 @@ const Team = () => {
       <div className="w-[100%]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
-      <div className="w-[100%] md:h-[11rem] mb-[5rem]">
+      <div className="w-[100%] md:h-[11rem] mb-[5rem] relative bottom-[.4rem] md:bottom-[1.3rem]">
         <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
       </div>
-      <div className="text-center md:text-[1.4rem] px-[2rem] sm:px-[10rem]  md:px-[18rem]">
+      <div
+        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[10rem]  md:px-[18rem]"
+        style={{ color: "#9B2125", fontFamily: "Alata" }}
+      >
         With the arrival of spring and the departure of winter days, our Mother Nature
         expresses her joy of welcoming the calming rejuvenation via greenery and
         brightness all around her. Our Spring Fest, Posua is that venture which nurtures
