@@ -1,4 +1,4 @@
-import TeamCard from "../../Components/TeamPageUI/Teamcard";
+import TeamCard from "../../Components/TeamPageUI/TeamCard";
 import PatronCard from "../../Components/TeamPageUI/PatronCard";
 
 const Team = () => {
