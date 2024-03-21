@@ -83,10 +83,10 @@ const Team = () => {
       <div className="w-[100%]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
-      <div className="w-[100%] h-[11rem] mb-[5rem]">
+      <div className="w-[100%] md:h-[11rem] mb-[5rem]">
         <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
       </div>
-      <div className="text-center md:text-[1.4rem] px-[1rem]  md:px-[18rem]">
+      <div className="text-center md:text-[1.4rem] px-[2rem] sm:px-[10rem]  md:px-[18rem]">
         With the arrival of spring and the departure of winter days, our Mother Nature
         expresses her joy of welcoming the calming rejuvenation via greenery and
         brightness all around her. Our Spring Fest, Posua is that venture which nurtures
@@ -95,31 +95,31 @@ const Team = () => {
         into its circle of gaiety and also ensures of breaking all the barriers among the
         crowd and bringing everyone together.
       </div>
-      <div className="mt-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[2rem]">
+      <div className="mt-[7rem] sm:mt-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
         {patronData.map((profile, i) => {
           return <PatronCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
-      <div className="mx-auto my-[4rem] w-[25rem]">
+      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={unionBodyImg} alt="Union Body" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[2rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
-      <div className="mx-auto my-[4rem] w-[25rem]">
+      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={coreTeamImg} alt="Core Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[2rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
-      <div className="mx-auto my-[4rem] w-[25rem]">
+      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={techTeamImg} alt="Tech Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[2rem]">
+      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem]">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
