@@ -1,5 +1,5 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { Events, Home } from "./Pages/index";
+import { Events, Home, Team, Sponsors, Borhomthuri, Gallery } from "./Pages/index";
 
 const App = () => {
   return (
@@ -9,6 +9,10 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/sponsors" element={<Sponsors />} />
+          <Route path="/borhomthuri" element={<Borhomthuri />} />
+          <Route path="/gallery" element={<Gallery />} />
         </Routes>
       </BrowserRouter>
     </main>
