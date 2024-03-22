@@ -1,16 +1,16 @@
 import React, { useState } from "react";
 import ArtistCard from "./ArtistCard";
 
-const ArtistPageAnimation = () => {
-  const [clickEvent, setclickEvent] = useState(false);
-  const [first, setfirst] = useState(false);
+const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthird }) => {
+  //   const [clickEvent, setclickEvent] = useState(false);
   const [firstCross, setfirstCross] = useState(true);
 
-  const [second, setsecond] = useState(false);
   const [secondCross, setsecondCross] = useState(true);
 
-  const [third, setthird] = useState(false);
   const [thirdCross, setthirdCross] = useState(true);
+  const name = "Zubeen Garg";
+  const assameseDesc = "";
+  const englishDesc = "";
   return (
     <div
       className={`relative w-[100%] transition-all duration-1000 ease-in-out ${first || second || third ? "h-[50rem]" : " h-[25rem]"}`}
@@ -19,9 +19,8 @@ const ArtistPageAnimation = () => {
         className={`flex h-[30rem] w-[100%] justify-center gap-[7rem] transition-all duration-500 ease-in-out ${first || second || third ? "top-[30rem]" : "top-0"} absolute`}
       >
         <div
-          className={`transition-all duration-700 ease-in-out ${clickEvent ? "" : ""} ${first ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-700 ease-in-out ${first ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
-            setclickEvent(true);
             setsecond(false);
             setthird(false);
             if (firstCross) {
@@ -29,12 +28,18 @@ const ArtistPageAnimation = () => {
             }
           }}
         >
-          <ArtistCard clickk={first} setClickk={setfirst} setCross={setfirstCross} />
+          <ArtistCard
+            clickk={first}
+            setClickk={setfirst}
+            setCross={setfirstCross}
+            name={name}
+            assameseDesc={assameseDesc}
+            englishDesc={englishDesc}
+          />
         </div>
         <div
-          className={`transition-all duration-700 ease-in-out ${clickEvent ? "" : ""} ${second ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-700 ease-in-out ${second ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
-            setclickEvent(true);
             setfirst(false);
             setthird(false);
             if (secondCross) {
@@ -42,12 +47,18 @@ const ArtistPageAnimation = () => {
             }
           }}
         >
-          <ArtistCard clickk={second} setClickk={setsecond} setCross={setsecondCross} />
+          <ArtistCard
+            clickk={second}
+            setClickk={setsecond}
+            setCross={setsecondCross}
+            name={name}
+            assameseDesc={assameseDesc}
+            englishDesc={englishDesc}
+          />
         </div>
         <div
-          className={`transition-all duration-700 ease-in-out ${clickEvent ? "" : ""} ${third ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-700 ease-in-out ${third ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
-            setclickEvent(true);
             setfirst(false);
             setsecond(false);
             if (thirdCross) {
@@ -55,7 +66,14 @@ const ArtistPageAnimation = () => {
             }
           }}
         >
-          <ArtistCard clickk={third} setClickk={setthird} setCross={setthirdCross} />
+          <ArtistCard
+            clickk={third}
+            setClickk={setthird}
+            setCross={setthirdCross}
+            name={name}
+            assameseDesc={assameseDesc}
+            englishDesc={englishDesc}
+          />
         </div>
       </div>
     </div>

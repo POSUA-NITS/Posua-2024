@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArtistCard = ({ clickk, setClickk, setCross }) => {
+const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
   //  const [clickk, setClickk] = useState(false);
   // console.log(clickk);
   const backFrame =
@@ -11,7 +11,7 @@ const ArtistCard = ({ clickk, setClickk, setCross }) => {
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex justify-between items-center transition-all duration-300 ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md" : "w-[12rem] h-[17rem]"}`}
+      className={`flex items-center transition-all duration-300 ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[17.3rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
@@ -30,10 +30,13 @@ const ArtistCard = ({ clickk, setClickk, setCross }) => {
           <img src={photoLink} alt="" className="w-full h-full object-cover" />
         </div>
         <div
-          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20] leading-[1rem]  ${clickk ? "top-[5.8rem]" : "top-[5.5rem]"}`}
+          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20]  ${clickk ? "top-[6.7rem] leading-[1.3rem]" : "top-[5.5rem] leading-[1rem]"}`}
         >
-          <div className="font-semibold text-[1rem]" style={{ color: "#B02227" }}>
-            Zubeen Garg
+          <div
+            className={`font-semibold ${clickk ? "text-[1.3rem]" : "text-[1rem]"}`}
+            style={{ color: "#B02227" }}
+          >
+            {name}
           </div>
           <div className="text-[.8rem]" style={{ color: "#B02227" }}>
             Singer
@@ -44,10 +47,10 @@ const ArtistCard = ({ clickk, setClickk, setCross }) => {
         className={`w-[45vw] flex flex-col gap-[1.5rem] flex-wrap h-full justify-center items-center px-[3rem] transition-all duration-500 ease-in-out ${clickk ? "opacity-100 relative" : "absolute opacity-0"}`}
       >
         <div
-          className="text-[2rem] font-bold"
+          className="text-[3rem] font-bold"
           style={{ color: "#B02227", fontFamily: "Abril Fatface" }}
         >
-          Zubeen Garg
+          {name}
         </div>
         <div
           className="text-[.8rem] text-center"
