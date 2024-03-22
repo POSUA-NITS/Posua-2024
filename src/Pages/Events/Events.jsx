@@ -7,8 +7,8 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
       className={styles.ExtendedView}
       style={{
         transform: `translateX(${mode * 100}vw)`,
-        transition: "linear 10ms",
-        transitionDelay: "500ms",
+        transition: "linear 1000ms",
+        // transitionDelay: "00ms",
         backgroundImage: `url('${data[current - 1].src}')`,
       }}
     >
@@ -17,9 +17,9 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
           <h1 className={styles.h1}>{data[current - 1].name}</h1>
           <p className={styles.description}>{data[current - 1].description}</p>
           <div className={styles.sliderBtnCont}>
-            {current < data.length && (
+            {current > 1 && (
               <button
-                onClick={() => setCurrent(current + 1)}
+                onClick={() => setCurrent(current - 1)}
                 className={styles.sliderBtn}
               >
                 <img
@@ -28,9 +28,9 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
                 />
               </button>
             )}
-            {current > 1 && (
+            {current < data.length && (
               <button
-                onClick={() => setCurrent(current - 1)}
+                onClick={() => setCurrent(current + 1)}
                 className={styles.sliderBtn}
               >
                 <img
@@ -51,7 +51,7 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
                 transform: `translateX(${-(current - 1) * 30}%)`,
                 transition: "linear 1000ms",
                 opacity: `${current === item.id ? 0 : 1}`,
-                scale: `${current === item.id ? 20 : 1}`,
+                scale: `${current === item.id ? 6 : 1}`,
               }}
               className={styles.eachItem}
             />
