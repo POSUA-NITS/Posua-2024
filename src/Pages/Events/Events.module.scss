@@ -1,5 +1,5 @@
 .superParent {
-  overflow-x: hidden;
+  overflow: hidden;
   background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
@@ -7,8 +7,10 @@
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/bg_events_jaapi_sltivi.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
-    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg");
-  background-blend-mode: lighten, normal, normal, normal, normal, normal, normal;
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+    linear-gradient(40deg, #e54927, #ffdc97);
+  background-blend-mode: soft-light, normal, soft-light, normal, soft-light, normal,
+    hard-light, hard-light, normal;
   background-position:
     bottom right,
     125% 0%,
@@ -17,7 +19,8 @@
     -22% 0%,
     75% top,
     30% center,
-    155% 0%;
+    155% 0%,
+    center;
   background-size:
     75% 75%,
     50% 100%,
@@ -26,9 +29,10 @@
     40% 40%,
     30% 30%,
     60% 60%,
-    60% 60%;
+    60% 60%,
+    100% 100%;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  min-height: 100%;
 
   .parent {
     color: #ffffff;
@@ -36,9 +40,11 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 0vh;
     padding-left: 10vw;
     height: 100%;
+    overflow-x: hidden;
+    min-height: 100vh;
 
     .innerCont {
       width: 40%;
@@ -61,6 +67,47 @@
         font-weight: 100;
         font-style: normal;
       }
+
+      .arrowCont {
+        background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_japi_2_x4thas.svg");
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-size: 50% 50%;
+        background-blend-mode: hard-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+
+        .viewDetails {
+          color: #ffffff;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .heading {
+          font-size: 1.5rem;
+        }
+
+        .description {
+          font-size: 0.5rem;
+          text-align: center;
+        }
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .innerCont {
+        align-items: center;
+        width: 50%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .parent {
+      justify-content: center;
+      padding-left: 0vw;
     }
   }
 
@@ -68,8 +115,7 @@
     position: absolute;
     top: 0;
     background-color: black;
-    min-height: 100%;
-    min-width: 100vw;
+    min-height: 100vh;
     color: #ffffff;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,6 +137,7 @@
         width: 100vw;
         z-index: -1;
         overflow: hidden;
+        gap: 2rem;
 
         .eachItem {
           height: 12rem;
@@ -118,7 +165,489 @@
           font-weight: 400;
           font-size: 1rem;
         }
+
+        .sliderBtn {
+          scale: 0.5;
+        }
       }
     }
+  }
+
+  @media screen and (max-width: 870px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 2rem auto;
+          align-items: center;
+          width: 50%;
+
+          .h1 {
+            font-size: 1.6rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 930px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 2rem auto;
+          align-items: center;
+
+          .h1 {
+            font-size: 1.6rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -10%,
+      30% center,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .superParent {
+    background-position:
+      100% 120%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .superParent {
+    background-position:
+      100% 120%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .superParent {
+    background-position:
+      100% 140%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .superParent {
+    background-position:
+      100% 150%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      115% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .superParent {
+    background-position:
+      100% 170%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      30% 30%,
+      35% 35%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .superParent {
+    background-position:
+      100% 160%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      30% 30%,
+      30% 30%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .superParent {
+    background-position:
+      100% 170%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      25% 25%,
+      30% 30%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .superParent {
+    background-position:
+      100% 175%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      30% 30%,
+      30% 30%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .superParent {
+    background-position:
+      100% 180%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      center center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      30% 30%,
+      30% 30%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .superParent {
+    background-position:
+      100% 185%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      100% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      30% 30%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .superParent {
+    background-position:
+      100% 190%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      25% 25%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .superParent {
+    background-position:
+      100% 195%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      100% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      20% 20%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .superParent {
+    background-position:
+      100% 200%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      20% 20%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .superParent {
+    background-position:
+      100% 205%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -10%,
+      30% center,
+      105% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      20% 20%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .superParent {
+    background-position:
+      100% 210%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -12%,
+      30% center,
+      100% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      20% 20%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .superParent {
+    background-position:
+      100% 220%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      75% -8%,
+      30% center,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      30% 30%,
+      60% 60%,
+      60% 60%,
+      100% 100%;
   }
 }

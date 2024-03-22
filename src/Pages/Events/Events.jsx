@@ -1,15 +1,18 @@
 import { React, useState } from "react";
 import styles from "./Events.module.scss";
 import data from "../../assets/Events.json";
+// width: `${current === item.id ? '100vw' : '12rem'}`,
+// height: `${current === item.id ? '100vh' : '12rem'}`,
 const ExtendedView = ({ mode, current, setCurrent }) => {
   return (
     <div
       className={styles.ExtendedView}
       style={{
         transform: `translateX(${mode * 100}vw)`,
-        transition: "linear 10ms",
-        transitionDelay: "500ms",
-        backgroundImage: `url('${data[current - 1].src}')`,
+        transition: `linear ${mode === 0 ? "500ms" : "10ms"}`,
+        transitionDelay: `${mode === 0 ? "500ms" : "0ms"}`,
+        backgroundColor: "#000000",
+        width: `${mode === 1 ? "0vw" : "100vw"}`,
       }}
     >
       <div className={styles.innerFilter}>
@@ -48,10 +51,9 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
               src={item.src}
               alt={item.name}
               style={{
-                transform: `translateX(${-(current - 1) * 30}%)`,
+                transform: `translateX(${-(current - 1) * 2}%)`,
                 transition: "linear 1000ms",
-                opacity: `${current === item.id ? 0 : 1}`,
-                scale: `${current === item.id ? 20 : 1}`,
+                scale: `${current === item.id ? 15 : 1}`,
               }}
               className={styles.eachItem}
             />
@@ -87,6 +89,7 @@ const Events = () => {
                 src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710584144/posua/arrow_ketmkt.svg"
                 alt="arrow"
               />
+              <h1 className={styles.viewDetails}>VIEW DETAILS</h1>
             </button>
           </div>
         </div>
