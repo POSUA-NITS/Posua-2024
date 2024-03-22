@@ -1,4 +1,4 @@
-import Borhomthuri from "../Borhomthuri/Borhomthuri";
+import Borhomthuri from "../../Components/Borhomthuri/Borhomthuri";
 import styles from "./Home.module.scss";
 const Home = () => {
   return (

@@ -1,10 +1,13 @@
 import styles from "./films.module.scss";
-import FilmImg from "./FILM.svg";
+// import FilmImg from "./FILM.svg";
 const Film = () => {
   return (
     <div>
       <div className={styles.FilmClass}>
-        <img alt="" src={FilmImg} />
+        <img
+          alt=""
+          src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711138935/Vector_yz2omx.png"
+        />
       </div>
     </div>
   );

@@ -1,6 +1,8 @@
 import Pepa from "./Pepa";
 import styles from "./Borhomthuri.module.scss";
 import Film from "./Films";
+
+import ScrolBar from "./ScrolBar";
 // import FrontCover from "./FrontCover";
 const Borhomthuri = () => {
   return (
@@ -8,6 +10,7 @@ const Borhomthuri = () => {
       <div className={styles.ParentClass}>
         <Pepa />
         <Film />
+        <ScrolBar />
         {/* <FrontCover/> */}
         <div className={styles.text}>
           Borhomthuri is the annual souvenir of POSUA.It enfolds indispensable parts of

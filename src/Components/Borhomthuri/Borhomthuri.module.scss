@@ -1,4 +1,4 @@
-.superParent{
+.superParent {
   min-height: 100vh;
 }
 .text {
@@ -7,7 +7,7 @@
   top: 10%;
   color: rgb(109, 12, 12);
   font-family: "Alata", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-size: 14px;
   font-style: normal;
   display: flex;
@@ -15,12 +15,14 @@
   text-align: center;
   width: 15%;
   height: 20%;
-  min-height: 100vh;
+  min-height: 150vh;
 }
 .ParentClass {
   background-color: rgb(228, 197, 156);
   background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
-    url(./sideFlower.svg);
+    url(../../assets/sideFlower.svg);
   background-position: right, left;
   background-repeat: no-repeat;
+}
+.Border {
 }

@@ -1,5 +1,5 @@
 import styles from "./Pepa.module.scss";
-import PepaImg from "./Pepa.svg";
+import PepaImg from "../../assets/Pepa.svg";
 const Pepa = () => {
   return (
     <div>
