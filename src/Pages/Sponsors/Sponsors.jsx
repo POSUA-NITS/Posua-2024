@@ -13,11 +13,36 @@ const SponsorPage = () => {
             />
           </div>
           <div className="sponsorContainer">
-            <div className="sponsor"></div>
-            <div className="sponsor"></div>
-            <div className="sponsor"></div>
-            <div className="sponsor"></div>
-            <div className="sponsor"></div>
+            <div className="sponsor">
+              <img
+                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098244/Hyundai_Logo_zqyig4.png"
+                alt=""
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098243/Pran_Logo_qkebp4.png"
+                alt=""
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/Oil_India-Logo_zwjxl7.png"
+                alt=""
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/NRL_Logo_sja6jq.png"
+                alt=""
+              />
+            </div>
+            <div className="sponsor">
+              <img
+                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711099239/Indian_Oil_Logo1_gx89of.png"
+                alt=""
+              />
+            </div>
           </div>
           <div className="bihu">
             <img
