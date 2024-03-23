@@ -138,10 +138,16 @@
         z-index: -1;
         overflow: hidden;
         gap: 2rem;
+        // background-color: transparent;
 
         .eachItem {
+          // height: 18rem;
+          // width: 15vw !important;
           height: 12rem;
           width: 12rem;
+          flex: none;
+          order: 1;
+          margin: 0 0.8vw;
         }
       }
 
@@ -650,4 +656,10 @@
       60% 60%,
       100% 100%;
   }
+}
+
+#carouselcardholder {
+  display: flex;
+  background-color: red;
+  width: 50% !important;
 }
