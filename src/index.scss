@@ -8,4 +8,11 @@
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+#root {
+  background: linear-gradient(40deg, #e54927, #ffdc97);
+  min-height: 100vh;
+  overflow-x: hidden;
 }

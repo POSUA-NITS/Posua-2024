@@ -80,9 +80,9 @@ const Gallery = () => {
           <ImgPop imgUrl={imgUrl} imgPop={imgPop} setImgPop={setImgPop} />
         </div>
 
-        <div className="w-[18rem] sm:w-[22rem] md:w-[35rem] mx-auto my-[3rem] md:my-[unset]">
+        <div className="w-[18rem] sm:w-[22rem] md:w-[35rem] h-[15rem] mx-auto my-[3rem] md:my-[unset] z-[400]">
           <img
-            className={`h-full w-full object-contain transition-all duration-[2000ms] md:duration-[4000ms]  ease-in-out ${flower ? "" : "scale-[1.6]"} `}
+            className={`h-full w-full object-cover transition-all duration-[2000ms] md:duration-[4000ms]  ease-in-out ${flower ? "" : "scale-[1.6]"} z-[500]`}
             src="https://res.cloudinary.com/dlyo7ec6c/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710793889/Group_2608609_1_p0nsnp.jpg?_s=public-apps"
             alt="Featured property "
             // style={{ height: "26vh", width: "33vw" }}
