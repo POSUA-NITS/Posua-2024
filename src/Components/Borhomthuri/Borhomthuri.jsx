@@ -1,6 +1,6 @@
 import Pepa from "./Pepa";
 import styles from "./Borhomthuri.module.scss";
-import Film from "./Films";
+import Film from "./Filmy";
 
 import ScrolBar from "./ScrolBar";
 // import FrontCover from "./FrontCover";
