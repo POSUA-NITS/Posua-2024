@@ -3,24 +3,28 @@
     "id": 1,
     "name": "Bordoisila",
     "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769592/posua/bihu_nasoni_x0rjsl.svg"
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769592/posua/bihu_nasoni_x0rjsl.svg",
+    "changing": 10
   },
   {
     "id": 2,
     "name": "Manthar",
     "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769274/posua/zubeen-da_fo3j1q.svg"
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769274/posua/zubeen-da_fo3j1q.svg",
+    "changing": 1
   },
   {
     "id": 3,
     "name": "Lorem Ipsum",
     "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769301/posua/random-performer_tjmv6r.svg"
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769301/posua/random-performer_tjmv6r.svg",
+    "changing": -6
   },
   {
     "id": 4,
     "name": "Lorem Ipsum",
     "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg"
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
+    "changing": 24
   }
 ]

@@ -51,8 +51,9 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
               src={item.src}
               alt={item.name}
               style={{
-                transform: `translateX(${-(current - 1) * 2}%)`,
+                transform: `${current === item.id + 1 ? `translateX(${(current + item.changing) * 10}%)` : `translateX(${-(current - 1) * 10}%)`}`,
                 transition: "linear 1000ms",
+                zIndex: `${current === item.id ? 0 : 1}`,
                 scale: `${current === item.id ? 15 : 1}`,
               }}
               className={styles.eachItem}
