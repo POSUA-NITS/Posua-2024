@@ -7,6 +7,7 @@ const Film = () => {
         <img
           alt=""
           src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711138935/Vector_yz2omx.png"
+          className={styles.cam}
         />
       </div>
     </div>
