@@ -10,12 +10,16 @@ const ImgPop = ({ imgUrl, imgPop, setImgPop }) => {
       >
         <img src={imgUrl} alt="modal Img" className="w-full h-full object-contain" />
         <div
-          className="text-[2.5rem] text-white top-[.8rem] md:top-[.4rem] right-[1.2rem] absolute  z-[200] cursor-pointer bg-black rounded-md flex justify-center font-bold items-center h-[2.5rem] w-[2.5rem]"
+          className="text-[2.5rem] text-white top-[1rem] md:top-[.4rem] right-[1.2rem] absolute  z-[200] cursor-pointer bg-white p-2 rounded-md flex justify-center font-bold items-center w-[2.5rem] h-[2.5rem]"
           onClick={() => {
             setImgPop(false);
           }}
         >
-          ×
+          <img
+            src="https://cdn4.iconfinder.com/data/icons/symbols-2-1/31/24_multiply_cross_math-512.png"
+            alt="cross"
+            className="w-full h-full object-contain"
+          />
         </div>
       </div>
     </div>
