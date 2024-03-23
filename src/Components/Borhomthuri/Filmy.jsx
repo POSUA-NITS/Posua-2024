@@ -1,4 +1,4 @@
-import styles from "./films.module.scss";
+import styles from "./Filmy.module.scss";
 // import FilmImg from "./FILM.svg";
 const Film = () => {
   return (
