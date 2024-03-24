@@ -12,7 +12,8 @@ const ExtendedView = ({ mode, current, setCurrent }) => {
         transition: `linear ${mode === 0 ? "500ms" : "10ms"}`,
         transitionDelay: `${mode === 0 ? "500ms" : "0ms"}`,
         backgroundColor: "#000000",
-        width: `${mode === 1 ? "0vw" : "100vw"}`,
+        minWidth: '100vw'
+        // width: `${mode === 1 ? "0vw" : "100vw"}`,
       }}
     >
       <div className={styles.innerFilter}>
@@ -90,7 +91,7 @@ const Events = () => {
                 src="https://res.cloudinary.com/dhry5xscm/image/upload/v1710584144/posua/arrow_ketmkt.svg"
                 alt="arrow"
               />
-              <h1 className={styles.viewDetails}>VIEW DETAILS</h1>
+              <h1 className={styles.viewDetails}>VIEW EVENTS</h1>
             </button>
           </div>
         </div>
