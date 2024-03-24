@@ -5,11 +5,10 @@
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_bottom_ap5ova.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
-    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1711312009/posua/center-circle_vs9g1x.svg"),
     url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
     linear-gradient(40deg, #e54927, #ffdc97);
-  background-blend-mode: soft-light, normal, soft-light, normal, soft-light,
-    hard-light, hard-light, normal;
+  background-blend-mode: soft-light, normal, soft-light, normal, soft-light, hard-light, normal, normal;
   background-position:
     bottom right,
     125% 100%,
@@ -94,8 +93,9 @@
       .jaapiCircle1 {
         animation-name: rotate1;
         animation-iteration-count: infinite;
-        animation-duration: 6s;
+        animation-duration: 17s;
         animation-fill-mode: forwards;
+        animation-timing-function: linear;
       }
     }
 
@@ -107,7 +107,9 @@
       .jaapiCircle2 {
         animation-name: rotate1;
         animation-iteration-count: infinite;
-        animation-duration: 9s;
+        animation-duration: 17s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
       }
     }
 
@@ -119,7 +121,9 @@
       .jaapiCircle3 {
         animation-name: rotate1;
         animation-iteration-count: infinite;
-        animation-duration: 17s;
+        animation-duration: 34s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
       }
     }
 
@@ -136,8 +140,8 @@
 
   @media screen and (max-width:775px) {
     .jaapiCont {
-      scale: 0.8;
-      top: -10%;
+      scale: 0.5;
+      top: -15%;
     }
   }
 
@@ -151,8 +155,8 @@
   @media screen and (max-width:365px) {
     .jaapiCont {
       scale: 0.4;
-      top: -15%;
-      left: 30%;
+      top: -20%;
+      left: 50%;
     }
   }
 
@@ -208,11 +212,22 @@
 
       @media screen and (max-width: 700px) {
         .heading {
-          font-size: 1.5rem;
+          font-size: 1.8rem;
         }
 
         .description {
-          font-size: 0.5rem;
+          font-size: 0.8rem;
+          text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .heading {
+          font-size: 1.4rem;
+        }
+
+        .description {
+          font-size: 0.8rem;
           text-align: center;
         }
       }
@@ -456,7 +471,7 @@
       75% 75%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      20% 20%,
       40% 40%,
       40% 40%,
       40% 40%,
@@ -467,9 +482,9 @@
 @media screen and (max-width: 755px) {
   .superParent {
     background-position:
-      100% 170%,
+      100% 120%,
       120% 100%,
-      10% 110%,
+      10% 100%,
       -20% bottom,
       -10% 0%,
       center center,
@@ -478,7 +493,7 @@
     background-size:
       75% 75%,
       50% 90%,
-      30% 30%,
+      20% 20%,
       50% 50%,
       40% 40%,
       30% 30%,
@@ -487,12 +502,12 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 710px) {
   .superParent {
     background-position:
-      100% 160%,
+      100% 150%,
       120% 100%,
-      10% 110%,
+      10% 105%,
       -20% bottom,
       -10% 0%,
       center center,
@@ -513,9 +528,9 @@
 @media screen and (max-width: 640px) {
   .superParent {
     background-position:
-      100% 170%,
+      100% 145%,
       120% 100%,
-      10% 110%,
+      10% 105%,
       -20% bottom,
       -10% 0%,
       center center,
@@ -535,10 +550,18 @@
 
 @media screen and (max-width: 590px) {
   .superParent {
+    background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_bottom_ap5ova.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1711312009/posua/center-circle_vs9g1x.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+      linear-gradient(130deg, #e54927, #ffdc97);
     background-position:
       100% 175%,
       120% 100%,
-      10% 110%,
+      10% 115%,
       -20% bottom,
       -10% 0%,
       center center,
@@ -550,7 +573,7 @@
       30% 30%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      50% 50%,
       30% 30%,
       100% 100%;
   }
@@ -561,7 +584,7 @@
     background-position:
       100% 180%,
       120% 100%,
-      10% 110%,
+      10% 115%,
       -20% bottom,
       -10% 0%,
       center center,
@@ -570,7 +593,7 @@
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      40% 40%,
       50% 50%,
       40% 40%,
       30% 30%,
@@ -587,13 +610,13 @@
       10% 110%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       100% 0%,
       center;
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      25% 25%,
       50% 50%,
       40% 40%,
       60% 60%,
@@ -607,16 +630,16 @@
     background-position:
       100% 190%,
       120% 100%,
-      10% 115%,
+      10% 105%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       105% 0%,
       center;
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      40% 40%,
       50% 50%,
       40% 40%,
       60% 60%,
@@ -633,7 +656,7 @@
       10% 115%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       100% 0%,
       center;
     background-size:
@@ -653,10 +676,10 @@
     background-position:
       100% 200%,
       120% 100%,
-      10% 115%,
+      10% 110%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       105% 0%,
       center;
     background-size:
@@ -676,16 +699,16 @@
     background-position:
       100% 205%,
       120% 100%,
-      10% 115%,
+      30% 110%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       105% 0%,
       center;
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      20% 20%,
       50% 50%,
       40% 40%,
       60% 60%,
@@ -699,16 +722,16 @@
     background-position:
       100% 210%,
       120% 100%,
-      10% 115%,
+      30% 100%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       100% 0%,
       center;
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      10% 10%,
       50% 50%,
       40% 40%,
       60% 60%,
@@ -722,16 +745,16 @@
     background-position:
       100% 220%,
       120% 100%,
-      10% 115%,
+      10% 100%,
       -20% bottom,
       -10% 0%,
-      30% center,
+      center center,
       155% 0%,
       center;
     background-size:
       75% 75%,
       50% 50%,
-      30% 30%,
+      10% 10%,
       50% 50%,
       40% 40%,
       60% 60%,
