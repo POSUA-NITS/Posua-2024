@@ -97,7 +97,10 @@ const Team = () => {
       <div className="w-[100%] z-[2]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
-      <div className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem]  z-[2]">
+      <div
+        className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem] z-[2]"
+        style={{ overflowX: "unset" }}
+      >
         <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
         <div className="absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
           <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem]">
@@ -148,13 +151,19 @@ const Team = () => {
       {/* *****************TeamCard for desktop view end1***************** */}
 
       {/* *****************TeamCard for mobile views start2***************** */}
-      <div className="my-[4rem] w-[100%] z-[10] relative flex justify-center items-center md:hidden">
+      <div
+        className="my-[4rem] w-[100%] z-[10] relative flex justify-center items-center md:hidden"
+        style={{ overflowX: "unset" }}
+      >
         <Swiper spaceBetween={100} slidesPerView={1}>
           {developerData.map((profile) => {
             return (
               <SwiperSlide key={profile.id}>
                 {({ isActive }) => (
-                  <div className="w-[100%] flex justify-center items-center">
+                  <div
+                    className="w-[100%] flex justify-center items-center"
+                    style={{ overflowX: "unset" }}
+                  >
                     {isActive ? setActive1(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
