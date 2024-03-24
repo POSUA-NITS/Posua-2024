@@ -1,5 +1,8 @@
+import useSetTitle from "../../Hooks/SetTitle";
+
 const Home = () => {
-  return <div>Home Page</div>;
+  useSetTitle("Home | Posua");
+  return <div>Home page</div>;
 };
 
 export default Home;

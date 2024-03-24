@@ -1,0 +1,56 @@
+.AppContainer {
+  overflow-x: hidden;
+  .Wrapper {
+    overflow-x: hidden;
+  }
+  .scrollContainer {
+    width: fit-content;
+    overflow-x: hidden;
+  }
+
+  .scrollWraper {
+    gap: 1rem;
+    // transform: translateX(0rem);
+    object-fit: contain;
+    animation-play-state: running;
+    animation: scrollAnimation2 2166s linear infinite;
+  }
+  .scrollWraper2 {
+    gap: 1rem;
+    object-fit: contain;
+    animation-play-state: running;
+    animation: scrollAnimation 166666s linear infinite;
+  }
+  @keyframes scrollAnimation {
+    0% {
+      transform: translateX(85vw);
+    }
+    100% {
+      transform: translateX(-10000%);
+    }
+  }
+  @keyframes scrollAnimation2 {
+    0% {
+      transform: translateX(-11980rem);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  @media (max-width: 768px) {
+    @keyframes scrollAnimation2 {
+      0% {
+        transform: translateX(-11995rem);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }
+  .scrollWraper:hover {
+    animation-play-state: paused; /* Pausing animation on hover */
+  }
+  .scrollWraper2:hover {
+    animation-play-state: paused; /* Pausing animation on hover */
+  }
+}
