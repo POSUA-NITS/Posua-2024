@@ -1,12 +1,17 @@
 import React, { useState, useEffect } from "react";
+// import {Link} from "react-router-dom";
+// import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import styles from "./Navbar.module.scss";
 import "./fonts.scss";
+
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState(null);
   // const [eventsClicked, setEventsClicked] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const [windowSize, setWindowSize] = useState(null);
+  const navigate = useNavigate(); // Get the navigate function
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -22,16 +27,18 @@ const Navbar = () => {
       };
     }
     return () => {};
+    // return undefined;
   }, []);
 
   const handleItemClick = (item) => {
     setSelectedItem(item);
-    // if (item === "Events") {
-    // setEventsClicked(true);
-    // } else {
-    // setEventsClicked(false);
-    // }
+
     closeMenu();
+    if (item === "Home") {
+      navigate("/");
+    } else {
+      navigate(`/${item.toLowerCase()}`);
+    }
   };
 
   const toggleMenu = () => {
@@ -48,24 +55,29 @@ const Navbar = () => {
       className={`${styles.navbar} ${selectedItem === "Events" ? styles.eventsClicked : ""}`}
     >
       <div className={styles.links}>
+        {/* <Link to="/"> */}
         <NavItem
           text="Home"
           selected={selectedItem === "Home"}
           onClick={() => handleItemClick("Home")}
-          // eventsClicked={eventsClicked}
         />
+        {/* </Link> */}
+        {/* <Link to="/events"> */}
         <NavItem
           text="Events"
           selected={selectedItem === "Events"}
           onClick={() => handleItemClick("Events")}
-          // eventsClicked={eventsClicked}
+          // path="/events"
         />
+        {/* </Link> */}
+        {/* <Link to="/gallery"> */}
         <NavItem
           text="Gallery"
           selected={selectedItem === "Gallery"}
           onClick={() => handleItemClick("Gallery")}
-          // eventsClicked={eventsClicked}
+          // path="/gallery"
         />
+        {/* </Link> */}
         <img
           src={
             selectedItem === "Events"
@@ -78,26 +90,35 @@ const Navbar = () => {
         />{" "}
         {/* Logo */}
         {/* <div className={styles.separator}></div> */}
+        {/* <Link to="/artists"> */}
         <NavItem
           text="Artists"
           selected={selectedItem === "Artists"}
           onClick={() => handleItemClick("Artists")}
+          // path="/artists"
           // eventsClicked={eventsClicked}
         />
+        {/* </Link> */}
+        {/* <Link to="/sponsors"> */}
         <NavItem
-          text="Sponsor"
-          selected={selectedItem === "Sponsor"}
-          onClick={() => handleItemClick("Sponsor")}
+          text="Sponsors"
+          selected={selectedItem === "Sponsors"}
+          onClick={() => handleItemClick("Sponsors")}
+          // path="/sponsors"
           // eventsClicked={eventsClicked}
         />
+        {/* </Link> */}
+        {/* <Link to="/team"> */}
         <NavItem
           text="Team"
           selected={selectedItem === "Team"}
           onClick={() => handleItemClick("Team")}
+          // path="/team"
           // eventsClicked={eventsClicked}
         />
+        {/* </Link> */}
       </div>
-      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""}`}>
+      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""} `}>
         <div
           className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
           onClick={toggleMenu}
@@ -107,21 +128,28 @@ const Navbar = () => {
           <div className={styles.bar}></div>
         </div>
         {windowSize < 768 && (
-          <img
-            src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
-            alt=""
-            style={{
-              justifyContent: "center",
-              alignItems: "start",
-              position: "relative",
-              top: "-45px",
-              display: "flex",
-            }}
-          />
+          <a href="/" style={{ textDecoration: "none" }}>
+            <span className="sr-only">Home</span>
+            <img
+              src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
+              alt=""
+              style={{
+                justifyContent: "center",
+                alignItems: "start",
+                position: "relative",
+                top: "-30px",
+                display: "flex",
+              }}
+            />
+          </a>
         )}
-        <div className={styles.mobileLinks}>
+        {/* <div className={styles.mobileLinks}> */}
+        <div
+          className={`${styles.mobileLinks} ${isMenuOpen ? styles.expandednavLinks : ""}`}
+        >
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
-          <div className="mr-[80vw] mt-[-10px]" onClick={closeMenu}>
+
+          <div className="mr-[80vw] mt-[-2px]" onClick={closeMenu}>
             <img
               src="https://res.cloudinary.com/dclhahfvz/image/upload/v1711130341/orangeCross_tqxpal.png"
               alt="Close Menu"
@@ -151,9 +179,9 @@ const Navbar = () => {
             onClick={() => handleItemClick("Artists")}
           />
           <NavItem
-            text="Sponsor"
-            selected={selectedItem === "Sponsor"}
-            onClick={() => handleItemClick("Sponsor")}
+            text="Sponsors"
+            selected={selectedItem === "Sponsors"}
+            onClick={() => handleItemClick("Sponsors")}
           />
           <NavItem
             text="Team"

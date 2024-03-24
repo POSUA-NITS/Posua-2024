@@ -85,36 +85,15 @@
     // align-items: center;
   }
 
-  // .navItem {
-  // margin-bottom: 1rem;
-  // }
-
-  //  .mobileMenu {
-  //     position: absolute;
-  //     display: flex; /* Show mobile menu */
-  //     justify-content: space-between;
-  //     width: 100%;
-  //     padding: 10px 17px; /* Adjust padding as needed */
-  //     align-items: center;
-  //      background: rgba(239, 208, 163, 0.55);
-  //      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
-  //      backdrop-filter: blur(12.5px);
-  //     color: #202020;
-  //   }
-
-  #Posua_Navbar {
-    display: flex;
-  }
-
   .hamburgerMenu {
     position: fixed;
-    top: 20px;
+    top: 30px;
     display: flex; /* Show hamburger icon */
     flex-direction: column;
   }
 
   .mobileLinks {
-    display: none;
+    //  display: none;
     position: absolute;
     top: 0px;
     left: 0;
@@ -126,23 +105,26 @@
     padding: 1rem;
     z-index: 10;
     gap: 4rem;
-    //  transition:  2s ease;
-    // overflow-y: auto;
+    transform: translateX(-100%); /* Initially off-screen */
+    transition: transform 0.5s ease; /* Add transition */
+    // transition: left 0.5s ease !important;
   }
-
+  .expandednavLinks {
+    transform: translateX(0) !important;
+    // left: 0;
+    // transition: left 0.5s ease ;
+  }
   .open .mobileLinks {
-    // left: -100%;
-    // transition:  1.5s ease;
     display: flex; /* Show mobile links when menu is open */
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    // left: 0;
-    // transition: left 3s ease;
+    //  transform: translateX(0);
+    //  transition: transform 0.5s ease;
   }
-
-  // body {
-  // overflow: ${({ isMenuOpen }) => (isMenuOpen ? "hidden" : "auto")}; /* Hide scrollbar when hamburger menu is open */
+  // .expandednavLinks {
+  //   transform: translateX(0) !important; /* Slide in */
+  //   // transition: transform 0.5s ease;
   // }
 
   .bar {
@@ -152,7 +134,7 @@
     border-radius: 50px;
     // stroke: #E27B4E;
     margin: 3px 0;
-    transition: all 0.3s ease;
+    // transition: all 0.3s ease;
   }
 
   .mobileMenu {
@@ -162,20 +144,10 @@
     align-items: center;
     padding: 2rem 0rem;
     width: 100%;
-
+    //  transform: translateX(-100%); /* Initially off-screen */
+    //  transition: transform 0.5s ease;
     // transition:  4s ease;
   }
-  //   .open .mobileMenu .bar:nth-child(1) {
-  //     transform: translateY(5px) rotate(45deg);
-  //   }
-
-  //   .open .mobileMenu .bar:nth-child(2) {
-  //     opacity: 0;
-  //   }
-
-  //   .open .mobileMenu .bar:nth-child(3) {
-  //     transform: translateY(-5px) rotate(-45deg);
-  //   }
 }
 
 .eventsClicked {
@@ -195,6 +167,6 @@
     lightgray 0px -0.053px / 100% 116.306% no-repeat;
 }
 
-#Posua_Navbar {
-  display: none;
-}
+// #Posua_Navbar {
+//   display: none;
+// }
