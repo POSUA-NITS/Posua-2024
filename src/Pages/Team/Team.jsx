@@ -1,7 +1,13 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useState } from "react";
 import TeamCard from "../../Components/TeamPageUI/TeamCard";
 import PatronCard from "../../Components/TeamPageUI/PatronCard";
-
+import "swiper/css";
 const Team = () => {
+  const [active1, setActive1] = useState(1);
+  const [active2, setActive2] = useState(1);
+  const [active3, setActive3] = useState(1);
+
   const teamTopLogo =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037538/team_fyxmgg.jpg?_s=public-apps";
   const topImage =
@@ -98,14 +104,16 @@ const Team = () => {
             <img
               src={jaapi2}
               alt="jaapi1"
-              className="w-full h-full object-fill animate-spin animation-duration-[10s] animation-timing-[linear]"
+              className="w-full h-full object-fill animate-spin"
+              style={{ animationDuration: "4s" }}
             />
           </div>
           <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem] ">
             <img
               src={jaapi2}
               alt="jaapi2"
-              className="w-full h-full object-fill animate-spin animation-duration-[10s] animation-timing-[linear]"
+              className="w-full h-full object-fill animate-spin"
+              style={{ animationDuration: "4s" }}
             />
           </div>
         </div>
@@ -130,40 +138,210 @@ const Team = () => {
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={unionBodyImg} alt="Union Body" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
+
+      {/* *****************TeamCard for desktop view start1***************** */}
+      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
+      {/* *****************TeamCard for desktop view end1***************** */}
+
+      {/* *****************TeamCard for mobile views start2***************** */}
+      <div className="my-[4rem] w-[100%] z-[10] relative flex justify-center items-center md:hidden">
+        <Swiper spaceBetween={100} slidesPerView={1}>
+          {developerData.map((profile) => {
+            return (
+              <SwiperSlide key={profile.id}>
+                {({ isActive }) => (
+                  <div className="w-[100%] flex justify-center items-center">
+                    {isActive ? setActive1(profile.id) : ""}
+                    <TeamCard {...profile} />
+                  </div>
+                )}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
+          <div
+            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+          ></div>
+        </div>
+      </div>
+      {/* *****************TeamCard for mobile view end2***************** */}
+
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={coreTeamImg} alt="Core Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
+
+      {/* *****************TeamCard for desktop view start3***************** */}
+      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
+      {/* *****************TeamCard for desktop view end3***************** */}
+
+      {/* *****************TeamCard for mobile view start4***************** */}
+      <div className="my-[4rem] w-[100%] z-[10] relative flex justify-center items-center md:hidden">
+        <Swiper spaceBetween={100} slidesPerView={1}>
+          {developerData.map((profile) => {
+            return (
+              <SwiperSlide key={profile.id}>
+                {({ isActive }) => (
+                  <div className="w-[100%] flex justify-center items-center">
+                    {isActive ? setActive2(profile.id) : ""}
+                    <TeamCard {...profile} />
+                  </div>
+                )}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
+          <div
+            className={`${active2 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active2 === 1 ? "white" : "#F2C18D" }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active2 === 1 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active2 === 1 ? "rounded-r-lg" : ""} ${active2 === 2 ? "rounded-l-lg" : ""} ${active2 !== 1 && active2 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active2 === 1 || active2 === 2 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active2 === 2 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active2 === 2 ? "rounded-r-lg" : ""} ${active2 === 3 ? "rounded-l-lg" : ""} ${active2 !== 2 && active2 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active2 === 2 || active2 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active2 === 3 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active2 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active2 === 3 ? "white" : "#F2C18D" }}
+          ></div>
+        </div>
+      </div>
+      {/* *****************TeamCard for mobile view end4***************** */}
+
       <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={techTeamImg} alt="Tech Team" className="w-full" />
       </div>
-      <div className="my-[4rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
+
+      {/* *****************TeamCard for desktop view start5***************** */}
+      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
+      {/* *****************TeamCard for desktop view end5***************** */}
+
+      {/* *****************TeamCard for mobile view start6***************** */}
+      <div className="my-[4rem] w-[100%] z-[10] relative flex justify-center items-center md:hidden">
+        <Swiper spaceBetween={100} slidesPerView={1}>
+          {developerData.map((profile) => {
+            return (
+              <SwiperSlide key={profile.id}>
+                {({ isActive }) => (
+                  <div className="w-[100%] flex justify-center items-center">
+                    {isActive ? setActive3(profile.id) : ""}
+                    <TeamCard {...profile} />
+                  </div>
+                )}
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
+          <div
+            className={`${active3 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active3 === 1 ? "white" : "#F2C18D" }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 1 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 1 ? "rounded-r-lg" : ""} ${active3 === 2 ? "rounded-l-lg" : ""} ${active3 !== 1 && active3 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 1 || active3 === 2 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 2 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 2 ? "rounded-r-lg" : ""} ${active3 === 3 ? "rounded-l-lg" : ""} ${active3 !== 2 && active3 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 2 || active3 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 3 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active3 === 3 ? "white" : "#F2C18D" }}
+          ></div>
+        </div>
+        <div></div>
+      </div>
+      {/* *****************TeamCard for mobile view end6***************** */}
 
       {/** *********flower section ************* */}
-
-      <div className="absolute z-[1] md:top-[45rem] md:left-[-25rem] w-[40rem] h-[40rem]">
+      <div className="absolute z-[1] top-[20rem] left-[-4rem] md:top-[45rem] md:left-[-25rem] w-[10rem] h-[10rem] md:w-[40rem] md:h-[40rem]">
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>
-      <div className="absolute z-[1] md:top-[140rem] md:left-[-9rem] w-[20rem] h-[20rem]">
+      <div className="absolute z-[1] top-[50rem] right-[-4rem] md:top-[100rem] md:right-[-9rem] w-[8rem] h-[8rem] md:w-[20rem] md:h-[20rem]">
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>
-      <div className="absolute z-[1] md:top-[150rem] md:right-[-10rem] w-[25rem] h-[25rem]">
+      <div className="absolute z-[1] top-[90rem] left-[-3rem] md:top-[150rem] md:left-[-10rem] w-[11rem] h-[11rem] md:w-[25rem] md:h-[25rem]">
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>
-      <div className="absolute z-[1] md:top-[180rem] md:left-[-10rem] w-[30rem] h-[30rem]">
+      <div className="absolute z-[1] top-[170rem] right-[-3rem] md:top-[180rem] md:right-[-10rem] w-[13rem] h-[13rem] md:w-[30rem] md:h-[30rem]">
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>
       {/** *********flower section ************* */}
