@@ -9,7 +9,11 @@ const DivComponent = ({ name, setImgUrl, setImgPop }) => {
         setImgPop(true);
       }}
     >
-      <img src={name} className="w-full h-full object-fill" alt="scroll images" />
+      <img
+        src={name}
+        className="w-full h-full object-fill cursor-pointer"
+        alt="scroll images"
+      />
     </div>
   );
 };

@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styles from "./Gallery.module.scss";
 import DivComponent from "../../Components/GalleryComp/DivComponent";
 import ImgPop from "../../Components/GalleryComp/ImgPop";
+import useSetTitle from "../../Hooks/SetTitle";
 const Gallery = () => {
+  useSetTitle("Gallery | Posua");
   const images = [
     {
       id: 1,
@@ -82,7 +84,7 @@ const Gallery = () => {
 
         <div className=" w-[18rem] sm:w-[22rem] md:w-[39rem] h-fit mx-auto my-[3rem] md:my-[unset]">
           <img
-            className={`transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${flower ? "scale-[.7]" : " "}`}
+            className={`transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${flower ? "scale-[.8]" : ""}`}
             src="https://res.cloudinary.com/dlyo7ec6c/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710793889/Group_2608609_1_p0nsnp.jpg?_s=public-apps"
             alt="Featured property "
           />
