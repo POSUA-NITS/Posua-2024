@@ -116,17 +116,26 @@ const Navbar = () => {
           // path="/team"
           // eventsClicked={eventsClicked}
         />
-        {/* </Link> */}
       </div>
-      <div className={`${styles.mobileMenu} ${isMenuOpen ? styles.open : ""} `}>
-        <div
+      <div
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  z-[100] ${isMenuOpen ? "opacity-0" : " opacity-100"}`}
+        onClick={toggleMenu}
+      >
+        <div className={styles.bar}></div>
+        <div className={styles.bar}></div>
+        <div className={styles.bar}></div>
+      </div>
+      <div
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
+      >
+        {/* <div
           className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
           onClick={toggleMenu}
         >
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
-        </div>
+        </div> */}
         {windowSize < 768 && (
           <a href="/" style={{ textDecoration: "none" }}>
             <span className="sr-only">Home</span>
@@ -144,9 +153,7 @@ const Navbar = () => {
           </a>
         )}
         {/* <div className={styles.mobileLinks}> */}
-        <div
-          className={`${styles.mobileLinks} ${isMenuOpen ? styles.expandednavLinks : ""}`}
-        >
+        <div className={`${styles.mobileLinks} `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
 
           <div className="mr-[80vw] mt-[-2px]" onClick={closeMenu}>
