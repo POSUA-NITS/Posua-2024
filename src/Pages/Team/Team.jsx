@@ -3,7 +3,9 @@ import { useState } from "react";
 import TeamCard from "../../Components/TeamPageUI/TeamCard";
 import PatronCard from "../../Components/TeamPageUI/PatronCard";
 import "swiper/css";
+import useSetTitle from "../../Hooks/SetTitle";
 const Team = () => {
+  useSetTitle("Team | Posua");
   const [active1, setActive1] = useState(1);
   const [active2, setActive2] = useState(1);
   const [active3, setActive3] = useState(1);
