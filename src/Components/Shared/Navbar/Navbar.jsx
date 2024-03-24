@@ -125,8 +125,24 @@ const Navbar = () => {
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
       </div>
+      {windowSize < 768 && (
+        <a href="/" style={{ textDecoration: "none" }}>
+          <span className="sr-only">Home</span>
+          <img
+            src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
+            alt=""
+            style={{
+              justifyContent: "center",
+              alignItems: "start",
+              position: "relative",
+              top: "-1px",
+              display: "flex",
+            }}
+          />
+        </a>
+      )}
       <div
-        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out z-[100] ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
       >
         {/* <div
           className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
@@ -136,7 +152,7 @@ const Navbar = () => {
           <div className={styles.bar}></div>
           <div className={styles.bar}></div>
         </div> */}
-        {windowSize < 768 && (
+        {/* {windowSize < 768 && (
           <a href="/" style={{ textDecoration: "none" }}>
             <span className="sr-only">Home</span>
             <img
@@ -151,7 +167,7 @@ const Navbar = () => {
               }}
             />
           </a>
-        )}
+        )} */}
         {/* <div className={styles.mobileLinks}> */}
         <div className={`${styles.mobileLinks} `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
