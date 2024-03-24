@@ -4,7 +4,8 @@ const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
   const [hover, sethover] = useState(false);
   return (
     <div
-      className="w-[15rem] h-[20rem] relative"
+      className="w-[15rem] h-[20rem] relative "
+      style={{ boxShadow: "10px 8px 20px" }}
       onMouseEnter={() => {
         sethover(true);
       }}

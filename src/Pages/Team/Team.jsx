@@ -336,7 +336,6 @@ const Team = () => {
             style={{ backgroundColor: active3 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
-        <div></div>
       </div>
       {/* *****************TeamCard for mobile view end6***************** */}
 

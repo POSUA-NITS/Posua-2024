@@ -6,6 +6,7 @@ const PatronCard = ({ name, email, photoLink }) => {
   return (
     <div
       className="w-[15rem] h-[20rem] relative"
+      style={{ boxShadow: "10px 8px 20px" }}
       onMouseEnter={() => {
         sethover(true);
       }}
