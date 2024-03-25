@@ -24,9 +24,19 @@ const ArtistBigCard = ({ photoLink, name }) => {
             className="absolute h-full w-full object-cover"
           />
         </div>
-        <div className="flex-[3] h-[100%] flex flex-col justify-between items-center py-3">
-          <div className=" font-bold text-[1.6rem]">{name}</div>
-          <div className="text-[.45rem] text-center">{desc}</div>
+        <div className="flex-[3] h-[100%] flex flex-col justify-between items-center py-4">
+          <div
+            className=" font-semibold text-[1.5rem]"
+            style={{ color: "#B02227", fontFamily: "Abril Fatface" }}
+          >
+            {name}
+          </div>
+          <div
+            className="text-[.45rem] text-center"
+            style={{ color: "#5F1516", fontFamily: "Alata" }}
+          >
+            {desc}
+          </div>
         </div>
       </div>
     </div>
