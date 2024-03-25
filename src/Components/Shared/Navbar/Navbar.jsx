@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 // import {Link} from "react-router-dom";
 // import { Routes, Route, BrowserRouter } from "react-router-dom";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { useNavigate, Link } from "react-router-dom"; // Import useNavigate
 import styles from "./Navbar.module.scss";
 import "./fonts.scss";
 
@@ -12,7 +12,7 @@ const Navbar = () => {
 
   const [windowSize, setWindowSize] = useState(null);
   const navigate = useNavigate(); // Get the navigate function
-
+  // console.log("isMenuOpen", isMenuOpen)
   useEffect(() => {
     if (typeof window !== "undefined") {
       const handleSize = () => {
@@ -80,16 +80,18 @@ const Navbar = () => {
           // path="/gallery"
         />
         {/* </Link> */}
-        <img
-          src={
-            selectedItem === "Events"
-              ? "https://res.cloudinary.com/dclhahfvz/image/upload/v1710922616/posua_logo_pscvmf.png"
-              : "https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
-          }
-          alt="Logo"
-          className={styles.logo}
-          // className={`${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}`}
-        />{" "}
+        <Link to="/">
+          <img
+            src={
+              selectedItem === "Events"
+                ? "https://res.cloudinary.com/dclhahfvz/image/upload/v1710922616/posua_logo_pscvmf.png"
+                : "https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
+            }
+            alt="Logo"
+            className={styles.logo}
+            // className={`${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}`}
+          />
+        </Link>{" "}
         {/* Logo */}
         {/* <div className={styles.separator}></div> */}
         {/* <Link to="/artists"> */}
@@ -127,8 +129,10 @@ const Navbar = () => {
         <div className={styles.bar}></div>
         <div className={styles.bar}></div>
       </div>
+
       {windowSize < 768 && (
-        <a href="/" style={{ textDecoration: "none" }}>
+        // <a href="/" style={{ textDecoration: "none" }}>
+        <Link to="/" style={{ textDecoration: "none" }}>
           <span className="sr-only">Home</span>
           <img
             src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
@@ -141,37 +145,17 @@ const Navbar = () => {
               display: "flex",
             }}
           />
-        </a>
+        </Link>
+
+        // </a>
       )}
+
       <div
-        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"}  `}
       >
-        {/* <div
-          className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
-          onClick={toggleMenu}
+        <div
+          className={`${styles.mobileLinks}  ${isMenuOpen ? styles.expandednavLinks : ""} `}
         >
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-        </div> */}
-        {/* {windowSize < 768 && (
-          <a href="/" style={{ textDecoration: "none" }}>
-            <span className="sr-only">Home</span>
-            <img
-              src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
-              alt=""
-              style={{
-                justifyContent: "center",
-                alignItems: "start",
-                position: "relative",
-                top: "-30px",
-                display: "flex",
-              }}
-            />
-          </a>
-        )} */}
-        {/* <div className={styles.mobileLinks}> */}
-        <div className={`${styles.mobileLinks} `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
 
           <div className="mr-[80vw] mt-[-2px]" onClick={closeMenu}>

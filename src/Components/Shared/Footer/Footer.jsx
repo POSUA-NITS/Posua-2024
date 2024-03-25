@@ -1,9 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // import footer_final from "../../../assets/footer_final.png"; // Import the PNG background image
 // import posua_logo from '../../../assets/posua_logo.png'; // Import the Posua logo image
 import styles from "./Footer.module.scss";
 import fontStyles from "./fontStyles.module.scss"; // Import font styles
-
 const Footer = () => {
   return (
     <footer
@@ -26,10 +26,17 @@ const Footer = () => {
       className={`${styles.Container} ${fontStyles.PhilosopherFont}`}
     >
       <div className={styles.posua}>
-        <img
+        <Link to="/">
+          <img
+            src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710953023/New_Posua_logo_kyknan.png"
+            alt="Posua Logo"
+          />
+        </Link>
+
+        {/* <img
           src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710953023/New_Posua_logo_kyknan.png"
           alt="Posua Logo"
-        />
+        /> */}
       </div>
       <div
         className={styles.content}
@@ -41,12 +48,12 @@ const Footer = () => {
         //     fontFamily:'Roboto',
         //     fontWeight:'400',
         //     color:'#fff'
-
         // }}
       >
+        {/* Contact */}
         <div className={styles.Contact}>
-          <div className="Cntct" style={{ textDecoration: "underline" }}>
-            Contacts
+          <div className={styles.Cntct} style={{ textDecoration: "underline" }}>
+            <p>Contacts</p>
           </div>
           <div>
             {" "}
@@ -56,15 +63,27 @@ const Footer = () => {
             <a href="tel:9876543210">xyz , 9876543210</a>
           </div>
         </div>
+
+        {/* Address */}
         <div className={styles.address}>
-          <div className="Add" style={{ textDecoration: "underline" }}>
-            Address
+          <div className={styles.Cntct} style={{ textDecoration: "underline" }}>
+            <p>Address</p>
           </div>
-          <div>Silchar, Assam</div>
+          <div>
+            <a
+              href="https://www.google.com/maps/place/National+Institute+Of+Technology,+Silchar/@24.7577144,92.789718,17z/data=!3m1!4b1!4m6!3m5!1s0x374e49dcb63bae9b:0x81efa836714a289b!8m2!3d24.7577144!4d92.7922929!16zL20vMDhfMWhk?entry=ttu"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Silchar, Assam
+            </a>
+          </div>
         </div>
+
+        {/* Social Media */}
         <div className={styles.socialmedia}>
-          <div className="Soc" style={{ textDecoration: "underline" }}>
-            Social
+          <div className={styles.Cntct} style={{ textDecoration: "underline" }}>
+            <p>Social</p>
           </div>
           {/* <p>Instagram - @posua_insta</p> */}
           <div>
@@ -87,9 +106,11 @@ const Footer = () => {
             </a>
           </div>
         </div>
+
+        {/* Mail */}
         <div className={styles.mail}>
-          <div className="email" style={{ textDecoration: "underline" }}>
-            Mail
+          <div className={styles.Cntct} style={{ textDecoration: "underline" }}>
+            <p>Mail</p>
           </div>
           <div>
             {" "}

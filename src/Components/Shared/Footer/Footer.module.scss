@@ -4,12 +4,17 @@
   // font-family: 'Philosopher', sans-serif;
   // bottom: 0;
   background-color: beige;
-  background-image: url(https://res.cloudinary.com/dclhahfvz/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710923131/footer_final_mj5rba.jpg?_s=public-apps);
+  background-image: url(https://res.cloudinary.com/dp92qug2f/image/upload/v1711374389/footerbg_posua24_zhs2zn.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   // text-align: center; // Center align content
   display: flex; // Use flexbox layout
   flex-direction: column;
   justify-content: center; // Center align items horizontally
   align-items: center; // Center align items vertically
+  padding-bottom: 2vw;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.326);
   // position: relative;
 }
 
@@ -102,14 +107,27 @@
   font-size: 16px;
 }
 
+.Cntct {
+  p {
+    font-size: 1.75vw;
+    font-family: "Philosopher", sans-serif;
+    font-weight: 500;
+    // margin-bottom: 0.25vw;
+    @media (max-width: 660px) {
+      font-size: 4.5vw;
+      margin-bottom: 1vw;
+    }
+  }
+}
+
 @media screen and (max-width: 768px) {
   .Container {
-    background-image: url("https://res.cloudinary.com/dclhahfvz/image/upload/v1711020725/mobileviewFooter_mwcskl.png");
-    background-size: cover;
+    // background-image: url("https://res.cloudinary.com/dclhahfvz/image/upload/v1711020725/mobileviewFooter_mwcskl.png");
+    // background-size: cover;
     display: flex;
     flex-direction: row;
     .posua {
-      width: 30%;
+      width: 50%;
       display: flex;
       flex-direction: row;
     }
