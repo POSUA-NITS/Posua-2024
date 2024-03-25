@@ -9,10 +9,10 @@ const ArtistBigCard = ({ photoLink, name }) => {
   return (
     <div>
       <div
-        className="w-[90vw] h-[13rem] gap-[1rem] flex items-center p-2 border-[.4rem]"
+        className="w-[90vw] h-[12rem] gap-[1rem] flex items-center px-2 border-[.4rem]"
         style={{ backgroundColor: "#F1E4D0", borderColor: "#C7A158" }}
       >
-        <div className="w-[8rem] h-[99%] flex items-center justify-center relative">
+        <div className="w-[6.5rem] h-[75%] flex items-center justify-center relative">
           <img
             src={frame}
             alt="Artist frame"
@@ -24,9 +24,9 @@ const ArtistBigCard = ({ photoLink, name }) => {
             className="absolute h-full w-full object-cover"
           />
         </div>
-        <div className="flex-[3] h-[100%] flex flex-col justify-between items-center py-4">
+        <div className="flex-[3] h-[100%] flex flex-col justify-center gap-[.6rem] py-2 items-center ">
           <div
-            className=" font-semibold text-[1.5rem]"
+            className=" font-semibold text-[1.2rem]"
             style={{ color: "#B02227", fontFamily: "Abril Fatface" }}
           >
             {name}

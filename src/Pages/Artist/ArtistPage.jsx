@@ -72,7 +72,7 @@ const ArtistPage = () => {
       className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden"
       style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
     >
-      <div className=" h-[2.7rem] md:h-[7rem] m-10 flex z-[50] relative">
+      <div className=" h-[3rem] md:h-[7rem] my-[3rem] flex z-[50] relative">
         <img src={artImg} alt="Art" className="w-full h-full object-cover" />
         {/* <div className="flex justify-center items-center absolute w-[100%] gap-[7.8rem]">
           <div className="h-[2.8rem] w-[2.8rem]"><img src={jaapi} alt="jaapi" className="h-full w-full object-cover" style={{ animationDuration: "4s" }}/></div>
@@ -154,7 +154,7 @@ const ArtistPage = () => {
 
       {/* ************Previous Artist mobile view end2***************** */}
 
-      <div className=" h-[2.7rem] md:h-[7rem] m-10 flex z-[50]">
+      <div className=" h-[3.5rem] md:h-[7rem] mt-[4rem] mb-[3rem] flex z-[50]">
         <img src={artImg2} alt="Art" className="w-full h-full object-cover" />
       </div>
 
