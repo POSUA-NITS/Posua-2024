@@ -1,6 +1,5 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import ArtistPage from "./Pages/Artist/ArtistPage";
 
 import Loading from "./Components/Loader/Loading";
 const Gallery = lazy(() =>
@@ -29,7 +28,6 @@ const App = () => {
   return (
     <main>
       {/* <h1 className="text-4xl font-bold underline text-red-600">Navbar</h1> */}
-      <ArtistPage />
       <BrowserRouter>
         <Suspense fallback={<Loading />}>
           <Routes>
