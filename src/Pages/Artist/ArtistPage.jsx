@@ -20,6 +20,9 @@ const ArtistPage = () => {
   const [active1, setActive1] = useState(1);
   const [active2, setActive2] = useState(1);
 
+  // const jaapi =
+  //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711053903/OBJECTS_1_gvgj7g.jpg?_s=public-apps";
+
   const prevArtistData = [
     {
       id: 1,
@@ -67,8 +70,12 @@ const ArtistPage = () => {
       className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden"
       style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
     >
-      <div className=" w-[40rem] h-[8rem] m-10 flex z-[50]">
+      <div className=" h-[2.7rem] md:h-[7rem] m-10 flex z-[50] relative">
         <img src={artImg} alt="Art" className="w-full h-full object-cover" />
+        {/* <div className="flex justify-center items-center absolute w-[100%] gap-[7.8rem]">
+          <div className="h-[2.8rem] w-[2.8rem]"><img src={jaapi} alt="jaapi" className="h-full w-full object-cover" style={{ animationDuration: "4s" }}/></div>
+          <div className="h-[2.8rem] w-[2.8rem]"><img src={jaapi} alt="jaapi" className="h-full w-full object-cover"/></div>
+        </div> */}
       </div>
 
       {/* ************Previous Artist desktop view start1***************** */}
@@ -85,10 +92,6 @@ const ArtistPage = () => {
       {/* ************Previous Artist desktop view end1***************** */}
 
       {/* ************Previous Artist mobile view start2***************** */}
-
-      {/* <div className="my-[5rem] z-[50] md:hidden">
-        <ArtistBigCard/>
-      </div> */}
 
       <div
         className="my-[4rem] w-[100%] z-[10] flex justify-center relative items-center md:hidden"
@@ -149,7 +152,7 @@ const ArtistPage = () => {
 
       {/* ************Previous Artist mobile view end2***************** */}
 
-      <div className=" w-[40rem] h-[8rem] m-10 flex z-[50]">
+      <div className=" h-[2.7rem] md:h-[7rem] m-10 flex z-[50]">
         <img src={artImg2} alt="Art" className="w-full h-full object-cover" />
       </div>
 
@@ -224,12 +227,12 @@ const ArtistPage = () => {
 
       {/* *************Flower section start************** */}
       <div
-        className={`absolute transition-all duration-[1000ms] ease-in-out w-[20rem] h-[20rem] top-[20rem] left-[-10rem] ${first || second || third ? "md:top-[30rem] md:left-[-12rem] md:w-[25rem] md:h-[25rem] rotate-45" : "md:top-[20rem] md:left-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
+        className={`absolute transition-all duration-[1000ms] ease-in-out w-[15rem] h-[15rem] top-[20rem] left-[-10rem] ${first || second || third ? "md:top-[30rem] md:left-[-12rem] md:w-[25rem] md:h-[25rem] rotate-45" : "md:top-[20rem] md:left-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
       >
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>
       <div
-        className={`absolute transition-all duration-[1000ms] ease-in-out w-[15rem] h-[15rem] top-[50rem] right-[-5rem] ${first || second || third ? "md:top-[30rem] md:right-[-12rem] md:w-[25rem] md:h-[25rem] rotate-90" : "md:top-[20rem] md:right-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
+        className={`absolute transition-all duration-[1000ms] ease-in-out w-[12rem] h-[12rem] top-[50rem] right-[-5rem] ${first || second || third ? "md:top-[30rem] md:right-[-12rem] md:w-[25rem] md:h-[25rem] rotate-90" : "md:top-[20rem] md:right-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
       >
         <img src={flower} alt="flower1" className="h-full w-full object-fill" />
       </div>

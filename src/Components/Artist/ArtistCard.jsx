@@ -11,11 +11,11 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[17.3rem] justify-center"}`}
+      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[16rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
-        className={`flex justify-center items-center relative transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[17rem]"}`}
+        className={`flex justify-center items-center relative transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[15rem]"}`}
         onClick={() => {
           setClickk(true);
         }}
@@ -30,7 +30,7 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
           <img src={photoLink} alt="" className="w-full h-full object-cover" />
         </div>
         <div
-          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20]  ${clickk ? "top-[6.7rem] leading-[1.3rem]" : "top-[5.5rem] leading-[1rem]"}`}
+          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20]  ${clickk ? "top-[6.7rem] leading-[1.3rem]" : "top-[4.9rem] leading-[1rem]"}`}
         >
           <div
             className={`font-semibold ${clickk ? "text-[1.3rem]" : "text-[1rem]"}`}
