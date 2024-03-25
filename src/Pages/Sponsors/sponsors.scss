@@ -10,6 +10,10 @@ body {
 }
 
 .heading {
+  padding-top: 5vw !important;
+  @media (max-width: 660px) {
+    padding-top: 10vw !important;
+  }
   display: flex;
   justify-content: center;
   margin-bottom: 3.875rem;
