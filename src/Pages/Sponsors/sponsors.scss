@@ -79,18 +79,19 @@ body {
 
 .cardContainer {
   display: flex;
-  flex-wrap: wrap;
+  //flex-direction: row;
+  //flex-wrap: wrap;
   justify-content: center;
-  gap: 5.7rem;
-  margin: 5.875rem 0;
+  gap: 2.2rem;
+  margin: 5.875rem 1.5rem;
 }
 
 .card {
-  display: flex;
-  width: 30.965rem;
+  max-width: 496px;
+  width: 33.33%;
   height: 100%;
   padding: 2.5rem;
-  flex-direction: column;
+  //flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 0.88rem;
@@ -114,7 +115,7 @@ body {
   color: #5f1516;
   text-align: center;
   font-family: "DM Serif Text";
-  font-size: 1.76rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -124,7 +125,7 @@ body {
   align-self: stretch;
   text-align: center;
   font-family: "DM Serif Text";
-  font-size: 1.76rem;
+  font-size: 1.7rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
@@ -156,10 +157,34 @@ body {
     border-radius: 0.6rem;
     border: 0.1rem solid $sponsor-border-color;
   }
+  .cardContainer {
+    flex-wrap: wrap;
+  }
+  .card {
+    width: 40%;
+  }
+  .number {
+    font-size: 1.55rem;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .content {
+    font-size: 0.84rem;
+  }
 }
 @media (max-width: 860px) and (min-width: 768px) {
   .sponsorContainer {
     gap: 2.5rem 2rem;
+    .number {
+      font-size: 1.45rem;
+    }
+    .title {
+      font-size: 1.5rem;
+    }
+    .content {
+      font-size: 0.8rem;
+    }
   }
   .sponsor {
     width: 18rem;
@@ -179,6 +204,19 @@ body {
     height: 8rem;
     padding: 1.5rem;
   }
+  .card {
+    width: 90%;
+    padding: 1.8rem;
+  }
+  .number {
+    font-size: 1.35rem;
+  }
+  .title {
+    font-size: 1.4rem;
+  }
+  .content {
+    font-size: 0.78rem;
+  }
 }
 @media screen and (max-width: 560px) {
   .cardContainer {
@@ -189,10 +227,7 @@ body {
     gap: 3.75rem; // 60px converted to rem
     flex-shrink: 0;
     //height: 100; // Adjust height as needed
-    .card {
-      width: 90%;
-      padding: 1.8rem;
-    }
+
     .inner {
       width: auto;
     }
@@ -217,7 +252,7 @@ body {
     font-size: 1.25rem;
   }
   .title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .content {
     font-size: 0.75rem;
