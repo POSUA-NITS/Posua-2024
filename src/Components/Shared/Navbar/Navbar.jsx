@@ -6,7 +6,7 @@ import styles from "./Navbar.module.scss";
 import "./fonts.scss";
 
 const Navbar = () => {
-  const [selectedItem, setSelectedItem] = useState(null);
+  const [selectedItem, setSelectedItem] = useState("Home");
   // const [eventsClicked, setEventsClicked] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -137,7 +137,7 @@ const Navbar = () => {
               justifyContent: "center",
               alignItems: "start",
               position: "relative",
-              top: "-1px",
+              top: "-10px",
               display: "flex",
             }}
           />
@@ -146,30 +146,6 @@ const Navbar = () => {
       <div
         className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
       >
-        {/* <div
-          className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
-          onClick={toggleMenu}
-        >
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-          <div className={styles.bar}></div>
-        </div> */}
-        {/* {windowSize < 768 && (
-          <a href="/" style={{ textDecoration: "none" }}>
-            <span className="sr-only">Home</span>
-            <img
-              src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710960996/navbar_logo_xv78qn.png"
-              alt=""
-              style={{
-                justifyContent: "center",
-                alignItems: "start",
-                position: "relative",
-                top: "-30px",
-                display: "flex",
-              }}
-            />
-          </a>
-        )} */}
         {/* <div className={styles.mobileLinks}> */}
         <div className={`${styles.mobileLinks} `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
