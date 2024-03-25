@@ -1,5 +1,5 @@
 const Artists = () => {
-  return <div></div>;
+  // return <div></div>;
 };
 
 export default Artists;

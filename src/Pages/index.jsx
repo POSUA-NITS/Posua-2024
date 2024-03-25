@@ -4,6 +4,6 @@ import Team from "./Team/Team";
 import Sponsors from "./Sponsors/Sponsors";
 import Borhomthuri from "./Borhomthuri/Borhomthuri";
 import Gallery from "./Gallery/Gallery";
-import Artists from "./Artists/Artists";
-
-export { Events, Home, Team, Sponsors, Borhomthuri, Gallery, Artists };
+import ArtistPage from "./Artist/ArtistPage";
+import NotFound from "./NotFound/NotFound";
+export { Events, Home, Team, Sponsors, Borhomthuri, Gallery, ArtistPage, NotFound };

@@ -36,6 +36,8 @@ const Navbar = () => {
     closeMenu();
     if (item === "Home") {
       navigate("/");
+    } else if (item === "ArtistPage") {
+      navigate("/artists");
     } else {
       navigate(`/${item.toLowerCase()}`);
     }
@@ -92,9 +94,9 @@ const Navbar = () => {
         {/* <div className={styles.separator}></div> */}
         {/* <Link to="/artists"> */}
         <NavItem
-          text="Artists"
-          selected={selectedItem === "Artists"}
-          onClick={() => handleItemClick("Artists")}
+          text="ArtistPage"
+          selected={selectedItem === "ArtistPage"}
+          onClick={() => handleItemClick("ArtistPage")}
           // path="/artists"
           // eventsClicked={eventsClicked}
         />
@@ -197,9 +199,9 @@ const Navbar = () => {
             onClick={() => handleItemClick("Gallery")}
           />
           <NavItem
-            text="Artists"
-            selected={selectedItem === "Artists"}
-            onClick={() => handleItemClick("Artists")}
+            text="ArtistPage"
+            selected={selectedItem === "ArtistPage"}
+            onClick={() => handleItemClick("ArtistPage")}
           />
           <NavItem
             text="Sponsors"
