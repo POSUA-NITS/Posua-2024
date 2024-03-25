@@ -11,11 +11,11 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex items-center transition-all duration-300 ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[17.3rem] justify-center"}`}
+      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[17.3rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
-        className={`flex justify-center items-center relative transition-all duration-500 ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[17rem]"}`}
+        className={`flex justify-center items-center relative transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[17rem]"}`}
         onClick={() => {
           setClickk(true);
         }}
@@ -53,7 +53,7 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
           {name}
         </div>
         <div
-          className="text-[.8rem] text-center"
+          className={`text-[.8rem] text-center transition-all ease-in-out duration-[3000ms] ${clickk ? "opacity-100" : "opacity-0"}`}
           style={{ color: "#5F1516", fontFamily: "Alata" }}
         >
           অসমৰ গাঁৱে-ভূঞে, চহৰে-নগৰে অসমীয়াৰ হুচৰিক মঞ্চত উপস্থাপন কৰি দৰ্শকৰ অপূৰ্ব
@@ -64,7 +64,7 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
           নাচিবলৈ, এতিয়া মাথোঁ অপেক্ষা ৫ মাৰ্চ তাৰিখলৈ
         </div>
         <div
-          className="text-[.8rem] text-center"
+          className={`text-[.8rem] text-center transition-all ease-in-out duration-[3000ms]  ${clickk ? "opacity-100" : "opacity-0"}`}
           style={{ color: "#5F1516", fontFamily: "Alata" }}
         >
           Spring has finally arrived, and the anticipation has culminated in the sounds of

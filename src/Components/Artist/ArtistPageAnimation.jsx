@@ -13,13 +13,13 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
   const englishDesc = "";
   return (
     <div
-      className={`relative w-[100%] transition-all duration-1000 ease-in-out ${first || second || third ? "h-[50rem]" : " h-[25rem]"}`}
+      className={`relative w-[100%] transition-all duration-[1000ms] ease-in-out ${first || second || third ? "h-[50rem]" : " h-[25rem]"}`}
     >
       <div
-        className={`flex h-[30rem] w-[100%] justify-center gap-[7rem] transition-all duration-500 ease-in-out ${first || second || third ? "top-[30rem]" : "top-0"} absolute`}
+        className={`flex h-[30rem] w-[100%] justify-center gap-[7rem] transition-all duration-[1500] ease-in-out ${first || second || third ? "top-[30rem]" : "top-[0rem]"} absolute`}
       >
         <div
-          className={`transition-all duration-700 ease-in-out ${first ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-[1500ms] ease-in-out ${first ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
             setsecond(false);
             setthird(false);
@@ -38,7 +38,7 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
           />
         </div>
         <div
-          className={`transition-all duration-700 ease-in-out ${second ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-[1500ms] ease-in-out ${second ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
             setfirst(false);
             setthird(false);
@@ -57,7 +57,7 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
           />
         </div>
         <div
-          className={`transition-all duration-700 ease-in-out ${third ? "absolute top-[-30rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-[1500ms] ease-in-out ${third ? "absolute top-[-30rem]" : "top-[0rem]"}`}
           onClick={() => {
             setfirst(false);
             setsecond(false);
