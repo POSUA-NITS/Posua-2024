@@ -7,7 +7,7 @@ import "swiper/css";
 import useSetTitle from "../../Hooks/SetTitle";
 
 const ArtistPage = () => {
-  useSetTitle("Artist | Posua");
+  useSetTitle("Artists | Posua");
   const artImg =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711097529/Frame_2608572_t5qpir.jpg?_s=public-apps";
   const artImg2 =
