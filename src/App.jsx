@@ -13,11 +13,13 @@ import Footer from "./Components/Shared/Footer/Footer";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 const App = () => {
   return (
-    <main>
+    <main className="relative">
       {/* <h1 className="text-4xl font-bold underline text-red-600">Navbar</h1> */}
       {/* <Navbar /> */}
       <BrowserRouter>
-        <Navbar />
+        <div className="min-h-[6.8rem]">
+          <Navbar />
+        </div>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/events" element={<Events />} />

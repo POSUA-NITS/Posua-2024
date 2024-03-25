@@ -52,7 +52,7 @@ const Navbar = () => {
   return (
     // <div className={styles.navbar}>
     <div
-      className={`${styles.navbar} ${selectedItem === "Events" ? styles.eventsClicked : ""}`}
+      className={`${styles.navbar} ${selectedItem === "Events" ? styles.eventsClicked : ""} absolute z-[20000]`}
     >
       <div className={styles.links}>
         {/* <Link to="/"> */}
@@ -118,7 +118,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  z-[100] ${isMenuOpen ? "opacity-0" : " opacity-100"}`}
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0" : " opacity-100"}`}
         onClick={toggleMenu}
       >
         <div className={styles.bar}></div>
@@ -142,7 +142,7 @@ const Navbar = () => {
         </a>
       )}
       <div
-        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out z-[100] ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
       >
         {/* <div
           className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  `}
