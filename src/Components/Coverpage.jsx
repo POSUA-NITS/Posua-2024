@@ -1,4 +1,4 @@
-import styles from "./CoverPage.module.scss";
+import styles from "./CoverPage.module.scss";git 
 const CoverPage = () => {
   return (
     <div>
