@@ -2,20 +2,17 @@
   min-height: 100vh;
 }
 .text {
-  position: relative;
-  left: 30%;
-  top: 10%;
   color: rgb(109, 12, 12);
   font-family: "Alata", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 1.2vw;
   font-style: normal;
   display: flex;
   justify-content: center;
-  text-align: center;
-  width: 15%;
-  height: 20%;
-  min-height: 150vh;
+  text-align: left;
+  // width: 25%;
+
+  left: 19%;
 }
 .ParentClass {
   background-color: rgb(228, 197, 156);
@@ -23,6 +20,213 @@
     url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
   background-position: right, left;
   background-repeat: no-repeat;
+  background-size: 14rem, 19rem;
+  background-position:
+    110% 5%,
+    0% -9%;
 }
-// .Border {
+.Child1 {
+  flex: none;
+  order: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 3vw;
+
+  // height: auto;
+
+  // background-color: red;
+  // margin: 0 10vw 10vw 20vw;
+  padding-left: 19vw;
+}
+// .cameraImg{
+//   position: absolute;
+//   scale: 0.3;
+//   left: 10%;
+//   bottom: -30%;
 // }
+
+.cameraImg {
+  width: 80%;
+  height: auto;
+  margin: 2vw auto 0 auto;
+  position: relative;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+// @media screen and (max-width:700px) {
+//   .ParentClass{
+//     background-size: 10rem,13rem;
+//   }
+// }
+.Child2 {
+  width: 50%;
+  height: auto;
+  // flex:none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  order: 1;
+}
+@media screen and (max-width: 800px) {
+  .ParentClass {
+    background-size: 10rem, 13rem;
+  }
+}
+// @media screen and (max-width:1200px) {
+//   .text{
+//      padding-top: 20%;
+//   }
+// }
+// @media screen and (max-width:1100px) {
+//   .text{
+//     padding-top: 30%;
+//   }
+
+// }
+@media screen and (max-width: 600px) {
+  // .text{
+  //   color: #7E3618;
+  //   text-align: center;
+  //   font-family: "DM Serif Text";
+  //   font-size: 3vw;
+  //   width: 70%;
+  //   height: 40%;
+  //   margin-top: 4rem;
+  //   font-style: italic;
+  //   font-weight: 400;
+  //   line-height: 38px;
+  //   display: flex;
+  //   justify-content: center;
+  //   text-align: center;
+  // }
+  .ParentClass {
+    background-image: none;
+  }
+}
+
+.HiddenText {
+  color: rgb(109, 12, 12);
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-size: 1.2vw;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 660px) {
+  .HiddenText {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .Child1 {
+    display: none;
+  }
+  .HiddenText {
+    display: block;
+    width: 100%;
+    scale: 1.5;
+    text-align: center;
+  }
+}
+// .movingCards{
+//   position: absolute;
+//   right:25vw;
+//   top:40vh;
+
+//   width:25rem;
+//   overflow-y: scroll;
+//   background-image:url("https://res.cloudinary.com/dl0knguhb/image/upload/v1711177383/Component_1_vhiwsw.webp");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+// }
+$n: 6; /* number of images*/
+
+.galleryBorhomthuri {
+  --d: 30s; /* duration */
+  position: absolute;
+  right: 25vw;
+  top: 40vh;
+  height: 15rem;
+  width: 15rem;
+  overflow-y: scroll;
+  background-image: url("https://res.cloudinary.com/dl0knguhb/image/upload/v1711177383/Component_1_vhiwsw.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: repeat(3, 200px); /* number of visible images + width */
+  overflow: hidden;
+  -webkit-mask: linear-gradient(180deg, #0000, #000 15% 95%, #0000);
+}
+.galleryBorhomthuri > a {
+  grid-area: 1/1;
+  width: 100%;
+  aspect-ratio: 1.5;
+  object-fit: cover;
+  animation: r var(--d) linear infinite;
+}
+@for $i from 2 to ($n + 1) {
+  .galleryBorhomthuri > a:nth-child(#{$i}) {
+    animation-delay: calc(#{(1 - $i) / $n}* var(--d));
+  }
+}
+@keyframes r {
+  #{100/$n}% {
+    transform: translateY(-100%);
+  }
+  #{100/$n + .01}% {
+    transform: translateY(($n - 1) * 100%);
+  }
+}
+@media screen and (max-width: 1500px) {
+  .galleryBorhomthuri {
+    top: 25vh;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .ParentClass {
+    background-position:
+      105% 10%,
+      0% -5%;
+  }
+  .galleryBorhomthuri {
+    top: 20vh;
+  }
+}
+@media screen and (max-width: 900px) {
+  .ParentClass {
+    background-color: rgb(228, 197, 156);
+    background-position:
+      95% 5%,
+      0% -20%;
+  }
+  .galleryBorhomthuri {
+    top: 19vh;
+    scale: 0.8;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .ParentClass {
+    background-position:
+      100% 5%,
+      0% -10%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ParentClass {
+    background-position:
+      100% 5%,
+      0% -15%;
+  }
+  .galleryBorhomthuri {
+    top: 15vh;
+    scale: 0.8;
+  }
+}

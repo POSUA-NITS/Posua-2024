@@ -26,3 +26,9 @@
     width: 38rem;
   }
 }
+@media screen and (max-width: 600px) {
+  .InvitationClass {
+    background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711460640/Group1_1_nju0mr.png);
+    background-position: 50% 40%;
+  }
+}
