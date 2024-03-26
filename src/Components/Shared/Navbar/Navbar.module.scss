@@ -14,13 +14,29 @@
   padding: 0 1rem;
   z-index: 1000;
 }
+body {
+  margin-top: 60px; /* Adjust body margin to accommodate fixed navbar */
+}
+
+/* Styles for when the navbar is fixed */
+.navbar.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Styles for when the navbar is not fixed */
+.navbar.relative {
+  position: relative;
+}
 
 .logo {
-  width: 7.5625rem; /* Adjust as needed */
-  height: 2.875rem; /* Adjust as needed */
-  mix-blend-mode: overlay; /* Apply mix-blend-mode */
-  position: relative; /* Add position relative */
-  z-index: 1; /* Ensure logo appears above the navbar background */
+  width: 7.5625rem;
+  height: 2.875rem;
+  mix-blend-mode: overlay;
+  position: relative;
+  z-index: 1;
 }
 .eventsClicked .logo {
   background-color: transparent; /* Reset background color */
@@ -63,7 +79,7 @@
   border-radius: 40px;
   background: #fff;
   position: absolute;
-  bottom: -8px; /* Adjust position as needed */
+  bottom: -8px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -71,26 +87,28 @@
 //   * Responsive styles */
 @media only screen and (max-width: 768px) {
   .navbar {
+    position: fixed;
+    top: 0;
     flex-direction: column;
     height: 9vh;
     padding: 1rem;
     z-index: 10000;
   }
-
+  body {
+    margin-top: 60px; /* Adjust body margin for fixed navbar */
+  }
   .logo {
     margin-bottom: 1rem;
   }
 
   .links {
     display: none;
-    // flex-direction: column;
-    // align-items: center;
   }
 
   .hamburgerMenu {
     position: fixed;
     top: 20px;
-    display: flex; /* Show hamburger icon */
+    display: flex;
     flex-direction: column;
   }
 
@@ -98,47 +116,30 @@
     //  display: none;
     position: absolute;
     top: 0px;
-    left: 0;
+    // left: 0;
     width: 100%;
     height: 100vh;
     background: rgba(239, 208, 163, 0.55);
     box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
     backdrop-filter: blur(12.5px);
     padding: 1rem;
-    z-index: 100000;
+    z-index: 1000;
     gap: 4rem;
-    // z-index: 9999;
-    // transform: translateX(-100%); /* Initially off-screen */
-    // transition: transform 0.5s ease; /* Add transition */
-    // transition: left 0.5s ease !important;
   }
-  // .expandednavLinks {
-  //   transform: translateX(0) !important;
-  //   // left: 0;
-  //   // transition: left 0.5s ease ;
-  // }
+
   .open .mobileLinks {
     display: flex; /* Show mobile links when menu is open */
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    // z-index: 1000000000 !important;
-    //  transform: translateX(0);
-    //  transition: transform 0.5s ease;
   }
-  // .expandednavLinks {
-  //   transform: translateX(0) !important; /* Slide in */
-  //   // transition: transform 0.5s ease;
-  // }
 
   .bar {
     width: 25px;
     height: 3px;
     background-color: #e48b65;
     border-radius: 50px;
-    // stroke: #E27B4E;
     margin: 3px 0;
-    // transition: all 0.3s ease;
   }
 
   .mobileMenu {
@@ -148,7 +149,7 @@
     align-items: center;
     padding: 2rem 0rem;
     width: 100%;
-    // z-index: 9999 ;
+    top: 0;
   }
 }
 
@@ -168,7 +169,3 @@
   background: url("https://res.cloudinary.com/dclhahfvz/image/upload/v1710922616/posua_logo_pscvmf.png")
     lightgray 0px -0.053px / 100% 116.306% no-repeat;
 }
-
-// #Posua_Navbar {
-//   display: none;
-// }

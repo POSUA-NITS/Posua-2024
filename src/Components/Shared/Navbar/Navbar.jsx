@@ -1,33 +1,39 @@
 import React, { useState, useEffect } from "react";
-// import {Link} from "react-router-dom";
-// import { Routes, Route, BrowserRouter } from "react-router-dom";
 import { useNavigate, Link } from "react-router-dom"; // Import useNavigate
 import styles from "./Navbar.module.scss";
 import "./fonts.scss";
 
 const Navbar = () => {
   const [selectedItem, setSelectedItem] = useState("Home");
-  // const [eventsClicked, setEventsClicked] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isNavbarFixed, setIsNavbarFixed] = useState(false);
   const [windowSize, setWindowSize] = useState(null);
   const navigate = useNavigate(); // Get the navigate function
-  // console.log("isMenuOpen", isMenuOpen)
+
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const handleSize = () => {
-        setWindowSize(window.innerWidth);
-      };
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
 
-      window.addEventListener("resize", handleSize);
-      handleSize();
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsNavbarFixed(true);
+      } else {
+        setIsNavbarFixed(false);
+      }
+    };
 
-      return () => {
-        window.removeEventListener("resize", handleSize);
-      };
-    }
-    return () => {};
-    // return undefined;
+    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
+
+    // Initial setup
+    handleResize();
+    handleScroll();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleItemClick = (item) => {
@@ -52,34 +58,27 @@ const Navbar = () => {
   };
 
   return (
-    // <div className={styles.navbar}>
     <div
-      className={`${styles.navbar} ${selectedItem === "Events" ? styles.eventsClicked : ""} absolute z-[20000]`}
+      className={`${styles.navbar} ${
+        isNavbarFixed ? styles.fixed : styles.relative
+      } ${selectedItem === "Events" ? styles.eventsClicked : ""} absolute z-[20000]`}
     >
       <div className={styles.links}>
-        {/* <Link to="/"> */}
         <NavItem
           text="Home"
           selected={selectedItem === "Home"}
           onClick={() => handleItemClick("Home")}
         />
-        {/* </Link> */}
-        {/* <Link to="/events"> */}
         <NavItem
           text="Events"
           selected={selectedItem === "Events"}
           onClick={() => handleItemClick("Events")}
-          // path="/events"
         />
-        {/* </Link> */}
-        {/* <Link to="/gallery"> */}
         <NavItem
           text="Gallery"
           selected={selectedItem === "Gallery"}
           onClick={() => handleItemClick("Gallery")}
-          // path="/gallery"
         />
-        {/* </Link> */}
         <Link to="/">
           <img
             src={
@@ -92,37 +91,24 @@ const Navbar = () => {
             // className={`${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}`}
           />
         </Link>{" "}
-        {/* Logo */}
-        {/* <div className={styles.separator}></div> */}
-        {/* <Link to="/artists"> */}
         <NavItem
           text="ArtistPage"
           selected={selectedItem === "ArtistPage"}
           onClick={() => handleItemClick("ArtistPage")}
-          // path="/artists"
-          // eventsClicked={eventsClicked}
         />
-        {/* </Link> */}
-        {/* <Link to="/sponsors"> */}
         <NavItem
           text="Sponsors"
           selected={selectedItem === "Sponsors"}
           onClick={() => handleItemClick("Sponsors")}
-          // path="/sponsors"
-          // eventsClicked={eventsClicked}
         />
-        {/* </Link> */}
-        {/* <Link to="/team"> */}
         <NavItem
           text="Team"
           selected={selectedItem === "Team"}
           onClick={() => handleItemClick("Team")}
-          // path="/team"
-          // eventsClicked={eventsClicked}
         />
       </div>
       <div
-        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0" : " opacity-100"}`}
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0 " : " opacity-100 "}`}
         onClick={toggleMenu}
       >
         <div className={styles.bar}></div>
@@ -141,7 +127,7 @@ const Navbar = () => {
               justifyContent: "center",
               alignItems: "start",
               position: "relative",
-              top: "-10px",
+              top: "-9px",
               display: "flex",
             }}
           />
@@ -151,14 +137,12 @@ const Navbar = () => {
       )}
 
       <div
-        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"}  `}
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
       >
-        <div
-          className={`${styles.mobileLinks}  ${isMenuOpen ? styles.expandednavLinks : ""} `}
-        >
+        <div className={`${styles.mobileLinks}   `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
 
-          <div className="mr-[80vw] mt-[-2px]" onClick={closeMenu}>
+          <div className="mr-[80vw] mt-[2px]" onClick={closeMenu}>
             <img
               src="https://res.cloudinary.com/dclhahfvz/image/upload/v1711130341/orangeCross_tqxpal.png"
               alt="Close Menu"
