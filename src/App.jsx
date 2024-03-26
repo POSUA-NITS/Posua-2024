@@ -20,6 +20,12 @@ const Sponsors = lazy(() =>
 const Borhomthuri = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Borhomthuri }))
 );
+const ArtistPage = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.ArtistPage }))
+);
+const NotFound = lazy(() =>
+  import("./Pages/index").then((module) => ({ default: module.NotFound }))
+);
 
 const App = () => {
   return (
@@ -34,6 +40,8 @@ const App = () => {
             <Route path="/sponsors" element={<Sponsors />} />
             <Route path="/borhomthuri" element={<Borhomthuri />} />
             <Route path="/gallery" element={<Gallery />} />
+            <Route path="/artists" element={<ArtistPage />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </Suspense>
       </BrowserRouter>
