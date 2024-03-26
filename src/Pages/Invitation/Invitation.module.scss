@@ -1,0 +1,28 @@
+.superParent {
+  background-color: red;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.InvitationClass {
+  background-color: rgb(228, 197, 156);
+  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
+    url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
+  background-position: right, left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  overflow-y: hidden;
+}
+.InvitationImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 44rem;
+  .img {
+    height: 44rem;
+    width: 38rem;
+  }
+}

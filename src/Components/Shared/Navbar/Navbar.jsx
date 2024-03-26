@@ -108,7 +108,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0" : " opacity-100 "} `}
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out ${isMenuOpen ? "opacity-0" : "opacity-100"}`}
         onClick={toggleMenu}
       >
         <div className={styles.bar}></div>
