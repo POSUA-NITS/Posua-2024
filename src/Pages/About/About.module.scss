@@ -5,6 +5,7 @@
   background-position: right, left;
   background-repeat: no-repeat;
   padding: 5vw 0;
+  padding-top: 0;
   @media (max-width: 660px) {
     background-image: none;
   }
@@ -18,7 +19,7 @@
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding-top: 10vw;
+    // padding-top: 10vw;
   }
   p {
     text-align: center;
@@ -123,15 +124,27 @@
   }
 }
 
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 660px) {
   #cicularrangoliholder {
     width: 95%;
     height: auto;
     margin: 5vw auto;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      animation: rotateCircle 30s linear infinite;
+      overflow: hidden;
     }
   }
 }

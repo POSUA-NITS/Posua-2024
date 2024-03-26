@@ -4,6 +4,7 @@ import Loading from "./Components/Loader/Loading";
 import Footer from "./Components/Shared/Footer/Footer";
 import Navbar from "./Components/Shared/Navbar/Navbar";
 import InitialLoadingForHome from "./Components/Loader/InitialLoadingForHome";
+import ToTopOnRouteChange from "./Components/ScrollToTopOnRouteChange/ToTopOnRouteChange";
 const Gallery = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Gallery }))
 );
@@ -32,22 +33,24 @@ const App = () => {
   return (
     <main className="relative">
       <BrowserRouter>
-        <InitialLoadingForHome />
-        <Suspense fallback={<Loading />}>
-          {/* <div className="min-h-[6.8rem]">
+        <ToTopOnRouteChange>
+          <InitialLoadingForHome />
+          <Suspense fallback={<Loading />}>
+            {/* <div className="min-h-[6.8rem]">
           </div> */}
-          <Navbar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/events" element={<Events />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/artists" element={<ArtistPage />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-          <Footer />
-        </Suspense>
+            <Navbar />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/events" element={<Events />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/sponsors" element={<Sponsors />} />
+              <Route path="/gallery" element={<Gallery />} />
+              <Route path="/artists" element={<ArtistPage />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+            <Footer />
+          </Suspense>
+        </ToTopOnRouteChange>
       </BrowserRouter>
     </main>
   );
