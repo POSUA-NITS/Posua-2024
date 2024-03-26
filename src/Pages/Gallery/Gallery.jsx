@@ -2,7 +2,9 @@ import React, { useState } from "react";
 import styles from "./Gallery.module.scss";
 import DivComponent from "../../Components/GalleryComp/DivComponent";
 import ImgPop from "../../Components/GalleryComp/ImgPop";
+import useSetTitle from "../../Hooks/SetTitle";
 const Gallery = () => {
+  useSetTitle("Gallery | Posua");
   const images = [
     {
       id: 1,

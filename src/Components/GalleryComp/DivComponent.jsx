@@ -11,7 +11,7 @@ const DivComponent = ({ name, setImgUrl, setImgPop }) => {
     >
       <img
         src={name}
-        className="w-full h-full object-cover rounded-md "
+        className="w-full h-full object-cover cursor-pointer rounded-md "
         alt="scroll images"
       />
     </div>
