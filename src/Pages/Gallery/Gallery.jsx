@@ -24,11 +24,11 @@ const Gallery = () => {
     },
     {
       id: 5,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860464/POSUA%20Gallery/2022/7_cuyswy.webp",
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782905/POSUA%20Gallery/2021/p87_1_z26am8.webp",
     },
     {
       id: 6,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860463/POSUA%20Gallery/2022/1_l5lxsh.webp",
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782905/POSUA%20Gallery/2021/p57_1_tlkow7.webp",
     },
     {
       id: 7,
@@ -44,7 +44,56 @@ const Gallery = () => {
     },
     {
       id: 10,
-      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677860464/POSUA%20Gallery/2022/5_dr0zbx.webp",
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782904/POSUA%20Gallery/2021/p28_1_w1veyn.webp",
+    },
+    {
+      id: 11,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847937/POSUA%20Gallery/2018/p178_-_Copy_fjnl8l.webp",
+    },
+    {
+      id: 12,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782904/POSUA%20Gallery/2021/p38_2_rb1uin.webp",
+    },
+    {
+      id: 13,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847519/POSUA%20Gallery/2021/p61_Small_hpddcy.webp",
+    },
+    {
+      id: 14,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56622560_2285129651551487_8015484988197699584_n_xqygo0.webp",
+    },
+    {
+      id: 15,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783238/POSUA%20Gallery/2019/56852764_2285148264882959_2544134228656783360_n_vaau9j.webp",
+    },
+    {
+      id: 16,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56387502_262527601367542_4087657569743536128_n_f4gpgm.webp",
+    },
+
+    {
+      id: 17,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56232280_2285119674885818_7328361491525009408_n_eitbdg.webp",
+    },
+    {
+      id: 18,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677847937/POSUA%20Gallery/2018/p178_-_Copy_fjnl8l.webp",
+    },
+    {
+      id: 19,
+      url: " https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677782904/POSUA%20Gallery/2021/p55_1_q1nxuk.webp",
+    },
+    {
+      id: 20,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783141/POSUA%20Gallery/2016/p131_1_qfggwi.webp",
+    },
+    {
+      id: 21,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56242463_2285149308216188_8148921002085056512_n_xkfthk.webp",
+    },
+    {
+      id: 22,
+      url: "https://res.cloudinary.com/dhoi8bcqz/image/upload/v1677783237/POSUA%20Gallery/2019/56232280_2285119674885818_7328361491525009408_n_eitbdg.webp",
     },
   ];
 
