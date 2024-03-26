@@ -28,7 +28,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -1rem));
+  transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -1rem));
   filter: blur(calc(var(--abs-offset) * 1px));
   transition: all 0.3s ease-out;
 }
@@ -118,22 +120,23 @@
   }
 }
 
-
-
 // .carousel {
 //     background-color: blue;
 // }
 
-
 @media screen and (min-width: 400px) {
   .cardContainer {
-    transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -4rem));
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -4rem));
   }
 }
 
 @media screen and (min-width: 710px) {
   .cardContainer {
-    transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
   }
 
   .bubbleCont {

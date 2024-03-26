@@ -111,7 +111,6 @@ const ExtendedView = ({ mode, setExtended, extended }) => {
   );
 };
 const Events = () => {
-
   const [extended, setExtended] = useState(1);
   useSetTitle("Events | Posua");
   return (
@@ -172,7 +171,10 @@ const Events = () => {
             fragrance of our uniqueness, to show everyone the pride that we feel as
             offsprings of our motherland.
           </p>
-          <div className={styles.arrowCont} style={{ zIndex: `${extended === 0 ? 1 : 0}` }}>
+          <div
+            className={styles.arrowCont}
+            style={{ zIndex: `${extended === 0 ? 1 : 0}` }}
+          >
             <button
               className={styles.arrowInner}
               onClick={() => setExtended(extended === 0 ? 1 : 0)}
