@@ -8,7 +8,11 @@ const ImgPop = ({ imgUrl, imgPop, setImgPop }) => {
       <div
         className={`fixed flex items-center justify-center transition-all duration-500 ease-in-out ${imgPop ? "w-[18rem] h-[22rem] sm:w-[25rem] sm:h-[29rem] md:w-[30rem] z-[110] md:h-[35rem] " : "w-[1rem] h-[1rem]"} relative`}
       >
-        <img src={imgUrl} alt="modal Img" className="w-full h-full object-cover" />
+        <img
+          src={imgUrl}
+          alt="modal Img"
+          className="w-full h-full object-cover rounded-md"
+        />
         <div
           className="text-[2.5rem] text-white top-[1rem] md:top-[.4rem] right-[1.2rem] absolute  z-[200] cursor-pointer bg-white p-2 rounded-md flex justify-center font-bold items-center w-[2.5rem] h-[2.5rem]"
           onClick={() => {
