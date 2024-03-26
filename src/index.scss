@@ -12,6 +12,8 @@
 }
 
 #root {
-  // background: linear-gradient(40deg, #e54927, #ffdc97);
+  background: linear-gradient(40deg, #e54927, #ffdc97);
+  min-height: 100vh;
+  overflow-x: hidden;
   padding: 0;
 }
