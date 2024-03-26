@@ -32,9 +32,10 @@ const App = () => {
     <main className="relative">
       <BrowserRouter>
         <Suspense fallback={<Loading />}>
-          <div className="min-h-[6.8rem]">
-            <Navbar />
-          </div>
+          {/* <div className="min-h-[6.8rem]">
+            
+          </div> */}
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/events" element={<Events />} />

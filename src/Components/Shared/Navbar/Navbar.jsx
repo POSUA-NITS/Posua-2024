@@ -92,7 +92,7 @@ const Navbar = () => {
           />
         </Link>{" "}
         <NavItem
-          text="ArtistPage"
+          text="Artists"
           selected={selectedItem === "ArtistPage"}
           onClick={() => handleItemClick("ArtistPage")}
         />
@@ -167,7 +167,7 @@ const Navbar = () => {
             onClick={() => handleItemClick("Gallery")}
           />
           <NavItem
-            text="ArtistPage"
+            text="Artists"
             selected={selectedItem === "ArtistPage"}
             onClick={() => handleItemClick("ArtistPage")}
           />
