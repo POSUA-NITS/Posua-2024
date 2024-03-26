@@ -1,0 +1,80 @@
+.AboutClass {
+  background-color: rgb(228, 197, 156);
+  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
+    url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
+  background-position: right, left;
+  background-repeat: no-repeat;
+}
+.AboutText {
+  width: 40%;
+  margin-left: 30%;
+  height: 50%;
+  text-align: center;
+  color: #984144;
+  text-align: center;
+  /* Paragraph */
+  font-family: "DM Serif Display";
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 32px; /* 133.333% */
+  letter-spacing: 0.48px;
+}
+@media screen and (max-width: 1128px) {
+  .AboutClass {
+    background-position:
+      110% 50%,
+      -10% 50%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .AboutClass {
+    background-position:
+      120% 50%,
+      -20% 50%;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .AboutClass {
+    background-position:
+      130% 50%,
+      -30% 50%;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  .AboutClass {
+    background-position:
+      140% 50%,
+      -40% 50%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .AboutClass {
+    background-position:
+      150% 50%,
+      -50% 50%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .AboutClass {
+    background-position:
+      170% 50%,
+      -70% 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .AboutClass {
+    background-position:
+      100% 50%,
+      0% 50%;
+    background-size:
+      50% 50%,
+      50% 50%;
+  }
+}

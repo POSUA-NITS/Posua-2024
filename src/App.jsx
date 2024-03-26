@@ -18,9 +18,7 @@ const Team = lazy(() =>
 const Sponsors = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.Sponsors }))
 );
-const Borhomthuri = lazy(() =>
-  import("./Pages/index").then((module) => ({ default: module.Borhomthuri }))
-);
+
 const ArtistPage = lazy(() =>
   import("./Pages/index").then((module) => ({ default: module.ArtistPage }))
 );
@@ -42,7 +40,6 @@ const App = () => {
             <Route path="/events" element={<Events />} />
             <Route path="/team" element={<Team />} />
             <Route path="/sponsors" element={<Sponsors />} />
-            <Route path="/borhomthuri" element={<Borhomthuri />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/artists" element={<ArtistPage />} />
             <Route path="*" element={<NotFound />} />
