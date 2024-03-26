@@ -79,10 +79,7 @@ const Team = () => {
   ];
 
   return (
-    <div
-      className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden"
-      style={{ background: "linear-gradient(130deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
-    >
+    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden">
       {/* <div
         style={{ fontFamily: "Abril Fatface" }}
         className="text-[2rem] md:text-[2.5rem] relative left-[1rem] md:left-[1.5rem] font-semibold"
