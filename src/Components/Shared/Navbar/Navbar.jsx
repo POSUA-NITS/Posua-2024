@@ -88,7 +88,7 @@ const Navbar = () => {
             }
             alt="Logo"
             className={styles.logo}
-            // className={`${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}`}
+            // className={${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}}
           />
         </Link>{" "}
         <NavItem
@@ -108,7 +108,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0 " : " opacity-100 "}`}
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out ${isMenuOpen ? "opacity-0" : "opacity-100"}`}
         onClick={toggleMenu}
       >
         <div className={styles.bar}></div>
@@ -137,7 +137,7 @@ const Navbar = () => {
       )}
 
       <div
-        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : "translate-x-[-100%]"} `}
+        className={`${styles.mobileMenu} transition-all duration-500 ease-in-out  ${isMenuOpen ? styles.open : `${styles.open} translate-x-[-100%]`} `}
       >
         <div className={`${styles.mobileLinks}   `}>
           {/* <div className=" mr-[80vw] text-[2rem] text-[#E27B4E] font-medium" onClick={closeMenu}>X</div> */}
