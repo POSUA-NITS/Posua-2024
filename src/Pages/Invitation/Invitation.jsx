@@ -19,6 +19,9 @@ const Invitation = () => {
           />
         </div>
         <ScrollerJapi />
+        {/* <div id={styles.cicularrangoliholder}>
+          <img src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711462263/hald_rangoli_posua_24_fbsywv.png" alt="" />
+        </div> */}
       </div>
     </div>
   );
