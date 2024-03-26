@@ -1,7 +1,11 @@
 // SponsporsPage
 import React from "react";
 import "./sponsors.scss";
+import useSetTitle from "../../Hooks/SetTitle";
+
 const SponsorPage = () => {
+  useSetTitle("Sponsors | Posua");
+
   return (
     <div>
       <body>
