@@ -116,3 +116,22 @@
     object-fit: cover;
   }
 }
+
+@media (min-width: 660px) {
+  #cicularrangoliholder {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  #cicularrangoliholder {
+    width: 95%;
+    height: auto;
+    margin: 5vw auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

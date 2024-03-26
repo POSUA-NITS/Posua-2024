@@ -1,5 +1,7 @@
 .superParent {
   background-color: rgb(228, 197, 156);
+  // background: linear-gradient(180deg, #e47231 0%, #ecbb5c 100%);
+
   min-height: 100vh;
   overflow: hidden;
   // padding-top: 5vw;
@@ -53,5 +55,24 @@
     height: 100%;
     object-fit: cover;
     pointer-events: none;
+  }
+}
+
+@media (min-width: 660px) {
+  #cicularrangoliholder {
+    display: none;
+  }
+}
+
+@media (max-width: 660px) {
+  #cicularrangoliholder {
+    width: 95%;
+    height: auto;
+    margin: 5vw auto;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
