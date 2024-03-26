@@ -28,9 +28,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
-    translateZ(calc(var(--abs-offset) * -30rem))
-    translateX(calc(var(--direction) * -1rem));
+  transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -1rem));
   filter: blur(calc(var(--abs-offset) * 1px));
   transition: all 0.3s ease-out;
 }
@@ -38,7 +36,7 @@
 @media screen and (min-width: 1001px) {
   .cardContainer {
     left: 50vw;
-    top: 20vh;
+    top: 30vh;
   }
 }
 
@@ -75,6 +73,7 @@
 
 @media screen and (max-width: 390px) {
   .cardContainer {
+    top: 60vh;
     left: 10vw;
   }
 }
@@ -119,101 +118,22 @@
   }
 }
 
-.nav {
-  color: white;
-  font-size: 1.5rem;
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
 
-  z-index: 12;
-  cursor: pointer;
-  user-select: none;
-  background: unset;
-  background-color: #000000;
-  border: unset;
-  padding: 0.5rem;
-  border: 0px solid transparent;
-  border-radius: 4rem;
-
-  &.left {
-    transform: translateX(-45%) translatey(-50%);
-  }
-
-  &.right {
-    right: 0;
-    transform: translateX(45%) translatey(-50%);
-  }
-}
-
-.regCont {
-  position: relative;
-  top: 12rem;
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.2rem;
-  font-size: 0rem;
-
-  .rocket {
-    color: #1b9889;
-    background-color: transparent;
-    transition-duration: 0.5s;
-    padding: 0.25rem;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    border: 3px solid #1b9889;
-    border-radius: 0.75rem;
-  }
-
-  .rocket:hover {
-    color: #ffffff;
-    background-color: #1b9889;
-    transition-duration: 0.5s;
-  }
-}
 
 // .carousel {
 //     background-color: blue;
 // }
 
-.bubbleCont {
-  display: flex;
-  flex-direction: row;
-  column-gap: 0.1rem;
-  position: relative;
-  top: 22rem;
-  z-index: 6;
-
-  .active,
-  .inactive {
-    height: 0.5rem;
-    width: 0.5rem;
-    border: 0px solid transparent;
-    border-radius: 1rem;
-    background-color: rgb(255, 255, 255);
-    transition-duration: 0.5s;
-  }
-
-  .active {
-    background-color: #1b9889;
-  }
-}
 
 @media screen and (min-width: 400px) {
   .cardContainer {
-    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
-      translateZ(calc(var(--abs-offset) * -30rem))
-      translateX(calc(var(--direction) * -4rem));
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -4rem));
   }
 }
 
 @media screen and (min-width: 710px) {
   .cardContainer {
-    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
-      translateZ(calc(var(--abs-offset) * -30rem))
-      translateX(calc(var(--direction) * -5rem));
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4)) translateZ(calc(var(--abs-offset) * -30rem)) translateX(calc(var(--direction) * -5rem));
   }
 
   .bubbleCont {

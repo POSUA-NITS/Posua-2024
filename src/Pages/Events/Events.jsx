@@ -4,6 +4,7 @@ import styles from "./Events.module.scss";
 import styles2 from "./EventCarousel.module.scss";
 import Pokhila from "../../assets/pokhila.json";
 import data from "../../assets/Events.json";
+import useSetTitle from "../../Hooks/SetTitle";
 // width: `${current === item.id ? '100vw' : '12rem'}`,
 // height: `${current === item.id ? '100vh' : '12rem'}`,
 const Carousel = ({ active }) => {
@@ -110,7 +111,9 @@ const ExtendedView = ({ mode, setExtended, extended }) => {
   );
 };
 const Events = () => {
+
   const [extended, setExtended] = useState(1);
+  useSetTitle("Events | Posua");
   return (
     <div className={styles.superParent}>
       <Lottie animationData={Pokhila} className={styles.pokhila} />
@@ -169,7 +172,7 @@ const Events = () => {
             fragrance of our uniqueness, to show everyone the pride that we feel as
             offsprings of our motherland.
           </p>
-          <div className={styles.arrowCont}>
+          <div className={styles.arrowCont} style={{ zIndex: `${extended === 0 ? 1 : 0}` }}>
             <button
               className={styles.arrowInner}
               onClick={() => setExtended(extended === 0 ? 1 : 0)}
