@@ -112,10 +112,7 @@ const Gallery = () => {
   }, 100);
 
   return (
-    <div
-      className={`${styles.AppContainer} min-h-[100vh] relative py-[4rem]`}
-      style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
-    >
+    <div className={`${styles.AppContainer} min-h-[100vh] relative py-[4rem]`}>
       <div className={styles.Wrapper}>
         <div className={`h-[13rem] overflow-x-hidden ${styles.scrollContainer}`}>
           <div className={`flex overflow-x-hidden   ${styles.scrollWraper}`}>

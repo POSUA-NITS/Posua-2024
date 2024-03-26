@@ -68,10 +68,7 @@ const ArtistPage = () => {
   ];
 
   return (
-    <main
-      className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden"
-      style={{ background: "linear-gradient(111deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
-    >
+    <main className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden">
       <div className=" h-[3rem] md:h-[7rem] my-[3rem] flex z-[50] relative">
         <img src={artImg} alt="Art" className="w-full h-full object-cover" />
         {/* <div className="flex justify-center items-center absolute w-[100%] gap-[7.8rem]">
