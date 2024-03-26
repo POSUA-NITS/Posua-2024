@@ -1,0 +1,16 @@
+.loader {
+  display: none;
+}
+
+.loader.active {
+  display: block;
+  height: 100vh;
+}
+
+#loadingtopmain {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}

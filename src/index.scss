@@ -8,11 +8,12 @@
   box-sizing: border-box;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   -webkit-tap-highlight-color: transparent;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 }
 
 #root {
+  background: linear-gradient(40deg, #e54927, #ffdc97);
+  // height: 100vh;
   overflow-x: hidden;
-  // background: linear-gradient(40deg, #e54927, #ffdc97);
-  padding: 0;
+  // padding: 0;
 }
