@@ -22,7 +22,7 @@
     gap: 1rem;
     object-fit: contain;
     animation-play-state: running;
-    animation: scrollAnimation 166666s linear infinite;
+    animation: scrollAnimation 229990s linear infinite;
   }
 
   @keyframes scrollAnimation {
@@ -37,7 +37,7 @@
 
   @keyframes scrollAnimation2 {
     0% {
-      transform: translateX(-11980rem);
+      transform: translateX(-26399rem);
     }
 
     100% {
