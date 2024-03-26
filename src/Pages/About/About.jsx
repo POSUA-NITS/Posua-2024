@@ -28,7 +28,10 @@ const About = () => {
         </div>
 
         <div id={styles.cicularrangoliholder}>
-          <img src="" alt="" />
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711288702/rangoli_404_posua_d0je3u.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
