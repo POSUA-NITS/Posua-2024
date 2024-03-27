@@ -32,6 +32,7 @@ const NotFound = lazy(() =>
 const App = () => {
   return (
     <main className="relative">
+      <InitialLoadingForHome />
       <BrowserRouter>
         <ToTopOnRouteChange>
           <InitialLoadingForHome />
