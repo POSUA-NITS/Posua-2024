@@ -3,7 +3,7 @@ import React from "react";
 const ImgPop = ({ imgUrl, imgPop, setImgPop }) => {
   return (
     <div
-      className={`fixed top-0 flex justify-center items-center w-[100vw] bg-blur backdrop-filter backdrop-blur-[.3rem] h-[100vh] transition-all duration-500 ease-in-out ${imgPop ? "z-[100] opacity-100" : "z-[-10] opacity-0"}`}
+      className={`fixed top-0 flex justify-center items-center w-[100vw] bg-blur backdrop-filter backdrop-blur-[.3rem] h-[100vh] transition-all duration-500 ease-in-out ${imgPop ? "z-[100001] opacity-100" : "z-[-10] opacity-0"}`}
     >
       <div
         className={`fixed flex items-center justify-center transition-all duration-500 ease-in-out ${imgPop ? "w-[18rem] h-[22rem] sm:w-[25rem] sm:h-[29rem] md:w-[30rem] z-[110] md:h-[35rem] " : "w-[1rem] h-[1rem]"} relative`}

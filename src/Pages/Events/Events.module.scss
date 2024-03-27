@@ -13,16 +13,16 @@
   background-position:
     bottom right,
     125% 100%,
-    20% 95%,
-    -20% bottom,
+    20% 100%,
+    -10% bottom,
     -22% 0%,
-    155% 0%,
+    155% -60%,
     center;
   background-size:
-    75% 75%,
+    60% 60%,
     50% 80%,
     20% 20%,
-    50% 50%,
+    40% 40%,
     40% 40%,
     60% 60%,
     100% 100%;
@@ -31,16 +31,24 @@
 
   .centreRangoli {
     position: absolute;
+    margin: 0 auto;
     left: 40%;
-    top: 0%;
+    top: 20%;
     scale: 1;
     opacity: 0.3;
     z-index: 0;
   }
 
-  @media screen and (max-width: 1480px) {
+  @media screen and (max-width: 1490px) {
     .centreRangoli {
       left: 40%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1443px) {
+    .centreRangoli {
+      left: 38%;
       top: 20%;
     }
   }
@@ -48,49 +56,64 @@
   @media screen and (max-width: 1225px) {
     .centreRangoli {
       left: 35%;
-      top: 30%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1085px) {
+    .centreRangoli {
+      left: 32%;
+      top: 20%;
     }
   }
 
   @media screen and (max-width: 905px) {
     .centreRangoli {
-      left: 30%;
-      top: 30%;
+      left: 25%;
+      top: 10%;
     }
   }
 
   @media screen and (max-width: 695px) {
     .centreRangoli {
       left: 25%;
-      top: 30%;
+      top: 10%;
+      scale: 0.5;
     }
   }
 
   @media screen and (max-width: 645px) {
     .centreRangoli {
       left: 20%;
-      top: 30%;
+      top: 10%;
     }
   }
 
   @media screen and (max-width: 522px) {
     .centreRangoli {
       left: 18%;
-      top: 30%;
+      top: 10%;
     }
   }
 
   @media screen and (max-width: 442px) {
     .centreRangoli {
-      left: 10%;
-      top: 30%;
+      left: 8%;
+      top: 10%;
     }
   }
 
   @media screen and (max-width: 405px) {
     .centreRangoli {
       left: 8%;
-      top: 30%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .centreRangoli {
+      left: 2%;
+      top: 10%;
     }
   }
 
@@ -105,41 +128,62 @@
   @media screen and (max-width: 640px) {
     .pokhila {
       top: -20rem;
-      left: -20rem;
+      left: -25rem;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .pokhila {
+      top: -25rem;
+      left: -27rem;
     }
   }
 
   @media screen and (max-width: 615px) {
     .pokhila {
-      top: -15rem;
-      left: -20rem;
+      top: -25rem;
+      left: -22rem;
     }
   }
 
   @media screen and (max-width: 580px) {
     .pokhila {
-      top: -12rem;
+      top: -22rem;
+      left: -22rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .pokhila {
+      top: -20rem;
       left: -20rem;
     }
   }
 
   @media screen and (max-width: 440px) {
     .pokhila {
-      top: -12rem;
+      top: -18rem;
+      left: -20rem;
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+    .pokhila {
+      top: -15rem;
       left: -20rem;
     }
   }
 
   @media screen and (max-width: 390px) {
     .pokhila {
-      top: -5rem;
+      top: -15rem;
       left: -20rem;
     }
   }
 
   @media screen and (max-width: 355px) {
     .pokhila {
-      top: -5rem;
+      top: -12rem;
       left: -15rem;
     }
   }
@@ -150,7 +194,7 @@
     flex-direction: row;
     justify-content: center;
     // overflow: hidden;
-    left: 50%;
+    left: 70%;
     width: 15rem;
     height: 18rem;
     z-index: 0;
@@ -216,24 +260,41 @@
     }
   }
 
+  @media screen and (max-width: 800px) {
+    .jaapiCont {
+      scale: 0.5;
+      top: 0%;
+      left: 60%;
+    }
+  }
+
   @media screen and (max-width: 775px) {
     .jaapiCont {
-      scale: 1;
+      scale: 0.5;
+      top: -5%;
+    }
+  }
+
+  @media screen and (max-width: 602px) {
+    .jaapiCont {
+      scale: 0.6;
       top: 0%;
+      left: 50%;
     }
   }
 
   @media screen and (max-width: 450px) {
     .jaapiCont {
-      scale: 0.8;
+      scale: 0.6;
       top: 0%;
+      left: 40%;
     }
   }
 
   @media screen and (max-width: 365px) {
     .jaapiCont {
-      scale: 0.8;
-      top: 0%;
+      scale: 0.55;
+      top: -2%;
       left: 20%;
     }
   }
@@ -255,7 +316,7 @@
       flex-direction: column;
       align-items: start;
       justify-content: space-around;
-      row-gap: 2.5rem;
+      row-gap: 0.7rem;
 
       .heading {
         font-size: 3rem;
@@ -275,17 +336,19 @@
 
       .arrowCont {
         background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_japi_2_x4thas.svg");
-        background-position: top right;
+        background-position: 0% 0%;
         background-repeat: no-repeat;
-        background-size: 50% 50%;
+        background-size: 60% 60%;
         background-blend-mode: hard-light;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        scale: 0.9;
 
         .viewDetails {
           color: #ffffff;
+          margin-top: 0.5rem;
         }
       }
 
@@ -308,22 +371,26 @@
 
         .description {
           font-size: 0.8rem;
-          text-align: center;
+          text-align: left;
         }
       }
     }
 
     @media screen and (max-width: 700px) {
       .innerCont {
-        align-items: center;
+        align-items: start;
         width: 50%;
       }
     }
 
     @media screen and (max-width: 500px) {
       .innerCont {
-        align-items: center;
+        align-items: start;
         width: 80%;
+
+        .description {
+          text-align: left;
+        }
       }
     }
   }
@@ -353,6 +420,7 @@
       top: 10vh;
       left: 0vw;
       z-index: 3;
+      scale: 0.6;
     }
 
     .innerFilter {
@@ -463,6 +531,33 @@
     }
   }
 
+  @media screen and (max-width: 440px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 20vh auto;
+          align-items: center;
+          width: 50%;
+
+          .h1 {
+            font-size: 2rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
   @media screen and (max-width: 1000px) {
     .ExtendedView {
       .innerFilter {
@@ -493,18 +588,18 @@
 @media screen and (max-width: 1315px) {
   .superParent {
     background-position:
-      100% 110%,
+      100% 100%,
       120% 100%,
-      10% 95%,
-      -20% bottom,
-      -10% 0%,
-      155% 0%,
+      10% 105%,
+      -10% bottom,
+      -25% 0%,
+      155% -30%,
       center;
     background-size:
-      75% 75%,
+      50% 50%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      40% 40%,
       40% 40%,
       60% 60%,
       100% 100%;
@@ -516,16 +611,16 @@
     background-position:
       100% 110%,
       120% 100%,
-      10% 95%,
-      -20% bottom,
-      -10% 0%,
-      155% 0%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
       center;
     background-size:
-      75% 75%,
+      50% 50%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      40% 40%,
       40% 40%,
       60% 60%,
       100% 100%;
@@ -537,16 +632,16 @@
     background-position:
       100% 120%,
       120% 100%,
-      10% 95%,
-      -20% bottom,
-      -10% 0%,
-      155% 0%,
+      10% 105%,
+      -10% bottom,
+      -35% 0%,
+      155% -30%,
       center;
     background-size:
-      75% 75%,
+      55% 55%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      40% 40%,
       40% 40%,
       60% 60%,
       100% 100%;
@@ -556,18 +651,18 @@
 @media screen and (max-width: 1120px) {
   .superParent {
     background-position:
-      100% 120%,
+      100% 110%,
       120% 100%,
-      10% 95%,
-      -20% bottom,
-      -10% 0%,
-      155% 0%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
       center;
     background-size:
-      75% 75%,
+      55% 55%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      40% 40%,
       40% 40%,
       60% 60%,
       100% 100%;
@@ -577,18 +672,18 @@
 @media screen and (max-width: 1060px) {
   .superParent {
     background-position:
-      100% 120%,
+      100% 110%,
       120% 100%,
-      10% 95%,
-      -20% bottom,
-      -10% 0%,
-      155% 0%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       30% 30%,
-      50% 50%,
+      40% 40%,
       40% 40%,
       60% 60%,
       100% 100%;
@@ -598,15 +693,15 @@
 @media screen and (max-width: 1000px) {
   .superParent {
     background-position:
-      100% 130%,
+      100% 110%,
       120% 100%,
-      10% 100%,
+      10% 105%,
       -20% bottom,
-      -10% 0%,
-      155% 0%,
+      -22% 0%,
+      155% -40%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       30% 30%,
       50% 50%,
@@ -619,15 +714,15 @@
 @media screen and (max-width: 985px) {
   .superParent {
     background-position:
-      100% 120%,
+      100% 110%,
       120% 100%,
       10% 110%,
       -20% bottom,
-      -10% 0%,
-      155% 0%,
+      -20% 0%,
+      155% -60%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       30% 30%,
       50% 50%,
@@ -640,15 +735,15 @@
 @media screen and (max-width: 955px) {
   .superParent {
     background-position:
-      100% 140%,
+      100% 115%,
       120% 100%,
       10% 110%,
       -20% bottom,
-      -10% 0%,
-      155% 0%,
+      -20% 0%,
+      155% -60%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       30% 30%,
       50% 50%,
@@ -661,18 +756,18 @@
 @media screen and (max-width: 835px) {
   .superParent {
     background-position:
-      100% 150%,
+      100% 115%,
       120% 100%,
-      10% 100%,
-      -20% bottom,
-      -10% 0%,
-      115% 0%,
+      10% 110%,
+      0% bottom,
+      -20% 0%,
+      115% -30%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       30% 30%,
-      20% 20%,
+      30% 30%,
       40% 40%,
       40% 40%,
       100% 100%;
@@ -682,20 +777,20 @@
 @media screen and (max-width: 755px) {
   .superParent {
     background-position:
-      100% 120%,
+      100% 118%,
       120% 100%,
-      10% 100%,
+      10% 106%,
       -20% bottom,
-      -10% 0%,
-      105% 0%,
+      -20% 0%,
+      105% -60%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 90%,
       20% 20%,
       50% 50%,
       40% 40%,
-      35% 35%,
+      55% 55%,
       100% 100%;
   }
 }
@@ -703,20 +798,20 @@
 @media screen and (max-width: 710px) {
   .superParent {
     background-position:
-      100% 150%,
+      100% 120%,
       120% 100%,
-      10% 105%,
+      10% 110%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -30%,
       center;
     background-size:
-      75% 75%,
+      45% 45%,
       50% 80%,
       30% 30%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      40% 40%,
       100% 100%;
   }
 }
@@ -724,12 +819,12 @@
 @media screen and (max-width: 640px) {
   .superParent {
     background-position:
-      100% 145%,
+      100% 185%,
       120% 100%,
-      10% 105%,
+      10% 115%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -20%,
       center;
     background-size:
       75% 75%,
@@ -737,7 +832,7 @@
       30% 30%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      40% 40%,
       100% 100%;
   }
 }
@@ -752,12 +847,12 @@
       url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
       linear-gradient(130deg, #e54927, #ffdc97);
     background-position:
-      100% 160%,
+      100% 190%,
       120% 100%,
-      10% 100%,
+      10% 110%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -50%,
       center;
     background-size:
       75% 75%,
@@ -765,7 +860,7 @@
       30% 30%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      50% 50%,
       100% 100%;
   }
 }
@@ -773,12 +868,12 @@
 @media screen and (max-width: 530px) {
   .superParent {
     background-position:
-      100% 180%,
+      100% 190%,
       120% 100%,
-      10% 115%,
+      10% 125%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -40%,
       center;
     background-size:
       75% 75%,
@@ -786,7 +881,7 @@
       40% 40%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      50% 50%,
       100% 100%;
   }
 }
@@ -794,12 +889,12 @@
 @media screen and (max-width: 515px) {
   .superParent {
     background-position:
-      100% 165%,
+      100% 195%,
       120% 100%,
-      10% 100%,
+      10% 110%,
       -20% bottom,
       -10% 0%,
-      100% 0%,
+      100% -40%,
       center;
     background-size:
       75% 75%,
@@ -807,7 +902,7 @@
       25% 25%,
       50% 50%,
       40% 40%,
-      30% 30%,
+      40% 40%,
       100% 100%;
   }
 }
@@ -815,20 +910,20 @@
 @media screen and (max-width: 470px) {
   .superParent {
     background-position:
-      100% 190%,
+      100% 205%,
       120% 100%,
-      10% 105%,
+      10% 125%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -30%,
       center;
     background-size:
       75% 75%,
       50% 50%,
       40% 40%,
       50% 50%,
-      40% 40%,
-      25% 25%,
+      50% 50%,
+      45% 45%,
       100% 100%;
   }
 }
@@ -836,20 +931,20 @@
 @media screen and (max-width: 455px) {
   .superParent {
     background-position:
-      100% 185%,
+      100% 205%,
       120% 100%,
-      10% 110%,
+      10% 120%,
       -20% bottom,
-      -10% 0%,
-      100% 0%,
+      0% 0%,
+      100% -60%,
       center;
     background-size:
       75% 75%,
       50% 50%,
       40% 40%,
       50% 50%,
-      40% 40%,
-      20% 20%,
+      30% 30%,
+      50% 50%,
       100% 100%;
   }
 }
@@ -857,12 +952,12 @@
 @media screen and (max-width: 415px) {
   .superParent {
     background-position:
-      100% 200%,
+      100% 205%,
       120% 100%,
-      10% 109%,
+      10% 122%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -30%,
       center;
     background-size:
       75% 75%,
@@ -870,28 +965,28 @@
       40% 40%,
       50% 50%,
       40% 40%,
-      20% 20%,
+      40% 40%,
       100% 100%;
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 370px) {
   .superParent {
     background-position:
-      100% 185%,
+      100% 215%,
       120% 100%,
-      30% 105%,
+      30% 115%,
       -20% bottom,
       -10% 0%,
-      105% 0%,
+      105% -30%,
       center;
     background-size:
       75% 75%,
       50% 50%,
       30% 30%,
       50% 50%,
+      35% 35%,
       40% 40%,
-      20% 20%,
       100% 100%;
   }
 }
@@ -899,12 +994,12 @@
 @media screen and (max-width: 340px) {
   .superParent {
     background-position:
-      100% 185%,
+      100% 215%,
       120% 100%,
-      30% 100%,
+      30% 113%,
       -20% bottom,
       -10% 0%,
-      100% 0%,
+      100% -30%,
       center;
     background-size:
       75% 75%,
@@ -912,7 +1007,7 @@
       25% 25%,
       50% 50%,
       40% 40%,
-      20% 20%,
+      40% 40%,
       100% 100%;
   }
 }
@@ -920,12 +1015,12 @@
 @media screen and (max-width: 330px) {
   .superParent {
     background-position:
-      100% 210%,
+      100% 215%,
       120% 100%,
-      30% 100%,
+      30% 115%,
       -20% bottom,
       -10% 0%,
-      100% 0%,
+      100% -30%,
       center;
     background-size:
       75% 75%,
@@ -933,7 +1028,7 @@
       30% 30%,
       50% 50%,
       40% 40%,
-      20% 20%,
+      40% 40%,
       100% 100%;
   }
 }

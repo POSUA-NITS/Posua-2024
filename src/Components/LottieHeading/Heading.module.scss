@@ -7,6 +7,7 @@
   #flexholder {
     display: flex;
     width: 100%;
+    // background-color: red;
     justify-content: center;
   }
 
@@ -23,6 +24,7 @@
   #lottie1 {
     width: 32vw;
     height: 100%;
+    // background-color: red;
     @media (max-width: 660px) {
       width: 50vw;
     }
@@ -36,9 +38,12 @@
     top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #cd2129;
+    // background-color: #c52123;
+    border-radius: 10px;
     h1 {
       color: white;
-      font-size: 3vw;
+      font-size: 2.835vw;
       @media (max-width: 660px) {
         font-size: 4.5vw;
       }

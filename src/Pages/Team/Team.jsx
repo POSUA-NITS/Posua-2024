@@ -75,20 +75,7 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden">
-      {/* <div
-        style={{ fontFamily: "Abril Fatface" }}
-        className="text-[2rem] md:text-[2.5rem] relative left-[1rem] md:left-[1.5rem] font-semibold"
-      >
-        TEAM
-      </div>
-      <div className="w-[20rem] sm:w-[25rem] md:w-[30rem] relative bottom-[4rem] sm:bottom-[5rem]">
-        <img
-          src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/wnacfkpock3ycdgdu0g4.jpg?_s=public-apps"
-          alt="Logo"
-          className="w-full object-contain"
-        />
-      </div> */}
+    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden mb-[4rem]">
       <div className="w-[100%] z-[2]">
         <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
       </div>
@@ -117,8 +104,13 @@ const Team = () => {
         </div>
       </div>
       <div
-        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[7rem]  md:px-[10rem] z-[2] font-semibold"
-        style={{ color: "#9B2125", fontFamily: "Alata" }}
+        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[7rem]  md:px-[10rem] z-[2]"
+        style={{
+          color: "#9B2125",
+          fontFamily: "DM Serif Display | serif",
+          lineHeight: "1.8",
+          fontStyle: "italic",
+        }}
       >
         With the arrival of spring and the departure of winter days, our Mother Nature
         expresses her joy of welcoming the calming rejuvenation via greenery and
@@ -203,6 +195,7 @@ const Team = () => {
           ></div>
         </div>
       </div>
+      {/* <TeamCard /> */}
       {/* *****************TeamCard for mobile view end2***************** */}
 
       <LottieHeading title="CORE TEAM" />
@@ -285,7 +278,7 @@ const Team = () => {
             return (
               <SwiperSlide key={profile.id}>
                 {({ isActive }) => (
-                  <div className="w-[100%] flex justify-center items-center">
+                  <div className="w-[100%] flex justify-center  items-center">
                     {isActive ? setActive3(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
