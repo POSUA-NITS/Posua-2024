@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./ScrollerJapi.module.scss";
 const ScrollerJapi = ({ type, windowSize }) => {
-  console.log(type);
   return (
     <div>
       <div
