@@ -2,78 +2,37 @@
   {
     "id": 1,
     "name": "Bordoisila",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769592/posua/bihu_nasoni_x0rjsl.svg",
-    "changing": 8
+    "description": "The NITS campus gets alive with captivating performances by the stunning 'Gabhorus', adorned in exquisite golden silk. It resembles the seasonal wind rushing back to her familial abode, bustling with fervor.",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711568991/posua/bordoisila_rryy9s.webp"
   },
   {
     "id": 2,
-    "name": "Manthar",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769274/posua/zubeen-da_fo3j1q.svg",
-    "changing": 2
+    "name": "Manthan",
+    "description": "Manthan is the highlight of POSUA, as it showcases the best performers from Assam to enthral everyone on the campus In previous years, famous artists such as Zubeen Garg, Priyanka Bharali, Dikshu, and Simanta Shekhar have blessed the Manthan stage with their amazing performances.",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711568848/posua/manthan_sqh9vw.webp"
   },
   {
     "id": 3,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769301/posua/random-performer_tjmv6r.svg",
-    "changing": -5
+    "name": "Abhijatri",
+    "description": "The true measure of our society's strength lies in our ability to embrace diversity and foster unity. Over the years, 'Bor-Axom' has embraced numerous communities and tribes, enriching the tapestry of the Greater Assamese Culture.",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711568901/posua/abhijatri_vpze0w.webp"
   },
   {
     "id": 4,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
-  },
-  {
-    "id": 4,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
+    "name": "Rongili",
+    "description": "The art of dance conjures an exhilarating trance for both spectators and performers alike. Among the array of events hosted by Posua is 'Rongili', the Female Bihu Dance Competition, offering a platform for participants to exhibit their dancing skills and convey their adoration for Bihu.",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711569012/posua/rongili_vgmzwl.webp"
   },
   {
     "id": 5,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
+    "name": "Paatkair Ipare",
+    "description": "Patkair Ipare is a quiz to embark on an enchanting journey through Assam's vibrant culture, mesmerizing traditions, and breathtaking landscapes! ",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711568836/posua/paatkair_paare_bcfbgz.webp"
   },
   {
     "id": 6,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
-  },
-  {
-    "id": 7,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
-  },
-  {
-    "id": 8,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
-  },
-  {
-    "id": 9,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
-  },
-  {
-    "id": 10,
-    "name": "Lorem Ipsum",
-    "description": "POSUA, the spring fest of NIT Silchar, spreads out exuberance all around with the arrival of spring rejuvenating the land. This ecstatic grandeur lets us enliven the beauteous culture of the land of Assam with joyful activities bringing out the heritages and indispensable indigenous traditions.",
-    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1710769498/posua/lora_bihu_temlpl.svg",
-    "changing": 24
+    "name": "Krishti",
+    "description": "The festival of Krishti gives a unique chance to see the beauty of time and to feel the complex cultural mix of the people who have lived in this land for ages, creating a splendid society that shows the combination of these different cultures. No matter where we live along the Barak or Brahmaputra rivers, we are all connected by a lovely fabric made of the golden threads of our cultural legacy.",
+    "src": "https://res.cloudinary.com/dhry5xscm/image/upload/v1711568864/posua/krishti_th6fek.webp"
   }
 ]
