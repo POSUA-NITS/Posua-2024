@@ -3,6 +3,9 @@
   // background: linear-gradient(180deg, #e47231 0%, #ecbb5c 100%);
 
   min-height: 100vh;
+  @media (max-width: 660px) {
+    min-height: auto;
+  }
   overflow: hidden;
   // padding-top: 5vw;
   // @media (max-width: 660px) {

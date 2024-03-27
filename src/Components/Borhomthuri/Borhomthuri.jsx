@@ -10,6 +10,19 @@ const Borhomthuri = () => {
     <div className={styles.superParent}>
       <div className={styles.ParentClass}>
         {/* <Pepa /> */}
+        <div id={styles.leftrangoliholder_borhom}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/leftrangoli_jp6whi.png"
+            alt=""
+          />
+        </div>
+
+        <div id={styles.rightrangoliholder_borhom}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/rightrangoli_jvpnus.png"
+            alt=""
+          />
+        </div>
         <div id={styles.pepaholder}>
           <LottieHeading title="BORHOMTHURI" />
         </div>
@@ -47,11 +60,20 @@ const Borhomthuri = () => {
             </div>
           </div>
 
-          <div className={styles.cameraImg}>
-            <img
-              alt="Camera"
-              src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711485113/FILM_1_lum7nf.svg"
-            />
+          <div id={styles.camerathingsholder}>
+            <div className={styles.cameraImg}>
+              <img
+                alt="Camera"
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711559065/camera_posua24_l7ndyp.png"
+              />
+            </div>
+
+            <div id={styles.camerafoucs}>
+              <img
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711559384/camera_focus_posua24_orhnta.png"
+                alt=""
+              />
+            </div>
           </div>
         </div>
 
