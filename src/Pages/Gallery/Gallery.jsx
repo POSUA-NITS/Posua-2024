@@ -3,6 +3,7 @@ import styles from "./Gallery.module.scss";
 import DivComponent from "../../Components/GalleryComp/DivComponent";
 import ImgPop from "../../Components/GalleryComp/ImgPop";
 import useSetTitle from "../../Hooks/SetTitle";
+import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 const Gallery = () => {
   useSetTitle("Gallery | Posua");
   const images = [
@@ -128,14 +129,40 @@ const Gallery = () => {
           <ImgPop imgUrl={imgUrl} imgPop={imgPop} setImgPop={setImgPop} />
         </div>
 
-        <div className=" w-[18rem] sm:w-[22rem] md:w-[39rem] h-fit mx-auto my-[3rem] md:my-[unset]">
-          <img
+        <div
+          className={`w-[18rem] sm:w-[22rem] md:w-[39rem] h-fit mx-auto my-[3rem] md:my-[unset] transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${flower ? "scale-[1.15] md:scale-[.85]" : "scale-[1.4] md:scale-[1.2]"}  ${styles.parentholder} `}
+        >
+          {/* <img
             className={`transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${
               flower ? "scale-[1.15] md:scale-[.85]" : "scale-[1.4] md:scale-[1.2]"
             }`}
             src="https://res.cloudinary.com/dlyo7ec6c/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710793889/Group_2608609_1_p0nsnp.jpg?_s=public-apps"
             alt="Featured property "
-          />
+          /> */}
+
+          <LottieHeading title="GALLERY" />
+          <div id={styles.rangoliholder}>
+            <img
+              src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711288702/rangoli_404_posua_d0je3u.png"
+              alt=""
+            />
+          </div>
+
+          <div id={styles.bothimgholder}>
+            <div id={styles.sideflowerholder}>
+              <img
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711483479/sideflower_stcy99.png"
+                alt=""
+              />
+            </div>
+
+            <div id={styles.reversesideflowerholder}>
+              <img
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711483479/sideflower_stcy99.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
 
         <div className={` h-[13rem] overflow-x-hidden ${styles.scrollContainer}`}>

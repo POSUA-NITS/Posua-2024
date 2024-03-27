@@ -1,15 +1,30 @@
 // import AboutPepa from "./AboutPepa";
+import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 import styles from "./About.module.scss";
 const About = () => {
   return (
     <div>
       <div className={styles.AboutClass}>
-        <div id={styles.pepaimgholder}>
+        <div id={styles.leftrangoliholder}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/leftrangoli_jp6whi.png"
+            alt=""
+          />
+        </div>
+
+        <div id={styles.rightrangoliholder}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/rightrangoli_jvpnus.png"
+            alt=""
+          />
+        </div>
+        <LottieHeading title="ABOUT US" />
+        {/* <div id={styles.pepaimgholder}>
           <img
             src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711212131/Frame_5_kuyfe0.png"
             alt=""
           />
-        </div>
+        </div> */}
         <div className={styles.AboutText}>
           <p>
             Posua, the wind that brings rain to the dry and parched earth, an aroma of

@@ -3,6 +3,7 @@
   .Wrapper {
     overflow-x: hidden;
   }
+
   .scrollContainer {
     width: fit-content;
     overflow-x: hidden;
@@ -15,42 +16,121 @@
     animation-play-state: running;
     animation: scrollAnimation2 2170s linear infinite;
   }
+
   .scrollWraper2 {
     gap: 1rem;
     object-fit: contain;
     animation-play-state: running;
     animation: scrollAnimation 255450s linear infinite;
   }
+
   @keyframes scrollAnimation {
     0% {
       transform: translateX(85vw);
     }
+
     100% {
       transform: translateX(-10000%);
     }
   }
+
   @keyframes scrollAnimation2 {
     0% {
       transform: translateX(-26399rem);
     }
+
     100% {
       transform: translateX(0%);
     }
   }
+
   @media (max-width: 768px) {
     @keyframes scrollAnimation2 {
       0% {
         transform: translateX(-26399rem);
       }
+
       100% {
         transform: translateX(0%);
       }
     }
   }
+
   .scrollWraper:hover {
-    animation-play-state: paused; /* Pausing animation on hover */
+    animation-play-state: paused;
+    /* Pausing animation on hover */
   }
+
   .scrollWraper2:hover {
-    animation-play-state: paused; /* Pausing animation on hover */
+    animation-play-state: paused;
+    /* Pausing animation on hover */
+  }
+}
+
+.parentholder {
+  position: relative;
+  margin-top: 4vw !important;
+  @media (max-width: 660px) {
+    margin-top: 10vw !important;
+  }
+}
+
+#rangoliholder {
+  position: absolute;
+  top: 42.5%;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25vw;
+  @media (max-width: 660px) {
+    width: 40vw;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+#bothimgholder {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  @media (max-width: 660px) {
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  height: 30vh;
+  // background-color: red;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+#sideflowerholder {
+  width: 50%;
+  height: auto;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#reversesideflowerholder {
+  flex: none;
+  order: 1;
+  z-index: -1;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: auto;
+  transform: scaleX(-1);
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import "./sponsors.scss";
 import useSetTitle from "../../Hooks/SetTitle";
+import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 
 const SponsorPage = () => {
   useSetTitle("Sponsors | Posua");
@@ -10,12 +11,13 @@ const SponsorPage = () => {
     <div>
       <body>
         <div className="first">
-          <div className="heading">
+          {/* <div className="heading">
             <img
               src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041756/OBJECTS_y61orj.png"
               alt=""
             />
-          </div>
+          </div> */}
+          <LottieHeading title="SPONSORS" />
           <div className="sponsorContainer">
             <div className="sponsor">
               <img

@@ -5,14 +5,15 @@
   min-height: 100vh;
   overflow: hidden;
   // padding-top: 5vw;
-  @media (max-width: 660px) {
-    padding-top: 10vw;
-  }
+  // @media (max-width: 660px) {
+  //   padding-top: 10vw;
+  // }
 }
 .InvitationClass {
   background-color: rgb(228, 197, 156);
-  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
-    url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
+  position: relative;
+  // background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
+  //   url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
   background-position: right, left;
   background-repeat: no-repeat;
   display: flex;
@@ -25,6 +26,41 @@
   }
 }
 
+#leftrangoliholderinvi {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 25vw;
+  height: auto;
+  @media (max-width: 660px) {
+    display: none;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+}
+
+#rightrangoliholderinvi {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  width: 21vw;
+  height: auto;
+  @media (max-width: 660px) {
+    display: none;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+}
 #pepaimgholder {
   width: 50vw;
   height: auto;
@@ -43,12 +79,12 @@
 }
 
 .InvitationImage {
-  width: 65vw;
+  width: 60vw;
   // height: 100vh;
   margin: 0 auto;
   @media (max-width: 660px) {
     width: 90vw;
-    margin: 15vw auto 0 auto;
+    margin: 1vw auto 0 auto;
   }
   img {
     width: 100%;

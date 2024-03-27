@@ -1,25 +1,67 @@
 .AboutClass {
   background-color: rgb(228, 197, 156);
-  background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
-    url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
+  // background-image: url(https://res.cloudinary.com/dl0knguhb/image/upload/v1710772395/posua%2024/Group_di1ejb.svg),
+  //   url(https://res.cloudinary.com/dl0knguhb/image/upload/v1711218036/sideFlower_sflgiz.svg);
   background-position: right, left;
   background-repeat: no-repeat;
+  background-size: 25vw, 2vw;
   padding: 5vw 0;
+  padding-top: 0;
+  position: relative;
   @media (max-width: 660px) {
     background-image: none;
   }
 }
+
+#leftrangoliholder {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 25vw;
+  height: auto;
+  @media (max-width: 660px) {
+    display: none;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+}
+
+#rightrangoliholder {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  width: 21vw;
+  height: auto;
+  @media (max-width: 660px) {
+    display: none;
+  }
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    pointer-events: none;
+  }
+}
+
 .AboutText {
-  width: 40%;
-  margin-left: 30%;
-  height: 50%;
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -2.5vw;
   @media (max-width: 660px) {
     width: 92%;
     margin-left: auto;
     margin-right: auto;
     height: auto;
-    padding-top: 10vw;
+    // padding-top: 10vw;
   }
+
   p {
     text-align: center;
     background: rgba(152, 65, 68, 1);
@@ -33,14 +75,16 @@
     text-align: center;
     font-family: "DM Serif Display", serif;
     font-size: 1.25vw;
-    line-height: 1.6;
+    line-height: 1.45;
     font-style: italic;
+
     @media (max-width: 660px) {
       font-size: 4vw;
       line-height: 2;
     }
   }
 }
+
 @media screen and (max-width: 1128px) {
   .AboutClass {
     background-position:
@@ -104,11 +148,13 @@
   width: 50vw;
   height: auto;
   margin: 0 auto 3vw auto;
+
   @media (max-width: 660px) {
     width: 80vw;
     height: auto;
     margin: 0 auto 0vw auto;
   }
+
   img {
     display: block;
     width: 100%;
@@ -123,15 +169,28 @@
   }
 }
 
+@keyframes rotateCircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 660px) {
   #cicularrangoliholder {
     width: 95%;
     height: auto;
     margin: 5vw auto;
+    overflow: hidden;
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      animation: rotateCircle 50s linear infinite;
+      mix-blend-mode: multiply;
+      overflow: hidden;
     }
   }
 }
