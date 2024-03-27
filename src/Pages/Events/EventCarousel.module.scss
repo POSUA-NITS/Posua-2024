@@ -44,46 +44,67 @@
 
 @media screen and (max-width: 1000px) {
   .cardContainer {
-    left: 35vw;
-    top: 50vh;
+    left: 18vw;
+    top: 30vh;
+    scale: 0.5;
   }
 }
 
-@media screen and (max-width: 815px) {
-  .cardContainer {
-    left: 30vw;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .cardContainer {
-    left: 25vw;
-    scale: 0.8;
-  }
-}
-
-@media screen and (max-width: 540px) {
-  .cardContainer {
-    left: 20vw;
-  }
-}
-
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 821px) {
   .cardContainer {
     left: 15vw;
   }
 }
 
+@media screen and (max-width: 620px) {
+  .cardContainer {
+    left: 15vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    left: 13vw;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cardContainer {
+    left: 12vw;
+    top: 35vh;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .cardContainer {
+    left: 10vw;
+    top: 38vh;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardContainer {
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .cardContainer {
+    left: 8vw;
+    scale: 0.4;
+  }
+}
+
 @media screen and (max-width: 390px) {
   .cardContainer {
-    top: 60vh;
-    left: 10vw;
+    left: 5vw;
+    scale: 0.3;
   }
 }
 
 @media screen and (max-width: 365px) {
   .cardContainer {
-    left: 5vw;
+    left: 2vw;
   }
 }
 
