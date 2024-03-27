@@ -5,13 +5,14 @@ import ArtistCard from "../../Components/Artist/ArtistCard";
 import ArtistBigCard from "../../Components/Artist/ArtistBigCard";
 import "swiper/css";
 import useSetTitle from "../../Hooks/SetTitle";
+import ArtistAnimation from "../../Components/Artist/ArtistAnimation";
 
 const ArtistPage = () => {
   useSetTitle("Artists | Posua");
   const artImg =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711097529/Frame_2608572_t5qpir.jpg?_s=public-apps";
-  const artImg2 =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711098320/Frame_2608573_tvqzoe.jpg?_s=public-apps";
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711559936/PREVIOUS_dibsut.jpg?_s=public-apps";
+  // const artImg2 =
+  //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711098320/Frame_2608573_tvqzoe.jpg?_s=public-apps";
   const flower =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037169/Group1_edn1zl.jpg?_s=public-apps";
 
@@ -22,8 +23,8 @@ const ArtistPage = () => {
   const [active1, setActive1] = useState(1);
   const [active2, setActive2] = useState(1);
 
-  // const jaapi =
-  //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711053903/OBJECTS_1_gvgj7g.jpg?_s=public-apps";
+  const jaapi =
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711053903/OBJECTS_1_gvgj7g.jpg?_s=public-apps";
 
   const prevArtistData = [
     {
@@ -68,14 +69,8 @@ const ArtistPage = () => {
   ];
 
   return (
-    <main className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden">
-      <div className=" h-[3rem] md:h-[7rem] my-[3rem] flex z-[50] relative">
-        <img src={artImg} alt="Art" className="w-full h-full object-cover" />
-        {/* <div className="flex justify-center items-center absolute w-[100%] gap-[7.8rem]">
-          <div className="h-[2.8rem] w-[2.8rem]"><img src={jaapi} alt="jaapi" className="h-full w-full object-cover" style={{ animationDuration: "4s" }}/></div>
-          <div className="h-[2.8rem] w-[2.8rem]"><img src={jaapi} alt="jaapi" className="h-full w-full object-cover"/></div>
-        </div> */}
-      </div>
+    <main className="min-h-full min-w-full flex flex-col relative justify-center items-center overflow-hidden mb-[4rem]">
+      <ArtistAnimation imgUrl={artImg} jaapi={jaapi} text="UPCOMING ARTISTS" />
 
       {/* ************Previous Artist desktop view start1***************** */}
       <div className="mt-[5rem] z-[50] hidden md:block">
@@ -151,9 +146,10 @@ const ArtistPage = () => {
 
       {/* ************Previous Artist mobile view end2***************** */}
 
-      <div className=" h-[3.5rem] md:h-[7rem] mt-[4rem] mb-[3rem] flex z-[50]">
+      {/* <div className=" h-[3.5rem] md:h-[7rem] mt-[4rem] mb-[3rem] flex z-[50]">
         <img src={artImg2} alt="Art" className="w-full h-full object-cover" />
-      </div>
+      </div> */}
+      <ArtistAnimation imgUrl={artImg} jaapi={jaapi} text="PREVIOUS ARTISTS" />
 
       {/* ************Upcoming Artist desktop start***************** */}
       <div className="my-[5rem] md:flex gap-[7rem] hidden">
