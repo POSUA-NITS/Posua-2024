@@ -57,15 +57,15 @@ const Navbar = () => {
     setIsMenuOpen(false);
   };
 
-  useEffect(() => {
-    if (isMenuOpen) {
-      document.body.style.overflow = "hidden";
-      document.body.style.height = "100vh";
-    } else {
-      document.body.style.overflow = "auto";
-      document.body.style.height = "auto";
-    }
-  }, [isMenuOpen]);
+  // useEffect(() => {
+  //   if (isMenuOpen) {
+  //     document.body.style.overflow = "hidden";
+  //     document.body.style.height = "100vh";
+  //   } else {
+  //     document.body.style.overflow = "auto";
+  //     document.body.style.height = "auto";
+  //   }
+  // }, [isMenuOpen]);
   return (
     <div
       className={`${styles.navbar} ${
