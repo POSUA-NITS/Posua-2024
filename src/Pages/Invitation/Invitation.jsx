@@ -6,12 +6,20 @@ const Invitation = () => {
   return (
     <div className={styles.superParent}>
       <div className={styles.InvitationClass}>
-        {/* <div id={styles.pepaimgholder}>
+        <div id={styles.leftrangoliholderinvi}>
           <img
-            src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711283241/Frame_5_1_tapnex.png"
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/leftrangoli_jp6whi.png"
             alt=""
           />
-        </div> */}
+        </div>
+
+        <div id={styles.rightrangoliholderinvi}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/rightrangoli_jvpnus.png"
+            alt=""
+          />
+        </div>
+
         <LottieHeading title="INVITATION" />
         <div className={styles.InvitationImage}>
           <img
