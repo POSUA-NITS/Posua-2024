@@ -6,4 +6,15 @@ import Borhomthuri from "../Components/Borhomthuri/Borhomthuri";
 import Gallery from "./Gallery/Gallery";
 import ArtistPage from "./Artist/ArtistPage";
 import NotFound from "./NotFound/NotFound";
-export { Events, Home, Team, Sponsors, Borhomthuri, Gallery, ArtistPage, NotFound };
+import Invitation from "./Invitation/Invitation";
+export {
+  Events,
+  Home,
+  Team,
+  Sponsors,
+  Borhomthuri,
+  Gallery,
+  ArtistPage,
+  NotFound,
+  Invitation,
+};
