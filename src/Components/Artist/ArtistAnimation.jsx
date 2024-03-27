@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "../Borhomthuri/Pepa.module.scss";
 const ArtistAnimation = ({ imgUrl, jaapi, text }) => {
   return (
     <div className=" h-[4.5rem] md:h-[7rem] my-[3rem] flex z-[50] justify-center items-center relative">
@@ -23,10 +23,10 @@ const ArtistAnimation = ({ imgUrl, jaapi, text }) => {
         </div>
       </div>
       <div
-        className="absolute text-[1.1rem] md:text-[1.7rem]"
+        className={`absolute text-[1.1rem] md:text-[1.7rem] ${styles.setfont}`}
         style={{ color: "#CB2229", fontWeight: "600" }}
       >
-        {text}
+        <p>{text}</p>
       </div>
     </div>
   );
