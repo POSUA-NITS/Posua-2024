@@ -1,0 +1,225 @@
+.Events {
+  visibility: visible;
+  margin: 0 auto;
+  width: 15rem;
+  height: 24rem;
+  /* perspective: 500px; */
+  transform-style: preserve-3d;
+}
+
+@media screen and (min-width: 350px) {
+  .Events {
+    width: 17rem;
+  }
+}
+
+@media screen and (min-width: 380px) {
+  .Events {
+    width: 20rem;
+  }
+}
+
+.cardContainer {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  left: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -1rem));
+  filter: blur(calc(var(--abs-offset) * 1px));
+  transition: all 0.3s ease-out;
+}
+
+@media screen and (min-width: 1001px) {
+  .cardContainer {
+    left: 50vw;
+    top: 30vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .cardContainer {
+    left: 35vw;
+    top: 50vh;
+  }
+}
+
+@media screen and (max-width: 815px) {
+  .cardContainer {
+    left: 30vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .cardContainer {
+    left: 25vw;
+    scale: 0.8;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .cardContainer {
+    left: 20vw;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .cardContainer {
+    left: 15vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .cardContainer {
+    top: 60vh;
+    left: 10vw;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .cardContainer {
+    left: 5vw;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  color: #000000;
+  text-align: justify;
+  transition: all 0.3s ease-out;
+  color: #ffffff;
+
+  .h2 {
+    text-align: center;
+    font-size: 0.2rem;
+    font-weight: bold;
+    margin: 0 0 0.7em;
+    color: #ffffff;
+  }
+
+  .p,
+  .h2 {
+    transition: all 0.3s ease-out;
+    opacity: var(--active);
+    text-align: center;
+  }
+
+  .p {
+    color: #1b9889;
+  }
+
+  .details {
+    margin-top: 80%;
+  }
+}
+
+// .carousel {
+//     background-color: blue;
+// }
+
+@media screen and (min-width: 400px) {
+  .cardContainer {
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -4rem));
+  }
+}
+
+@media screen and (min-width: 710px) {
+  .cardContainer {
+    transform: scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+  }
+
+  .bubbleCont {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 22rem;
+    column-gap: 0.5rem;
+
+    .active,
+    .inactive {
+      height: 0.5rem;
+      width: 0.5rem;
+      border: 0px solid transparent;
+      border-radius: 1.25rem;
+      background-color: rgba(27, 152, 137, 0.5);
+    }
+
+    .active {
+      background-color: #1b9889;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .Events {
+    width: 28rem;
+    height: 28rem;
+  }
+}
+
+.cardParent {
+  visibility: visible;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0;
+  margin: 2rem;
+}
+
+.card {
+  background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1709721990/GDSC%20images/bg-pattern-bottom-right_bj7izm.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1709721988/GDSC%20images/bg-pattern-bottom-left_doblwp.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1709721982/GDSC%20images/bg-pattern-top-left_xijini.svg");
+  background-repeat: no-repeat;
+  background-position:
+    200% 200%,
+    -200% 200%,
+    -200% -200%;
+  width: 15rem;
+  height: 18rem;
+  // box-shadow: 0 0 1rem #828283;
+  border: 0px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition-duration: 0.5s;
+
+  .name {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    transition-duration: 0.5s;
+  }
+
+  .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 0 solid transparent;
+    margin: 0 auto;
+    transition-duration: 0.5s;
+    z-index: 1;
+  }
+}
+
+// @media screen and (max-width:500px) {
+//     .cardParent {
+//         display: none;
+//     }
+// }
