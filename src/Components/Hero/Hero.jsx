@@ -1,20 +1,16 @@
 import React, { useState, useEffect } from "react";
+import ScrollerJapi from "../../Pages/Invitation/ScrollerJapi";
 import styles from "./Hero.module.scss";
 
 const Hero = () => {
   const [stopAnimation, setStopAnimation] = useState(false);
   const [windowSize, setWindowSize] = useState();
-  const [delay, setDelay] = useState(false);
   const rhino =
     "https://res.cloudinary.com/dex25uzgp/image/upload/v1711377908/Posua/rhino-kela_r0cmqd.gif";
   const startAnimation = () => {
     setTimeout(() => {
       setStopAnimation(true);
     }, 4000);
-
-    setTimeout(() => {
-      setDelay(true);
-    }, 4400);
   };
 
   useEffect(() => {
@@ -38,19 +34,19 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className=" h-[100vh] w-[100vw]">
+    <div className=" h-[100vh] w-[100vw] flex justify-center items-center">
       {!stopAnimation && (
         <div
-          className={`${styles.container} bg-white h-[100vh] w-[100vw] flex justify-center items-center absolute top-0`}
+          className={`${styles.main} bg-white z-[10000] h-[100vh] w-[100vw] flex justify-center items-center absolute top-0`}
         >
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711272596/VectorOuterMostMost_oerg7f.jpg?_s=public-apps"
-            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100] bg-cover h-[100vh] w-[100vw]`}
+            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100]  h-[100vh] w-[100vw]`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711269677/VectorOutermost_rkwlvo.jpg?_s=public-apps"
-            className={`${styles.jungle_left} absolute flex justify-center items-center z-[95] bg-cover bottom-0 h-[100vh] w-[55vw]`}
+            className={`${styles.jungle_left} absolute flex justify-center items-center z-[95]  bottom-0 h-[100vh] w-[55vw]`}
             alt=""
           />
           <img
@@ -85,45 +81,45 @@ const Hero = () => {
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow2_qpujrs.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow2_qpujrs.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow1_pl5tdl.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow1_pl5tdl.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] bg-cover`}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281984/GroupRays_nzqf91.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover  `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100]   `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281984/GroupRays_nzqf91.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] bg-cover  `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80]   `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711269677/VectorDimShine_t0h3pt.jpg?_s=public-apps"
-            className={`${styles.jungle_outer4} absolute flex justify-center items-center z-[10] w-[80vw] h-[80vh] bg-cover`}
+            className={`${styles.jungle_outer4} absolute flex justify-center items-center z-[10] w-[80vw] h-[80vh] `}
             alt=""
           />
         </div>
       )}
-      {stopAnimation && delay && windowSize > 800 && (
-        <div className=" h-[100vh] ">
+      {windowSize > 800 && (
+        <div className=" h-[100vh] w-100vw absolute left-0">
           <div
-            className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center items-start absolute top-0`}
+            className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center absolute top-0`}
           >
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711420592/foreground_land_mygpzp_2_gxrznp.jpg?_s=public-apps"
@@ -138,11 +134,6 @@ const Hero = () => {
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281990/VectorRayPoint_rgwhmn.jpg?_s=public-apps"
               className={`${styles.sun_main} flex justify-center items-start absolute overflow-x-hidden top-[-10vh] object-contain h-[100vh] z-[50]`}
-              alt=""
-            />
-            <img
-              src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711502926/posua_logo_1_to45u1.jpg?_s=public-apps"
-              className={`${styles.posua_logo} absolute flex justify-center items-start object-contain overflow-hidden h-[45vh] w-[40vw] z-[49] top-[-5vh]`}
               alt=""
             />
             <div className={`${styles.parrot_tree} `}>
@@ -202,8 +193,33 @@ const Hero = () => {
           </div>
         </div>
       )}
+      {stopAnimation && (
+        <div className="animation_slideInto flex justify-center items-start">
+          <img
+            src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711502926/posua_logo_1_to45u1.jpg?_s=public-apps"
+            className={`${styles.posua_logo_mobile} absolute flex justify-center items-start object-contain overflow-hidden h-[60vh] w-[100vw] z-[49] left-5 top-[0%]`}
+            alt=""
+          />
+          <div
+            className={`${styles.jaapi_arrow} absolute z-[55] top-[40vh] sm:top-[50] flex-col justify-center items-center text-center  ${windowSize > 440 ? "left-[30%]" : "left-[25%]"} sm:left-[40%]`}
+            onClick={() => {
+              window.scrollTo({
+                top: window.innerHeight,
+                behavior: "smooth",
+              });
+            }}
+          >
+            <div>
+              <ScrollerJapi type="hero" windowSize={windowSize} />
+            </div>
+            <div className={`${styles.Jaapi_text} text-white text-lg z-[49] mt-[-50px] `}>
+              Slide Down
+            </div>
+          </div>
+        </div>
+      )}
 
-      {stopAnimation && delay && windowSize < 800 && (
+      {windowSize < 800 && (
         <div className=" h-[100vh] w-[100vw] ">
           <div
             className={`${styles.landing} h-[100vh] w-[100vw] object-contain flex justify-center items-start absolute top-0`}
@@ -216,11 +232,6 @@ const Hero = () => {
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281990/VectorRayPoint_rgwhmn.jpg?_s=public-apps"
               className={`${styles.sun_main} top-[-10vh] object-contain h-[100vh] z-[50]`}
-              alt=""
-            />
-            <img
-              src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711502926/posua_logo_1_to45u1.jpg?_s=public-apps"
-              className={`${styles.posua_logo_mobile} absolute flex justify-center items-start object-contain overflow-hidden h-[60vh] w-[100vw] z-[49] top-[5vh]`}
               alt=""
             />
             <div className={`${styles.parrot_tree} `}>
