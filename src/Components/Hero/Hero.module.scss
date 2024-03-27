@@ -1,0 +1,316 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(178deg, #39b6d8 -0.36%, #ffdc97 74.6%, #5cbdcd 92.2%);
+}
+
+@layer utilities {
+  .container {
+    --tw-brightness: 0.5;
+    filter: brightness(var(--tw-brightness));
+    animation-name: brightness;
+    animation-duration: 4s;
+    animation-delay: 1s;
+  }
+
+  .jungle_rays {
+    width: 0;
+    opacity: 0.25;
+    animation-name: rays;
+    animation-duration: 3s;
+    animation-delay: 1s;
+  }
+
+  .jungle_sunrays {
+    width: 50vw;
+    animation-name: sunrays;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: 1;
+  }
+
+  .jungle_outer1 {
+    width: 100vw;
+    animation-name: outer1;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .jungle_outer2 {
+    width: 100vw;
+    animation-name: outer2;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .jungle_outer3 {
+    width: 100vw;
+    animation-name: outer3;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .jungle_outerCircular {
+    width: 100vw;
+    animation-name: outerCircular;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+  .jungle_outer4 {
+    width: 100vw;
+    animation-name: outer4;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+
+  .jungle_left {
+    left: -10vh;
+    animation-name: left;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+
+  .jungle_right {
+    right: 0;
+    animation-name: right;
+    animation-duration: 4s;
+    animation-delay: 2s;
+  }
+
+  .posua_logo {
+    animation-name: logo_slide_down;
+    animation-duration: 4s;
+  }
+
+  .jaapi_arrow {
+    animation-name: logo_slide_up;
+    animation-duration: 4s;
+  }
+
+  .cloud_L2R {
+    animation-name: cloud_L2R;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+  }
+
+  .cloud_R2L {
+    animation-name: cloud_R2L;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes rays {
+    0% {
+      width: 0;
+      height: 0;
+      opacity: 0.25;
+    }
+    10% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 1;
+    }
+    100% {
+      width: 100vw;
+      height: 100vh;
+      opacity: 0;
+    }
+  }
+
+  @keyframes brightness {
+    0% {
+      --tw-brightness: 0.5;
+    }
+    10% {
+      --tw-brightness: 0.5;
+    }
+    20% {
+      --tw-brightness: 0.75;
+    }
+    30% {
+      --tw-brightness: 1.5;
+    }
+    40% {
+      --tw-brightness: 2.25;
+    }
+    50% {
+      --tw-brightness: 2.5;
+    }
+    60% {
+      --tw-brightness: 2.75;
+    }
+    70% {
+      --tw-brightness: 3;
+    }
+    80% {
+      --tw-brightness: 3.5;
+    }
+    90% {
+      --tw-brightness: 5;
+    }
+    100% {
+      --tw-brightness: 10;
+    }
+  }
+
+  @keyframes outer1 {
+    0% {
+      width: 100vw;
+      transform: scale(1);
+    }
+    50% {
+      width: 100vw;
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+      width: 200vw;
+    }
+  }
+
+  @keyframes sunrays {
+    0% {
+      width: 50vw;
+      opacity: 0.5;
+    }
+    10% {
+      width: 100vw;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes outer2 {
+    0% {
+      width: 100vw;
+      transform: scale(1);
+    }
+    50% {
+      width: 100vw;
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes outer3 {
+    0% {
+      width: 100vw;
+      transform: scale(1);
+    }
+    50% {
+      width: 200vw;
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes outerCircular {
+    0% {
+      width: 100vw;
+      transform: scale(1);
+    }
+    50% {
+      width: 100vw;
+      transform: scale(2);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes outer4 {
+    0% {
+      width: 100vw;
+      transform: scale(1);
+    }
+    50% {
+      width: 100vw;
+      transform: scale(1.5);
+      opacity: 0;
+    }
+    100% {
+      width: 200vw;
+      transform: scale(2);
+      opacity: 0;
+    }
+  }
+
+  @keyframes left {
+    0% {
+      left: -5vw;
+    }
+    50% {
+      left: -100vw;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes right {
+    0% {
+      right: 0;
+    }
+    50% {
+      right: -100vw;
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes logo_slide_down {
+    0% {
+      top: -20%;
+    }
+    100% {
+      top: -5%;
+    }
+  }
+
+  @keyframes jaapi_slide_up {
+    0% {
+      bottom: -20%;
+    }
+    100% {
+      top: 10%;
+    }
+  }
+
+  @keyframes cloud_L2R {
+    0% {
+      left: 0%;
+    }
+    50% {
+      left: 40%;
+    }
+    100% {
+      left: 0%;
+    }
+  }
+
+  @keyframes cloud_R2L {
+    0% {
+      right: 0%;
+    }
+    50% {
+      right: 50%;
+    }
+    100% {
+      right: 0%;
+    }
+  }
+}
