@@ -1,6 +1,5 @@
 .AppContainer {
   overflow-x: hidden;
-
   .Wrapper {
     overflow-x: hidden;
   }
@@ -14,13 +13,13 @@
     // transform: translateX(0rem);
     object-fit: contain;
     animation-play-state: running;
-    animation: scrollAnimation2 2166s linear infinite;
+    animation: scrollAnimation2 2170s linear infinite;
   }
   .scrollWraper2 {
     gap: 1rem;
     object-fit: contain;
     animation-play-state: running;
-    animation: scrollAnimation 229990s linear infinite;
+    animation: scrollAnimation 255450s linear infinite;
   }
   @keyframes scrollAnimation {
     0% {
@@ -41,7 +40,7 @@
   @media (max-width: 768px) {
     @keyframes scrollAnimation2 {
       0% {
-        transform: translateX(-11995rem);
+        transform: translateX(-26399rem);
       }
       100% {
         transform: translateX(0%);
