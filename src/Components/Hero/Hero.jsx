@@ -38,19 +38,19 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className=" h-[100vh] w-[100vw] flex justify-center items-center">
+    <div className=" h-[100vh] w-[100vw]">
       {!stopAnimation && (
         <div
           className={`${styles.container} bg-white h-[100vh] w-[100vw] flex justify-center items-center absolute top-0`}
         >
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711272596/VectorOuterMostMost_oerg7f.jpg?_s=public-apps"
-            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100]  h-[100vh] w-[100vw]`}
+            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100] bg-cover h-[100vh] w-[100vw]`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711269677/VectorOutermost_rkwlvo.jpg?_s=public-apps"
-            className={`${styles.jungle_left} absolute flex justify-center items-center z-[95]  bottom-0 h-[100vh] w-[55vw]`}
+            className={`${styles.jungle_left} absolute flex justify-center items-center z-[95] bg-cover bottom-0 h-[100vh] w-[55vw]`}
             alt=""
           />
           <img
@@ -85,45 +85,45 @@ const Hero = () => {
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow2_qpujrs.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow2_qpujrs.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow1_pl5tdl.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281983/GroupSunRaysGlow1_pl5tdl.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] bg-cover`}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281984/GroupRays_nzqf91.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100]   `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[100] bg-cover  `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711281984/GroupRays_nzqf91.jpg?_s=public-apps"
-            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80]   `}
+            className={`${styles.jungle_rays} absolute flex justify-center items-center z-[80] bg-cover  `}
             alt=""
           />
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711269677/VectorDimShine_t0h3pt.jpg?_s=public-apps"
-            className={`${styles.jungle_outer4} absolute flex justify-center items-center z-[10] w-[80vw] h-[80vh] `}
+            className={`${styles.jungle_outer4} absolute flex justify-center items-center z-[10] w-[80vw] h-[80vh] bg-cover`}
             alt=""
           />
         </div>
       )}
       {stopAnimation && delay && windowSize > 800 && (
-        <div className=" h-[100vh] w-100vw absolute left-0">
+        <div className=" h-[100vh] ">
           <div
-            className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center absolute top-0`}
+            className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center items-start absolute top-0`}
           >
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711420592/foreground_land_mygpzp_2_gxrznp.jpg?_s=public-apps"

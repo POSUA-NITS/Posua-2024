@@ -8,11 +8,6 @@
   background: linear-gradient(178deg, #39b6d8 -0.36%, #ffdc97 74.6%, #5cbdcd 92.2%);
 }
 
-* {
-  padding: 0%;
-  margin: 0%;
-}
-
 @layer utilities {
   .container {
     --tw-brightness: 0.5;
@@ -52,7 +47,6 @@
   }
   .jungle_outer3 {
     width: 100vw;
-    opacity: 0.5;
     animation-name: outer3;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -71,14 +65,14 @@
   }
 
   .jungle_left {
-    // left: -10vh;
+    left: -10vh;
     animation-name: left;
     animation-duration: 4s;
     animation-delay: 2s;
   }
 
   .jungle_right {
-    // right: 0;
+    right: 0;
     animation-name: right;
     animation-duration: 4s;
     animation-delay: 2s;
