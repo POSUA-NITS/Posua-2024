@@ -5,6 +5,19 @@ const About = () => {
   return (
     <div>
       <div className={styles.AboutClass}>
+        <div id={styles.leftrangoliholder}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/leftrangoli_jp6whi.png"
+            alt=""
+          />
+        </div>
+
+        <div id={styles.rightrangoliholder}>
+          <img
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/rightrangoli_jvpnus.png"
+            alt=""
+          />
+        </div>
         <LottieHeading title="ABOUT US" />
         {/* <div id={styles.pepaimgholder}>
           <img
