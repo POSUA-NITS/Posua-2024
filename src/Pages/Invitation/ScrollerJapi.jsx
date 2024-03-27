@@ -1,16 +1,12 @@
 import React from "react";
 import styles from "./ScrollerJapi.module.scss";
-const ScrollerJapi = () => {
-  // const[IsHover, setIsHover] = useState(false);
-  // const handleMouseEnter = () =>{
-  //     setIsHover(true);
-  // };
-  // const handleMouseLeave = () =>{
-  //     setIsHover(false);
-  // };
+const ScrollerJapi = ({ type, windowSize }) => {
+  console.log(type);
   return (
     <div>
-      <div className={styles.ScrollerJapiClass}>
+      <div
+        className={`${styles.ScrollerJapiClass} ${type !== "hero" && windowSize < 660 && "hidden"}`}
+      >
         <img
           alt="Line"
           src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711315135/Vector_1_euyeze.png"

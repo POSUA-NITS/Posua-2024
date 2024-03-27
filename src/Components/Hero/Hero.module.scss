@@ -1,6 +1,7 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 
 .landing {
   width: 100vw;
@@ -8,8 +9,12 @@
   background: linear-gradient(178deg, #39b6d8 -0.36%, #ffdc97 74.6%, #5cbdcd 92.2%);
 }
 
+.Jaapi_text {
+  font-family: "Atlata";
+}
+
 @layer utilities {
-  .container {
+  .main {
     --tw-brightness: 0.5;
     filter: brightness(var(--tw-brightness));
     animation-name: brightness;
@@ -84,11 +89,12 @@
   }
   .posua_logo_mobile {
     animation-name: logo_slide_down_mobile;
-    animation-duration: 4s;
+    animation-duration: 2s;
   }
 
   .jaapi_arrow {
-    animation-name: logo_slide_up;
+    z-index: 10000;
+    animation-name: jaapi_slide_up;
     animation-duration: 4s;
   }
 
@@ -291,30 +297,21 @@
     }
   }
 
-  @keyframes logo_slide_down {
-    0% {
-      top: -20%;
-    }
-    100% {
-      top: -5%;
-    }
-  }
-
   @keyframes logo_slide_down_mobile {
     0% {
-      top: -20%;
+      top: -10%;
     }
     100% {
-      top: 5%;
+      top: 0%;
     }
   }
 
   @keyframes jaapi_slide_up {
     0% {
-      bottom: -20%;
+      top: 100vh;
     }
     100% {
-      top: 10%;
+      top: 40vh;
     }
   }
 
