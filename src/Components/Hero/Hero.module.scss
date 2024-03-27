@@ -8,6 +8,11 @@
   background: linear-gradient(178deg, #39b6d8 -0.36%, #ffdc97 74.6%, #5cbdcd 92.2%);
 }
 
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
 @layer utilities {
   .container {
     --tw-brightness: 0.5;
@@ -47,6 +52,7 @@
   }
   .jungle_outer3 {
     width: 100vw;
+    opacity: 0.5;
     animation-name: outer3;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -65,14 +71,14 @@
   }
 
   .jungle_left {
-    left: -10vh;
+    // left: -10vh;
     animation-name: left;
     animation-duration: 4s;
     animation-delay: 2s;
   }
 
   .jungle_right {
-    right: 0;
+    // right: 0;
     animation-name: right;
     animation-duration: 4s;
     animation-delay: 2s;
@@ -80,6 +86,10 @@
 
   .posua_logo {
     animation-name: logo_slide_down;
+    animation-duration: 4s;
+  }
+  .posua_logo_mobile {
+    animation-name: logo_slide_down_mobile;
     animation-duration: 4s;
   }
 
@@ -125,26 +135,41 @@
     10% {
       --tw-brightness: 0.5;
     }
+    15% {
+      --tw-brightness: 0.625;
+    }
     20% {
       --tw-brightness: 0.75;
+    }
+    25% {
+      --tw-brightness: 1.125;
     }
     30% {
       --tw-brightness: 1.5;
     }
+    35% {
+      --tw-brightness: 1.75;
+    }
     40% {
       --tw-brightness: 2.25;
     }
-    50% {
+    45% {
       --tw-brightness: 2.5;
     }
-    60% {
+    50% {
       --tw-brightness: 2.75;
     }
-    70% {
+    55% {
       --tw-brightness: 3;
     }
-    80% {
+    60% {
       --tw-brightness: 3.5;
+    }
+    70% {
+      --tw-brightness: 3.75;
+    }
+    80% {
+      --tw-brightness: 4;
     }
     90% {
       --tw-brightness: 5;
@@ -278,6 +303,15 @@
     }
     100% {
       top: -5%;
+    }
+  }
+
+  @keyframes logo_slide_down_mobile {
+    0% {
+      top: -20%;
+    }
+    100% {
+      top: 5%;
     }
   }
 

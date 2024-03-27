@@ -12,7 +12,7 @@ const Home = () => {
     setDelay(true);
   }, 4000);
   return (
-    <div className={`${styles.home} ${!delay && "bg-white"}`}>
+    <div className={`${styles.home}`}>
       <Hero />
       {delay && (
         <div>
