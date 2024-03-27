@@ -104,8 +104,13 @@ const Team = () => {
         </div>
       </div>
       <div
-        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[7rem]  md:px-[10rem] z-[2] font-semibold"
-        style={{ color: "#9B2125", fontFamily: "Alata" }}
+        className="text-center md:text-[1.4rem] px-[2rem] sm:px-[7rem]  md:px-[10rem] z-[2]"
+        style={{
+          color: "#9B2125",
+          fontFamily: "DM Serif Display | serif",
+          lineHeight: "1.8",
+          fontStyle: "italic",
+        }}
       >
         With the arrival of spring and the departure of winter days, our Mother Nature
         expresses her joy of welcoming the calming rejuvenation via greenery and
