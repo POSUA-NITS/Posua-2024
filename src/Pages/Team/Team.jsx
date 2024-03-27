@@ -4,6 +4,7 @@ import TeamCard from "../../Components/TeamPageUI/TeamCard";
 import PatronCard from "../../Components/TeamPageUI/PatronCard";
 import "swiper/css";
 import useSetTitle from "../../Hooks/SetTitle";
+import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 const Team = () => {
   useSetTitle("Team | Posua");
   const [active1, setActive1] = useState(1);
@@ -14,12 +15,7 @@ const Team = () => {
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037538/team_fyxmgg.jpg?_s=public-apps";
   const topImage =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711024939/magh_bihu_1_2_t4nl8t.jpg?_s=public-apps";
-  const unionBodyImg =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711025427/OBJECTS_t50kgh.jpg?_s=public-apps";
-  const coreTeamImg =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711025427/Frame_2608666_in8fmz.jpg?_s=public-apps";
-  const techTeamImg =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711025427/Frame_2608668_xnvc5t.jpg?_s=public-apps";
+
   const flower =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037169/Group1_edn1zl.jpg?_s=public-apps";
   // const jaapi = "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711016549/Group_2608542_ylhq2y.jpg?_s=public-apps";
@@ -79,10 +75,7 @@ const Team = () => {
   ];
 
   return (
-    <div
-      className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden"
-      style={{ background: "linear-gradient(130deg, #FFD0C6 5.11%, #FFE2A9 90.22%)" }}
-    >
+    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden">
       {/* <div
         style={{ fontFamily: "Abril Fatface" }}
         className="text-[2rem] md:text-[2.5rem] relative left-[1rem] md:left-[1.5rem] font-semibold"
@@ -140,9 +133,10 @@ const Team = () => {
           return <PatronCard key={profile.id} {...profile} index={i} />;
         })}
       </div>
-      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
+      {/* <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
         <img src={unionBodyImg} alt="Union Body" className="w-full" />
-      </div>
+      </div> */}
+      <LottieHeading title="UNION BODY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
       <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
@@ -211,9 +205,7 @@ const Team = () => {
       </div>
       {/* *****************TeamCard for mobile view end2***************** */}
 
-      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
-        <img src={coreTeamImg} alt="Core Team" className="w-full" />
-      </div>
+      <LottieHeading title="CORE TEAM" />
 
       {/* *****************TeamCard for desktop view start3***************** */}
       <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
@@ -276,9 +268,7 @@ const Team = () => {
       </div>
       {/* *****************TeamCard for mobile view end4***************** */}
 
-      <div className="mx-auto my-[4rem] w-[18rem] sm:w-[25rem]">
-        <img src={techTeamImg} alt="Tech Team" className="w-full" />
-      </div>
+      <LottieHeading title="TECH TEAM" />
 
       {/* *****************TeamCard for desktop view start5***************** */}
       <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">

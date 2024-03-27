@@ -7,10 +7,9 @@ const Home = () => {
   useSetTitle("Home | Posua");
   return (
     <div className={styles.home}>
-      Home page
-      <Borhomthuri />
       <About />
       <Invitation />
+      <Borhomthuri />
     </div>
   );
 };
