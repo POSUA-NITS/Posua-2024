@@ -32,9 +32,10 @@ const NotFound = lazy(() =>
 const App = () => {
   return (
     <main className="relative">
+      <InitialLoadingForHome />
       <BrowserRouter>
         <ToTopOnRouteChange>
-          <InitialLoadingForHome />
+          {/* <InitialLoadingForHome /> */}
           <Suspense fallback={<Loading />}>
             {/* <div className="min-h-[6.8rem]">
           </div> */}
