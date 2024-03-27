@@ -1,21 +1,15 @@
-// @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 .Container {
-  // font-family: 'Philosopher', sans-serif;
-  // bottom: 0;
   background-color: beige;
   background-image: url(https://res.cloudinary.com/dp92qug2f/image/upload/v1711374389/footerbg_posua24_zhs2zn.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  // text-align: center; // Center align content
   display: flex; // Use flexbox layout
   flex-direction: column;
   justify-content: center; // Center align items horizontally
   align-items: center; // Center align items vertically
   padding-bottom: 2vw;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.326);
-  // position: relative;
 }
 
 .content div {
@@ -42,36 +36,13 @@
     color: white;
   }
 }
-/* Footer.module.scss */
 
 .Contact div,
 .address div,
 .socialmedia div,
 .mail div {
   font-size: 1em; /* Adjust the font size as needed */
-  // margin-right: 1rem;
-  // position: relative;
 }
-
-//  .Cntct div,
-//  .Add div,
-//  .Soc div,
-//  .email div {
-//   position: relative;
-//  }
-
-// .Cntct::after,
-// .Add::after,
-// .Soc::after,
-// .email::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: -5px; /* Adjust the position of the underline */
-//   height: 2px; /* Adjust the height of the underline */
-//   width: 100%;
-//   background-color: #fff; /* Color of the underline */
-// }
 
 .posua {
   display: flex;
@@ -90,19 +61,16 @@
 }
 .Contact {
   display: flex;
-  // min-width: 200px;
   flex-direction: column;
   font-size: clamp(12px, 5vw, 16px);
 }
 .address {
   display: flex;
-  // min-width: 200px;
   flex-direction: column;
   font-size: 16px;
 }
 .socialmedia {
   display: flex;
-  // min-width: 200px;
   flex-direction: column;
   font-size: 16px;
 }
@@ -112,7 +80,6 @@
     font-size: 1.75vw;
     font-family: "Philosopher", sans-serif;
     font-weight: 500;
-    // margin-bottom: 0.25vw;
     @media (max-width: 660px) {
       font-size: 4.5vw;
       margin-bottom: 1vw;
@@ -122,8 +89,6 @@
 
 @media screen and (max-width: 768px) {
   .Container {
-    // background-image: url("https://res.cloudinary.com/dclhahfvz/image/upload/v1711020725/mobileviewFooter_mwcskl.png");
-    // background-size: cover;
     display: flex;
     flex-direction: row;
     .posua {

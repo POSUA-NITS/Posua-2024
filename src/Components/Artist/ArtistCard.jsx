@@ -15,7 +15,7 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
-        className={`flex justify-center items-center relative transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[15rem]"}`}
+        className={`flex justify-center cursor-pointer items-center relative transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[16rem] h-[21rem] ml-[1rem]" : "w-[12rem] h-[15rem]"}`}
         onClick={() => {
           setClickk(true);
         }}

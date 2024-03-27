@@ -12,10 +12,10 @@
   backdrop-filter: blur(12.5px);
   color: #202020;
   padding: 0 1rem;
-  z-index: 1000;
+  z-index: 999;
 }
 body {
-  margin-top: 60px; /* Adjust body margin to accommodate fixed navbar */
+  margin-top: 60px; /* body margin to accommodate fixed navbar */
 }
 
 /* Styles for when the navbar is fixed */
@@ -39,8 +39,8 @@ body {
   z-index: 1;
 }
 .eventsClicked .logo {
-  background-color: transparent; /* Reset background color */
-  mix-blend-mode: unset; /* Reset mix-blend-mode */
+  background-color: transparent;
+  mix-blend-mode: unset;
 }
 
 .links {
@@ -59,8 +59,8 @@ body {
     color 0.3s,
     background-color 0.3s;
   position: relative;
-  font-family: "Alata", sans-serif; /* Set font family */
-  font-weight: 500; /* Set font weight */
+  font-family: "Alata", sans-serif;
+  font-weight: 500;
 }
 
 .navItem:hover {
@@ -95,7 +95,7 @@ body {
     z-index: 10000;
   }
   body {
-    margin-top: 60px; /* Adjust body margin for fixed navbar */
+    margin-top: 60px; /* body margin for fixed navbar */
   }
   .logo {
     margin-bottom: 1rem;

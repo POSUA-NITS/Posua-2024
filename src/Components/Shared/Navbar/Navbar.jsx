@@ -88,11 +88,11 @@ const Navbar = () => {
             }
             alt="Logo"
             className={styles.logo}
-            // className={`${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}`}
+            // className={${styles.logo} ${selectedItem === "Events" ? styles.logoWithBackground : ""}}
           />
         </Link>{" "}
         <NavItem
-          text="ArtistPage"
+          text="Artists"
           selected={selectedItem === "ArtistPage"}
           onClick={() => handleItemClick("ArtistPage")}
         />
@@ -108,7 +108,7 @@ const Navbar = () => {
         />
       </div>
       <div
-        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out  ${isMenuOpen ? "opacity-0" : " opacity-100 "} `}
+        className={`${styles.hamburgerMenu} mr-[80vw] md:mr-0  transition-all duration-300 ease-in-out ${isMenuOpen ? "opacity-0" : "opacity-100"}`}
         onClick={toggleMenu}
       >
         <div className={styles.bar}></div>
@@ -167,7 +167,7 @@ const Navbar = () => {
             onClick={() => handleItemClick("Gallery")}
           />
           <NavItem
-            text="ArtistPage"
+            text="Artists"
             selected={selectedItem === "ArtistPage"}
             onClick={() => handleItemClick("ArtistPage")}
           />

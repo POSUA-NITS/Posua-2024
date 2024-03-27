@@ -1,11 +1,18 @@
+import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 import styles from "./Invitation.module.scss";
-import InvitationPepa from "./InvitationPepa";
+// import InvitationPepa from "./InvitationPepa";
 import ScrollerJapi from "./ScrollerJapi";
 const Invitation = () => {
   return (
     <div className={styles.superParent}>
       <div className={styles.InvitationClass}>
-        <InvitationPepa />
+        {/* <div id={styles.pepaimgholder}>
+          <img
+            src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711283241/Frame_5_1_tapnex.png"
+            alt=""
+          />
+        </div> */}
+        <LottieHeading title="INVITATION" />
         <div className={styles.InvitationImage}>
           <img
             alt=""
@@ -14,6 +21,9 @@ const Invitation = () => {
           />
         </div>
         <ScrollerJapi />
+        {/* <div id={styles.cicularrangoliholder}>
+          <img src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711462263/hald_rangoli_posua_24_fbsywv.png" alt="" />
+        </div> */}
       </div>
     </div>
   );
