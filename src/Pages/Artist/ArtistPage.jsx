@@ -29,21 +29,24 @@ const ArtistPage = () => {
   const prevArtistData = [
     {
       id: 1,
-      name: "Zubeen Garg",
+      name: "Dikshu Sharma",
+      profession: "Singer",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/c_scale,w_760,f_auto,fl_lossy/v1677782744/posua/WhatsApp_Image_2023-03-03_at_00.15.12_nhe9xz.jpg",
     },
     {
       id: 2,
-      name: "Zubeen Garg",
+      name: "Ranjit Gogoi",
+      profession: "Bihu Samrat",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/c_scale,w_360,f_auto,fl_lossy/v1677783229/posua/DSC_0102_1_-min_obvt2f.jpg",
     },
     {
       id: 3,
-      name: "Zubeen Garg",
+      name: "Deusila",
+      profession: "Bihu Dol",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://assets.sentinelassam.com/h-upload/c_scale,w_360,f_auto,fl_lossy/2021/04/14/218865-bihu.webp?w=940&dpr=1.3",
     },
   ];
 
@@ -153,9 +156,16 @@ const ArtistPage = () => {
 
       {/* ************Upcoming Artist desktop start***************** */}
       <div className="my-[5rem] md:flex gap-[7rem] hidden">
-        <ArtistCard name="Rob JackSon" />
-        <ArtistCard name="Rob JackSon" />
-        <ArtistCard name="Rob JackSon" />
+        {prevArtistData.map((profile) => {
+          return (
+            <ArtistCard
+              name={profile.name}
+              key={profile.id}
+              profession={profile.profession}
+              photoLink={profile.photoLink}
+            />
+          );
+        })}
       </div>
       {/* ************Upcoming Artist desktop end***************** */}
 
