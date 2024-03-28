@@ -37,12 +37,12 @@ const SponsorPage = () => {
                 alt=""
               />
             </div>
-            {/* <div className="sponsor">
+            <div className="sponsor">
               <img
-                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/Oil_India-Logo_zwjxl7.png"
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638976/EM_LONG_LOGO_TRANSPARENCY-min_v4qm70.webp"
                 alt=""
               />
-            </div> */}
+            </div>
             {/* <div className="sponsor">
               <img
                 src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/NRL_Logo_sja6jq.png"
