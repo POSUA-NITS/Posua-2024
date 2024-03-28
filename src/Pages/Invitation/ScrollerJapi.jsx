@@ -1,11 +1,9 @@
 import React from "react";
 import styles from "./ScrollerJapi.module.scss";
-const ScrollerJapi = ({ type, windowSize }) => {
+const ScrollerJapi = () => {
   return (
     <div>
-      <div
-        className={`${styles.ScrollerJapiClass} ${type !== "hero" && windowSize < 660 && "hidden"}`}
-      >
+      <div className={styles.ScrollerJapiClass}>
         <img
           alt="Line"
           src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711315135/Vector_1_euyeze.png"
