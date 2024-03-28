@@ -37,12 +37,12 @@ const SponsorPage = () => {
                 alt=""
               />
             </div>
-            {/* <div className="sponsor">
+            <div className="sponsor">
               <img
-                src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/Oil_India-Logo_zwjxl7.png"
+                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638976/EM_LONG_LOGO_TRANSPARENCY-min_v4qm70.webp"
                 alt=""
               />
-            </div> */}
+            </div>
             {/* <div className="sponsor">
               <img
                 src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711098241/NRL_Logo_sja6jq.png"
@@ -158,7 +158,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041820/Frame_26086392_nyx2rp.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638641/Frame_26086392_nyx2rp_1_-min_vnstj5.webp"
                   alt=""
                 />
               </div>
@@ -196,7 +196,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041768/Frame_26086391_sgjt4z.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638567/Frame_26086391_sgjt4z-min_x8fnnq.webp"
                   alt=""
                 />
               </div>
@@ -213,7 +213,7 @@ const SponsorPage = () => {
               <div className="content">
                 <p>
                   1)There will be banners and posters with mention of our sponsors put up
-                  in the college campus as well as across the city during POSUA’23.
+                  in the college campus as well as across the city during POSUA’24.
                   <br />
                   <br />
                   2)We will be sending brochures,posters and flash presentations with the
@@ -230,7 +230,7 @@ const SponsorPage = () => {
                   entire programme as all important information regarding the fest are put
                   up there.Since the day of sponsorship confirmation, the logo and link of
                   official websites of our respective sponsors will be featured in our
-                  website
+                  website.
                   <br />
                   <br />
                   <br />
@@ -238,7 +238,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041752/Frame_2608639_hwrfdx.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638494/Frame_2608639_hwrfdx-min_cycnum.webp"
                   alt=""
                 />
               </div>

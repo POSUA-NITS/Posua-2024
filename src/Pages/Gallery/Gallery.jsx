@@ -130,7 +130,8 @@ const Gallery = () => {
         </div>
 
         <div
-          className={`w-[18rem] sm:w-[22rem] md:w-[39rem] h-fit mx-auto my-[3rem] md:my-[unset] transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${flower ? "scale-[1.15] md:scale-[.85]" : "scale-[1.4] md:scale-[1.2]"}  ${styles.parentholder} `}
+          className={`w-[18rem] sm:w-[22rem] md:w-[39rem] h-fit mx-auto my-[3rem] md:my-[unset] transition-all duration-[2000ms] md:duration-[4
+            000ms] ease-in-out ${flower ? "scale-[1.15] md:scale-[.85]" : "scale-[1.4] md:scale-[1.2]"}  ${styles.parentholder} `}
         >
           {/* <img
             className={`transition-all duration-[2000ms] md:duration-[4000ms] ease-in-out ${

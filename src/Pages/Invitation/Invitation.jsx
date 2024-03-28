@@ -67,7 +67,7 @@ const Invitation = () => {
           <img
             alt=""
             src=""
-            data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711608213/Invitation_2024_1_1_vg3kjj-min_frj2qy.webp"
+            data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711643604/Posua_24-min_deytzq.webp"
             className={`${loaded ? "loadedClass" : "loadingClass"} ${styles.img}`}
             onLoad={() => setIsLoaded(true)}
           />
