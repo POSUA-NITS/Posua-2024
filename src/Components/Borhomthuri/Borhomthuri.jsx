@@ -1,25 +1,64 @@
+/* eslint-disable func-names */
+/* eslint-disable no-param-reassign */
+/* eslint-disable prefer-arrow-callback */
+
+import { useState, useEffect } from "react";
 import styles from "./Borhomthuri.module.scss";
-// import Film from "./Filmy";
-// import Card from "./Card";
 import data from "../../assets/Edition.json";
 import LottieHeading from "../LottieHeading/LottieHeading";
-// import ScrolBar from "./ScrolBar";
-// import FrontCover from "./FrontCover";
+
 const Borhomthuri = () => {
+  /*  implementing lazy load via ioa */
+  const config = {
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0.2,
+  };
+
+  const [loaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(function (entries, self) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadImages(entry.target);
+          self.unobserve(entry.target);
+        }
+      });
+    }, config);
+    const imgs = document.querySelectorAll("[data-src]");
+    imgs.forEach((img) => {
+      observer.observe(img);
+    });
+    return () => {
+      imgs.forEach((img) => {
+        observer.unobserve(img);
+      });
+    };
+  });
+
+  const loadImages = (image) => {
+    image.src = image.dataset.src;
+  };
+
   return (
     <div className={styles.superParent}>
       <div className={styles.ParentClass}>
         {/* <Pepa /> */}
         <div id={styles.leftrangoliholder_borhom}>
           <img
-            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/leftrangoli_jp6whi.png"
+            src=""
+            data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607934/leftrangoli_jp6whi-min_eicyyv.webp"
+            className={loaded ? "loadedClass" : "loadingClass"}
+            onLoad={() => setIsLoaded(true)}
             alt=""
           />
         </div>
 
         <div id={styles.rightrangoliholder_borhom}>
           <img
-            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711549216/rightrangoli_jvpnus.png"
+            src=""
+            data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711608053/rightrangoli_jvpnus-min_h2l42o.webp"
+            className={loaded ? "loadedClass" : "loadingClass"}
+            onLoad={() => setIsLoaded(true)}
             alt=""
           />
         </div>
@@ -46,9 +85,18 @@ const Borhomthuri = () => {
                   target="_blank"
                   style={{ margin: "1.2rem" }}
                 >
-                  <img src={item.src} alt="magazine" />
                   <img
-                    src={item.edition_num}
+                    src=""
+                    data-src={item.src}
+                    className={loaded ? "loadedClass" : "loadingClass"}
+                    onLoad={() => setIsLoaded(true)}
+                    alt="magazine"
+                  />
+                  <img
+                    src=""
+                    data-src={item.edition_num}
+                    className={loaded ? "loadedClass" : "loadingClass"}
+                    onLoad={() => setIsLoaded(true)}
                     alt="Edition"
                     style={{
                       margin: "0 auto",
@@ -64,13 +112,19 @@ const Borhomthuri = () => {
             <div className={styles.cameraImg}>
               <img
                 alt="Camera"
-                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711559065/camera_posua24_l7ndyp.png"
+                src=""
+                data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607582/camera_posua24_l7ndyp-min_o41997.webp"
+                className={loaded ? "loadedClass" : "loadingClass"}
+                onLoad={() => setIsLoaded(true)}
               />
             </div>
 
             <div id={styles.camerafoucs}>
               <img
-                src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711559384/camera_focus_posua24_orhnta.png"
+                src=""
+                data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607671/camera_focus_posua24_orhnta-min_o0quzy.webp"
+                className={loaded ? "loadedClass" : "loadingClass"}
+                onLoad={() => setIsLoaded(true)}
                 alt=""
               />
             </div>
@@ -95,9 +149,18 @@ const Borhomthuri = () => {
                 target="_blank"
                 style={{ margin: "1.2rem" }}
               >
-                <img src={item.src} alt="magazine" />
                 <img
-                  src={item.edition_num}
+                  src=""
+                  data-src={item.src}
+                  className={loaded ? "loadedClass" : "loadingClass"}
+                  onLoad={() => setIsLoaded(true)}
+                  alt="magazine"
+                />
+                <img
+                  src=""
+                  data-src={item.edition_num}
+                  className={loaded ? "loadedClass" : "loadingClass"}
+                  onLoad={() => setIsLoaded(true)}
                   alt="Edition"
                   style={{
                     margin: "0 auto",
@@ -107,19 +170,6 @@ const Borhomthuri = () => {
               </a>
             ))}
           </div>
-          {/* <ScrolBar /> */}
-          {/* <div className={styles.movingCards}>
-            {
-              data.map((item)=>(
-                <Card imgSrc={item.src} srcMag={item.link} />
-              ))
-            }
-          </div> */}
-
-          {/* <div id={styles.random}>
-<img src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps" alt="" />
-          </div> */}
-          {/* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium ratione, perspiciatis vitae sit asperiores quia sunt quasi maxime. Nihil, officia qui fuga reprehenderit obcaecati ipsam alias vel hic laudantium pariatur aliquam mollitia reiciendis explicabo? */}
         </div>
       </div>
     </div>
