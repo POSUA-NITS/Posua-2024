@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ScrollerJapi from "../../Pages/Invitation/ScrollerJapi";
 import styles from "./Hero.module.scss";
+import Leaves from "../LottieHeading/Leaves";
 
 const Hero = () => {
   const [stopAnimation, setStopAnimation] = useState(false);
@@ -41,7 +42,7 @@ const Hero = () => {
         >
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711649093/VectorOuterMostMost_oerg7f_wq2egq.jpg?_s=public-apps"
-            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100]  h-[100vh] w-[100vw]`}
+            className={`${styles.jungle_outer1} absolute flex justify-center items-center z-[100] h-[100vh] w-[100vw]`}
             alt=""
           />
           <img
@@ -219,6 +220,7 @@ const Hero = () => {
           <div
             className={`${styles.landing} h-[100vh] w-[100vw] object-contain flex justify-center items-start absolute top-0`}
           >
+            <Leaves windowSize={windowSize} />
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711654537/foreground_land_n6iyl8.jpg?_s=public-apps"
               className={`${styles.land_bottom} absolute bottom-0 min-h-[100px] ${windowSize < 640 && "object-cover"} z-[90]`}
