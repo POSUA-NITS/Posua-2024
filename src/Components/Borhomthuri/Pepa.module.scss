@@ -4,3 +4,13 @@
   margin-right: auto;
   width: 50%;
 }
+@media screen and (max-width: 600px) {
+  .PepaClass {
+  }
+}
+
+.setfont {
+  p {
+    font-family: "DM Serif Text", serif;
+  }
+}
