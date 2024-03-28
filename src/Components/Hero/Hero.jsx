@@ -201,7 +201,7 @@ const Hero = () => {
             alt=""
           />
           <div
-            className={`${styles.jaapi_arrow} absolute z-[49] top-[55vh] flex-col justify-center items-center text-center left-[40%]`}
+            className={`${styles.jaapi_arrow} absolute z-[49] top-[55vh] flex-col justify-center items-center text-center left-[45%]`}
             onClick={() => {
               window.scrollTo({
                 top: window.innerHeight,
