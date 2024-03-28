@@ -1,15 +1,52 @@
-import React from "react";
+/* eslint-disable func-names */
+/* eslint-disable no-param-reassign */
+/* eslint-disable prefer-arrow-callback */
+
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Footer.module.scss";
 import fontStyles from "./fontStyles.module.scss"; // Import font styles
 const Footer = () => {
+  /*  implementing lazy load via ioa */
+  const config = {
+    rootMargin: "0px 0px 0px 0px",
+    threshold: 0.2,
+  };
+
+  const [loaded, setIsLoaded] = useState(false);
+  useEffect(() => {
+    const observer = new window.IntersectionObserver(function (entries, self) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          loadImages(entry.target);
+          self.unobserve(entry.target);
+        }
+      });
+    }, config);
+    const imgs = document.querySelectorAll("[data-src]");
+    imgs.forEach((img) => {
+      observer.observe(img);
+    });
+    return () => {
+      imgs.forEach((img) => {
+        observer.unobserve(img);
+      });
+    };
+  });
+
+  const loadImages = (image) => {
+    image.src = image.dataset.src;
+  };
   return (
     <footer className={`${styles.Container} ${fontStyles.PhilosopherFont}`}>
       <div className={styles.posua}>
         <Link to="/">
           <img
-            src="https://res.cloudinary.com/dclhahfvz/image/upload/v1710953023/New_Posua_logo_kyknan.png"
+            src=""
+            data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607487/New_Posua_logo_kyknan-min_bbxthz.webp"
             alt="Posua Logo"
+            className={loaded ? "loadedClass" : "loadingClass"}
+            onLoad={() => setIsLoaded(true)}
           />
         </Link>
       </div>
@@ -21,10 +58,17 @@ const Footer = () => {
           </div>
           <div>
             {" "}
-            <a href="tel:1234567890">XYZ , 1234567890</a>
+            <a href="tel:+918822005811">Rituporna Das, +91 88220 05811</a>
           </div>
           <div>
-            <a href="tel:9876543210">xyz , 9876543210</a>
+            <a href="tel:+918822190933">Hrisikesh Barpujari, +91 88221 90933</a>
+          </div>
+
+          <div>
+            <a href="tel:+919707940357">Amlandeep Dutta, +91 97079 40357</a>
+          </div>
+          <div>
+            <a href="tel:+917086805215">Gyandeep Gogoi, +91 70868 05215</a>
           </div>
         </div>
 
@@ -39,7 +83,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Silchar, Assam
+              NIT Silchar, Assam
             </a>
           </div>
         </div>
@@ -52,7 +96,7 @@ const Footer = () => {
           {/* <p>Instagram - @posua_insta</p> */}
           <div>
             <a
-              href="https://www.instagram.com/posua_nits?igsh=MXR6a29raDJhaDFiaQ=="
+              href="https://www.instagram.com/posua_nits/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -62,7 +106,7 @@ const Footer = () => {
           {/* <p>Facebook - facebook.com/posua</p> */}
           <div>
             <a
-              href="https://www.facebook.com/nitsposua?mibextid=ZbWKwL"
+              href="https://www.facebook.com/nitsposua"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -78,7 +122,7 @@ const Footer = () => {
           </div>
           <div>
             {" "}
-            <a href="mailto:borhomthuri.posua@gmail.com">borhomthuri.posua@gmail.com</a>
+            <a href="mailto:borhomthuri.posua@gmail.com">posua@nits.ac.in</a>
           </div>
         </div>
       </div>

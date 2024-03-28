@@ -11,7 +11,7 @@ const ScrollerJapi = () => {
         />
         <img
           alt="Circle"
-          src="https://res.cloudinary.com/dl0knguhb/image/upload/v1711315135/Group_julcxm.png"
+          src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711609115/Group_julcxm-min_lxhrhu.webp"
           className={styles.ImgCircle}
         />
       </div>
