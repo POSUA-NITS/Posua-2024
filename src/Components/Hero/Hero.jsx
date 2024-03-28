@@ -197,11 +197,11 @@ const Hero = () => {
         <div className="animation_slideInto flex justify-center items-start">
           <img
             src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711502926/posua_logo_1_to45u1.jpg?_s=public-apps"
-            className={`${styles.posua_logo_mobile} absolute flex justify-center items-start object-contain overflow-hidden h-[60vh] w-[100vw] z-[49] left-5 top-[0%]`}
+            className={`${styles.posua_logo_mobile} absolute flex justify-center items-start object-contain overflow-hidden h-[40vh] w-[100vw] z-[49] left-5 top-[0%]`}
             alt=""
           />
           <div
-            className={`${styles.jaapi_arrow} absolute z-[55] top-[40vh] sm:top-[50] flex-col justify-center items-center text-center  ${windowSize > 440 ? "left-[30%]" : "left-[25%]"} sm:left-[40%]`}
+            className={`${styles.jaapi_arrow} absolute z-[49] top-[55vh] flex-col justify-center items-center text-center left-[45%]`}
             onClick={() => {
               window.scrollTo({
                 top: window.innerHeight,
@@ -209,12 +209,7 @@ const Hero = () => {
               });
             }}
           >
-            <div>
-              <ScrollerJapi type="hero" windowSize={windowSize} />
-            </div>
-            <div className={`${styles.Jaapi_text} text-white text-lg z-[49] mt-[-50px] `}>
-              Slide Down
-            </div>
+            <ScrollerJapi />
           </div>
         </div>
       )}

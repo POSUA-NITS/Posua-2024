@@ -71,11 +71,11 @@ const Borhomthuri = () => {
         <div className={styles.Child1}>
           <div className={styles.text}>
             <p className={styles.p}>
-              Borhomthuri is the annual souvenir of POSUA.It enfolds indispensable parts
+              Borhomthuri is the annual souvenir of POSUA. It enfolds indispensable parts
               of Assamese Culture and also the emotions of students in the form of
-              enthralling articles,poems,stories and sketches.Borhomthuri reflects the
+              enthralling articles, poems, stories and sketches. Borhomthuri reflects the
               ardour of NITS Family towards POSUA and provides an opportunity for the
-              literary skills of students to get revived
+              literary skills of students to get revived.
             </p>
             <div className={styles.galleryBorhomthuri}>
               {data.map((item) => (
@@ -134,11 +134,11 @@ const Borhomthuri = () => {
         <div className={styles.child2}>
           <div className={styles.HiddenText}>
             <p>
-              Borhomthuri is the annual souvenir of POSUA.It enfolds indispensable parts
+              Borhomthuri is the annual souvenir of POSUA. It enfolds indispensable parts
               of Assamese Culture and also the emotions of students in the form of
-              enthralling articles,poems,stories and sketches.Borhomthuri reflects the
+              enthralling articles, poems, stories and sketches. Borhomthuri reflects the
               ardour of NITS Family towards POSUA and provides an opportunity for the
-              literary skills of students to get revived
+              literary skills of students to get revived.
             </p>
           </div>
           <div className={styles.galleryBorhomthurimobile}>
