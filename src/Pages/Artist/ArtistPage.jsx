@@ -29,21 +29,44 @@ const ArtistPage = () => {
   const UpArtistData = [
     {
       id: 1,
-      name: "Zubeen Garg",
+      name: "Nilotpal Bora",
+      desc: `ঐ গধূলি গধূলি
+      ফুৰো ৰহিমলা
+      বাঘে খাই ঘোঙে খাই খাঁওক
+      তোমাৰে কাৰণে
+      ঐ হ'লো মই পগলা
+      জীৱনটো গ'লেও
+      যাঁওক ৰহিমলা
+      ৰৈ ৰৈ ধেমালি কৰা, ৰহিমলা
+      ৰৈ ৰৈ ধেমালি
+      ৰৈ ৰৈ ধেমালি কৰা 
+      এই বিহুগীত ফাকি চিনাকী যেন লাগিছেনে? নিশ্চয় লাগিব। ব'হাগ আহি পালেহি মানে এই বিহুগীতটিত ককাঁল ভাঙি নাচিবলৈ সাজু হ'বই হ'ল। পিছে আমি যদি কওঁ, এই বিহুগীতটিৰ শিল্পীগৰাকী এইবেলি আমাৰ সকলোৰে মাজত উপস্থিত থাকি আমাক বিহু নচুৱাবলৈ আহি আছে, আপোনাৰ বাৰু শুনি ভাল নালাগিবনে? হয় আপুনি ঠিকে ধৰিছে। মাজুলীৰ আকাশত ৰাঙলী হৈ জিলিকা বেলিটিৰ কথা ক'বলৈ, ঘৰমুৱা পখীৰ বতৰা লৈ  এইবেলি পছোৱা'২৪-ৰ মঞ্চ শুৱনি কৰিবলৈ আহি আছে অসমৰ সাংস্কৃতিক জগতৰ জিলিকা তৰা স্বৰূপ কণ্ঠশিল্পী নিলোৎপল বৰা। সেয়হে সাজু হওক ৰাইজ, এইবেলিৰ বসন্তোৎসৱত ঢোলৰ চাপৰত আত্মহাৰা হ'বলৈ, সুৰৰ মায়াজালত মন্ত্ৰমুগ্ধ হ'বলৈ।
+      #শিমলু_ফুলিছে_ৰঙচুৱা_পদূলিত_হেঁপাহৰ_পছোৱা
+      #বসন্তৰ_পদূলিত_পছোৱাৰ_সুহুৰি 
+      
+      `,
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711634914/Runway-2024-03-28T13_53_53.448Z-Upscale-Image-Upscaled-Image-2550-x-1920-min_bvkkf6.webp",
+
+      englishContent: `𝑅𝑖𝑛𝑖𝑘𝑖 𝑟𝑖𝑛𝑘𝑖 𝑟𝑎𝑛𝑔𝑜𝑙𝑖 𝑏𝑒𝑙𝑖𝑡𝑖
+      𝑗𝑖𝑙𝑖𝑘𝑒 𝑚𝑎𝑗𝑢𝑙𝑖𝑡𝑒 𝑜𝑖
+      𝑗𝑒𝑡ℎ𝑜𝑟𝑒 𝑗𝑢𝑟𝑢𝑙𝑎 𝑘ℎ𝑎𝑢𝑛𝑒 𝑥𝑜ℎ𝑢𝑎
+      𝑏𝑢𝑘𝑢𝑡𝑒 𝑏𝑜𝑛𝑔𝑒𝑒𝑡 ℎ𝑜𝑖
+      Get ready to be swept off your feet!  We're thrilled to announce that the incredibly talented 𝐍𝐈𝐋𝐎𝐓𝐏𝐀𝐋 𝐁𝐎𝐑𝐀 will be gracing our stage for the night!  Join us for an unforgettable evening filled with soulful melodies and electrifying performances.  Experience the magic as 𝐍𝐈𝐋𝐎𝐓𝐏𝐀𝐋 𝐁𝐎𝐑𝐀 captivates hearts and souls with his mesmerizing voice and captivating presence.
+      #arrival_of_the_flâneur_wind_of_spring_aroma 
+      #posua_singing_serenade_of_spring`,
     },
     {
       id: 2,
-      name: "Zubeen Garg",
+      name: "Xomonnoy Gushti",
       photoLink:
         "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-    },
-    {
-      id: 3,
-      name: "Zubeen Garg",
-      photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+      desc: `লোকসংস্কৃতি বুলিয়েই মনলৈ আহে এটি জাতিৰ স্বকীয় পৰিচয়। লোকসংস্কৃতিয়ে দি আহিছে একো একোটি জাতিক নিজস্বতাৰ স্বীকৃতি। ঠিক তেনেদৰেই আমাৰ অসমীয়া লোকসংস্কৃতিৰ ভঁৰালটোও তেনেই চহকী। ইতিহাসে ঢুকি নোপোৱা সময়ৰ পৰাই অসমৰ লোকসংস্কৃতিয়ে কৈ আহিছে চহা অসমীয়াৰ হৰ্ষ - বিষাদৰ কথা, জীৱন প্ৰণালীৰ নিয়ম আৰু শতাধিক সময়ৰ গৌৰৱময় গাথা। অসমৰ এই লোকজীৱনৰ জীৱনচৰ্চাৰ কলাত্মক প্ৰকাশত এক গুৰুত্বপূৰ্ণ ভূমিকা পালন কৰি আহিছে লোক সাংস্কৃতিক সংগঠন 'সমন্বয় এনাজৰী সাংস্কৃতিক গোষ্ঠীয়ে'। সবাতোকৈ আনন্দৰ কথা এয়া যে, লোকসংস্কৃতিৰ ধ্বজাবাহক এই শিল্পীসকল আহি আছে 'পছোৱা'২৪' মঞ্চ শুৱনি কৰিবলৈ। সেয়েহে আপোনালোকো সাজু হওক, লোকসংস্কৃতিৰ এই ন-ৰূপৰ উপস্থাপনৰ আনন্দত বিলীন হ'বলৈ।
+      #শিমলু_ফুলিছে_ৰঙচুৱা_পদূলিত_হেঁপাহৰ_পছোৱা 
+      #বসন্তৰ_পদূলিত_পছোৱাৰ_সুহুৰি `,
+      englishContent: `Folk culture narrates the unexplored realms of history and serves as the acknowledgment of a community's intrinsic identity. Culture validates the sovereignty of each ethnicity. Similarly, the rich tapestry of our Assamese culture resonates profoundly. It is precisely through the richness of our Assamese cultural heritage that our identity is portrayed: the unexplored realms of history narrate the tales of joy and sorrow, the societal norms, and the glorious sagas of bygone eras within Assamese culture. Embracing the artistic expression of the indigenous Assamese, the "𝑿𝒐𝒎𝒐𝒏𝒏𝒐𝒚 𝑬𝒏𝒂𝒋𝒐𝒓𝒊 𝑺𝒂𝒏𝒔𝒌𝒓𝒊𝒕𝒊𝒌 𝑮𝒖𝒔𝒉𝒕𝒊" has played a significant role in representing the diverseness of this land.  It's a matter of great joy that the flag bearers of our cultural heritage, these artists, are set to grace the Posua'24 stage. So, let's come together and revel in the presentation of Assamese culture in its myriad forms, for it's a celebration that promises to immerse us in joy and enlightenment.
+      #arrival_of_the_flâneur_wind_of_spring_aroma 
+      #posua_singing_serenade_of_spring`,
     },
   ];
   const prevArtistData = [
@@ -145,7 +168,11 @@ const ArtistPage = () => {
                     style={{ overflowX: "unset" }}
                   >
                     {isActive ? setActive1(profile.id) : ""}
-                    <ArtistBigCard photoLink={profile.photoLink} name={profile.name} />
+                    <ArtistBigCard
+                      photoLink={profile.photoLink}
+                      name={profile.name}
+                      desc={profile.desc}
+                    />
                   </div>
                 )}
               </SwiperSlide>
