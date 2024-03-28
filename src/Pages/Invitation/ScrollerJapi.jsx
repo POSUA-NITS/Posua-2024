@@ -1,13 +1,6 @@
 import React from "react";
 import styles from "./ScrollerJapi.module.scss";
 const ScrollerJapi = () => {
-  // const[IsHover, setIsHover] = useState(false);
-  // const handleMouseEnter = () =>{
-  //     setIsHover(true);
-  // };
-  // const handleMouseLeave = () =>{
-  //     setIsHover(false);
-  // };
   return (
     <div>
       <div className={styles.ScrollerJapiClass}>
