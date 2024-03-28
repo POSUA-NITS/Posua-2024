@@ -30,18 +30,21 @@ const ArtistPage = () => {
     {
       id: 1,
       name: "Zubeen Garg",
+      profession: "Singer",
       photoLink:
         "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
     },
     {
       id: 2,
       name: "Zubeen Garg",
+      profession: "Singer",
       photoLink:
         "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
     },
     {
       id: 3,
       name: "Zubeen Garg",
+      profession: "Singer",
       photoLink:
         "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
     },
@@ -145,7 +148,11 @@ const ArtistPage = () => {
                     style={{ overflowX: "unset" }}
                   >
                     {isActive ? setActive1(profile.id) : ""}
-                    <ArtistBigCard photoLink={profile.photoLink} name={profile.name} />
+                    <ArtistBigCard
+                      photoLink={profile.photoLink}
+                      name={profile.name}
+                      profession={profile.profession}
+                    />
                   </div>
                 )}
               </SwiperSlide>
