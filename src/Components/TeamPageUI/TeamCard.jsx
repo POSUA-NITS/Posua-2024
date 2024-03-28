@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
+const TeamCard = ({ name, photoLink, designation }) => {
   const [hover, sethover] = useState(false);
   return (
     <div
@@ -28,7 +28,7 @@ const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
         <div
           className={`transition-all duration-500 ease-in-out mx-auto flex justify-center gap-[1rem] ${hover ? "opacity-100" : "opacity-0"} mt-[.5rem]`}
         >
-          <a href={github} className="w-[1.8rem] h-[1.8rem] z-[130]" target="_blank">
+          {/* <a href={github} className="w-[1.8rem] h-[1.8rem] z-[130]" target="_blank">
             <img
               src="https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876324/pickjnwr5e23ommeghr9.jpg?_s=public-apps"
               alt="github"
@@ -48,18 +48,18 @@ const TeamCard = ({ name, photoLink, facebook, github, linkedin }) => {
               alt="github"
               className="w-full h-full object-cover"
             />
-          </a>
+          </a> */}
         </div>
       </div>
       <div className="absolute w-full h-full flex flex-col justify-end items-center bottom-[3rem]">
         <div
-          className="text-[1.3rem] font-semibold"
+          className="text-[1.1rem] font-semibold"
           style={{ color: "#BC0404", fontFamily: "DM serif Display" }}
         >
           {name}
         </div>
         <div className="text-[.8rem]" style={{ fontFamily: "Alata", color: "#B47A7B" }}>
-          DEVELOPER
+          {designation}
         </div>
         <hr
           className={`h-[.12rem] w-[20%] border-orange-500 transition-all duration-300 ease-in-out ${hover ? "opacity-100" : "opacity-0"}`}
