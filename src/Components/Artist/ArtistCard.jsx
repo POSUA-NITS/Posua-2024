@@ -4,9 +4,11 @@ const ArtistCard = ({
   clickk,
   setClickk,
   setCross,
-  photoLink = "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+  photoLink,
   name,
-  profession = "Singer",
+  profession,
+  assameseContent,
+  englishContent,
 }) => {
   //  const [clickk, setClickk] = useState(false);
   // console.log(clickk);
@@ -18,7 +20,7 @@ const ArtistCard = ({
   //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] py-5 px-2 border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[16rem] justify-center"}`}
+      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[auto] border-[.5rem] shadow-md justify-between pb-8" : "w-[12.8rem] h-[16rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
@@ -63,25 +65,13 @@ const ArtistCard = ({
           className={`text-[.8rem] text-center transition-all ease-in-out duration-[3000ms] ${clickk ? "opacity-100" : "opacity-0"}`}
           style={{ color: "#5F1516", fontFamily: "Alata" }}
         >
-          অসমৰ গাঁৱে-ভূঞে, চহৰে-নগৰে অসমীয়াৰ হুচৰিক মঞ্চত উপস্থাপন কৰি দৰ্শকৰ অপূৰ্ব
-          খ্যাতি লাভ কৰিবলৈ সক্ষম হোৱা &quot;দেউচিলা বিহুদল&quot; আহি আজি এন. আই. টি. ৰ
-          বাকৰি শুৱনি কৰিছেহি। এন. আই. টি. ৰ বিহুবলীয়া ৰাইজৰ মন প্ৰাণ জিনিবলৈ নিজৰ ঢোল,
-          পেঁপা, গগনাৰ লগতে বিভিন্ন বাদ্যযন্ত্ৰৰ সুৰেৰে আপ্লুত কৰি তুলিবলৈ সাজু
-          &quot;দেউচিলা বিহুদল&quot;। ঢোলৰ চাপৰত হুঁচৰিৰ চেঁৱত আকৌ এবাৰ কঁকাল ভাঙি
-          নাচিবলৈ, এতিয়া মাথোঁ অপেক্ষা ৫ মাৰ্চ তাৰিখলৈ
+          {assameseContent}
         </div>
         <div
           className={`text-[.8rem] text-center transition-all ease-in-out duration-[3000ms]  ${clickk ? "opacity-100" : "opacity-0"}`}
           style={{ color: "#5F1516", fontFamily: "Alata" }}
         >
-          Spring has finally arrived, and the anticipation has culminated in the sounds of
-          Bihu beats all around the corner. And with this, NIT Silchar is all set to host
-          performance of &apos;Deusila Bihudol&apos;, a renowned folk group whose
-          mesmerizing shows have captivated audiences and made them groove to the beats of
-          Bihu. Brace yourselves for a magnificent cultural event as &apos;Deusila
-          Bihudal&apos; takes the stage with their drums, pepas, gaganas and various other
-          musical instruments, ready to win the hearts of many. Hoping to see you all
-          there promptly!
+          {englishContent}
         </div>
         <div
           className="absolute top-[-.4rem] right-3 text-[2rem] text-red-600 font-bold cursor-pointer z-[100]"

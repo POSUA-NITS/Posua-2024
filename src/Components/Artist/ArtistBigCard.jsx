@@ -1,11 +1,9 @@
 import React from "react";
 
-const ArtistBigCard = ({ photoLink, name, profession = "Singer" }) => {
+const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
   const frame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps";
 
-  const desc =
-    "Spring has finally arrived, and the anticipation has culminated in the sounds of Bihu beats all around the corner. And with this, NIT Silchar is all set to host performance of 'Deusila Bihudol', a renowned folk group whose mesmerizing shows have captivated audiences and made them groove to the beats of Bihu. Brace yourselves for a magnificent cultural event as 'Deusila Bihudal' takes the stage with their drums, pepas, gaganas and various other musical instruments, ready to win the hearts of many. Hoping to see you all there promptly!";
   return (
     <div>
       <div

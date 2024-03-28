@@ -58,10 +58,17 @@ const Footer = () => {
           </div>
           <div>
             {" "}
-            <a href="tel:1234567890">XYZ , 1234567890</a>
+            <a href="tel:+918822005811">Rituporna Das, +91 88220 05811</a>
           </div>
           <div>
-            <a href="tel:9876543210">xyz , 9876543210</a>
+            <a href="tel:+918822190933">Hrisikesh Barpujari, +91 88221 90933</a>
+          </div>
+
+          <div>
+            <a href="tel:+919707940357">Amlandeep Dutta, +91 97079 40357</a>
+          </div>
+          <div>
+            <a href="tel:+917086805215">Gyandeep Gogoi, +91 70868 05215</a>
           </div>
         </div>
 
@@ -76,7 +83,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Silchar, Assam
+              NIT Silchar, Assam
             </a>
           </div>
         </div>
@@ -89,7 +96,7 @@ const Footer = () => {
           {/* <p>Instagram - @posua_insta</p> */}
           <div>
             <a
-              href="https://www.instagram.com/posua_nits?igsh=MXR6a29raDJhaDFiaQ=="
+              href="https://www.instagram.com/posua_nits/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -99,7 +106,7 @@ const Footer = () => {
           {/* <p>Facebook - facebook.com/posua</p> */}
           <div>
             <a
-              href="https://www.facebook.com/nitsposua?mibextid=ZbWKwL"
+              href="https://www.facebook.com/nitsposua"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,7 +122,7 @@ const Footer = () => {
           </div>
           <div>
             {" "}
-            <a href="mailto:borhomthuri.posua@gmail.com">borhomthuri.posua@gmail.com</a>
+            <a href="mailto:borhomthuri.posua@gmail.com">posua@nits.ac.in</a>
           </div>
         </div>
       </div>

@@ -72,7 +72,7 @@ const Invitation = () => {
             onLoad={() => setIsLoaded(true)}
           />
         </div>
-        <ScrollerJapi />
+        <ScrollerJapi type="invitation" windowSize={window.innerWidth} />
         {/* <div id={styles.cicularrangoliholder}>
           <img src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711462263/hald_rangoli_posua_24_fbsywv.png" alt="" />
         </div> */}
