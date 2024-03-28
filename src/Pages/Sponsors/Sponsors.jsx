@@ -158,7 +158,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041820/Frame_26086392_nyx2rp.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638641/Frame_26086392_nyx2rp_1_-min_vnstj5.webp"
                   alt=""
                 />
               </div>
@@ -196,7 +196,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041768/Frame_26086391_sgjt4z.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638567/Frame_26086391_sgjt4z-min_x8fnnq.webp"
                   alt=""
                 />
               </div>
@@ -238,7 +238,7 @@ const SponsorPage = () => {
               </div>
               <div className="image">
                 <img
-                  src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041752/Frame_2608639_hwrfdx.png"
+                  src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711638494/Frame_2608639_hwrfdx-min_cycnum.webp"
                   alt=""
                 />
               </div>
