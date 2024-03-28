@@ -122,6 +122,7 @@ const Hero = () => {
           <div
             className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center absolute top-0`}
           >
+            <Leaves windowSize={windowSize} />
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711654537/foreground_land_n6iyl8.jpg?_s=public-apps"
               className={`${styles.land_bottom} absolute bottom-0 object-none md:object-contain min-h-[20vh] z-[90]`}
