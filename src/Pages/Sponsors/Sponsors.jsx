@@ -213,7 +213,7 @@ const SponsorPage = () => {
               <div className="content">
                 <p>
                   1)There will be banners and posters with mention of our sponsors put up
-                  in the college campus as well as across the city during POSUA’23.
+                  in the college campus as well as across the city during POSUA’24.
                   <br />
                   <br />
                   2)We will be sending brochures,posters and flash presentations with the
@@ -230,7 +230,7 @@ const SponsorPage = () => {
                   entire programme as all important information regarding the fest are put
                   up there.Since the day of sponsorship confirmation, the logo and link of
                   official websites of our respective sponsors will be featured in our
-                  website
+                  website.
                   <br />
                   <br />
                   <br />
