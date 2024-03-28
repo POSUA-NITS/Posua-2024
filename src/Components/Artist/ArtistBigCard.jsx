@@ -9,7 +9,7 @@ const ArtistBigCard = ({ photoLink, name }) => {
   return (
     <div>
       <div
-        className="w-[90vw] h-[12rem] gap-[1rem] flex items-center px-2 border-[.4rem]"
+        className="w-[90vw] py-4 gap-[1rem] flex items-center px-2 border-[.4rem]"
         style={{ backgroundColor: "#F1E4D0", borderColor: "#C7A158" }}
       >
         <div className="w-[6.5rem] h-[75%] flex items-center justify-center relative">

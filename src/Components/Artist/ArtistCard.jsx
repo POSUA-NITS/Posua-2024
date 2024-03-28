@@ -18,7 +18,7 @@ const ArtistCard = ({
   //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[16rem] justify-center"}`}
+      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] py-5 px-2 border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[16rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
