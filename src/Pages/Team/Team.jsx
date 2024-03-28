@@ -8,7 +8,6 @@ import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 const Team = () => {
   useSetTitle("Team | Posua");
   const [active1, setActive1] = useState(1);
-  const [active2, setActive2] = useState(1);
   const [active3, setActive3] = useState(1);
 
   const teamTopLogo =
