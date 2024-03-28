@@ -297,7 +297,7 @@
     }
   }
 
-  @keyframes logo_slide_down_mobile {
+  @keyframes logo_slide_down {
     0% {
       top: -10%;
     }
@@ -306,12 +306,21 @@
     }
   }
 
+  @keyframes logo_slide_down_mobile {
+    0% {
+      top: -10%;
+    }
+    100% {
+      top: 3%;
+    }
+  }
+
   @keyframes jaapi_slide_up {
     0% {
       top: 100vh;
     }
     100% {
-      top: 55vh;
+      top: 60vh;
     }
   }
 
