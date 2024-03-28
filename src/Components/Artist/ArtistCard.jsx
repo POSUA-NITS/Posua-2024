@@ -1,14 +1,21 @@
 import React from "react";
 
-const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
+const ArtistCard = ({
+  clickk,
+  setClickk,
+  setCross,
+  photoLink = "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+  name,
+  profession = "Singer",
+}) => {
   //  const [clickk, setClickk] = useState(false);
   // console.log(clickk);
   const backFrame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056518/Frame_2608596_hzjumh.jpg?_s=public-apps";
   const frame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps";
-  const photoLink =
-    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
+  // const photoLink =
+  //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
       className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[25rem] border-[.5rem] shadow-md justify-between" : "w-[12.8rem] h-[16rem] justify-center"}`}
@@ -30,7 +37,7 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
           <img src={photoLink} alt="" className="w-full h-full object-cover" />
         </div>
         <div
-          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20]  ${clickk ? "top-[6.7rem] leading-[1.3rem]" : "top-[4.9rem] leading-[1rem]"}`}
+          className={`absolute w-[100%] h-[100%] flex flex-col justify-center items-center  z-[20]  ${clickk ? "top-[6.7rem] leading-[1.3rem]" : "top-[4.9rem] leading-[1.1rem]"}`}
         >
           <div
             className={`font-semibold ${clickk ? "text-[1.3rem]" : "text-[1rem]"}`}
@@ -38,8 +45,8 @@ const ArtistCard = ({ clickk, setClickk, setCross, name }) => {
           >
             {name}
           </div>
-          <div className="text-[.8rem]" style={{ color: "#B02227" }}>
-            Singer
+          <div className="text-[.7rem]" style={{ color: "#B02227" }}>
+            {profession}
           </div>
         </div>
       </div>

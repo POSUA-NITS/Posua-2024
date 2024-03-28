@@ -16,7 +16,7 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
       className={`relative w-[100%] transition-all duration-[1000ms] ease-in-out ${first || second || third ? "h-[50rem]" : " h-[25rem]"}`}
     >
       <div
-        className={`flex h-[30rem] w-[100%] justify-center gap-[7rem] transition-all duration-[1500] ease-in-out ${first || second || third ? "top-[30rem]" : "top-[0rem]"} absolute`}
+        className={`flex h-[30rem] w-[100%] justify-center gap-[8rem] transition-all duration-[1500] ease-in-out ${first || second || third ? "top-[30rem]" : "top-[0rem]"} absolute`}
       >
         <div
           className={`transition-all duration-[1500ms] ease-in-out ${first ? "absolute top-[-30rem]" : "top-[0rem]"}`}
