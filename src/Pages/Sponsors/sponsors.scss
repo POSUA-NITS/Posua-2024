@@ -2,7 +2,7 @@ $bg-2: linear-gradient(111deg, #ffd0c6 5.11%, #ffe2a9 90.22%);
 $sponsor-border-color: #d88e0a;
 $card-border-color: #ce4013;
 
-body {
+main {
   width: 100%;
   height: 100%;
   background: var(--BG-2, #{$bg-2});
@@ -93,10 +93,10 @@ body {
 }
 
 .card {
-  max-width: 496px;
+  max-width: 410px;
   width: 33.33%;
   height: 100%;
-  padding: 2.5rem;
+  padding: 2rem;
   //flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -106,7 +106,7 @@ body {
 .card:hover {
   background: #fce0c6;
   //box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  transition: 0.5s;
+  transition: 1s;
 }
 .inner {
   display: flex;

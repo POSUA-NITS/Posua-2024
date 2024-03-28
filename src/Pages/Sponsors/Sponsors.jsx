@@ -7,10 +7,16 @@ import LottieHeading from "../../Components/LottieHeading/LottieHeading";
 const SponsorPage = () => {
   useSetTitle("Sponsors | Posua");
 
+  const jaapi2 =
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711053903/OBJECTS_1_gvgj7g.jpg?_s=public-apps";
+
+  const topImage =
+    "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711024939/magh_bihu_1_2_t4nl8t.jpg?_s=public-apps";
+
   return (
     <div>
-      <body>
-        <div className="first">
+      <main>
+        <div className="first pb-20">
           {/* <div className="heading">
             <img
               src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041756/OBJECTS_y61orj.png"
@@ -51,18 +57,37 @@ const SponsorPage = () => {
             </div>
           </div>
         </div>
-        <div className="second">
-          <div className="bihu">
-            <img
-              src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041851/magh_bihu_1_2_edzkl9.png"
-              alt=""
-            />
+        <div className="second relative">
+          <div className="w-[100%] z-[2]">
+            <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
           </div>
-          <div className="heading2">
+          <div
+            className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem] z-[2]"
+            style={{ overflowX: "unset" }}
+          >
             <img
               src="https://res.cloudinary.com/dex25uzgp/image/upload/v1711041758/Group_2608570_lbnsan.png"
               alt=""
             />
+            {/* <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" /> */}
+            <div className="absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
+              <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem]">
+                <img
+                  src={jaapi2}
+                  alt="jaapi1"
+                  className="w-full h-full object-fill animate-spin"
+                  style={{ animationDuration: "4s" }}
+                />
+              </div>
+              <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem] ">
+                <img
+                  src={jaapi2}
+                  alt="jaapi2"
+                  className="w-full h-full object-fill animate-spin"
+                  style={{ animationDuration: "4s" }}
+                />
+              </div>
+            </div>
           </div>
           <div className="sponsorContainer">
             <div className="sponsor">
@@ -223,7 +248,7 @@ const SponsorPage = () => {
             </div>
           </div>
         </div>
-      </body>
+      </main>
     </div>
   );
 };
