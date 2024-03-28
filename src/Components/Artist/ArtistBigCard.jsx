@@ -1,6 +1,6 @@
 import React from "react";
 
-const ArtistBigCard = ({ photoLink, name }) => {
+const ArtistBigCard = ({ photoLink, name, profession = "Singer" }) => {
   const frame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps";
 
@@ -23,8 +23,16 @@ const ArtistBigCard = ({ photoLink, name }) => {
             alt="Artist img"
             className="absolute h-full w-full object-cover"
           />
+          <div className="absolute flex flex-col justify-center items-center bottom-[.8rem] z-[20000] leading-[.6rem]">
+            <div className="text-[.7rem] font-semibold" style={{ color: "#B02227" }}>
+              {name}
+            </div>
+            <div className="text-[.4rem]" style={{ color: "#B02227" }}>
+              {profession}
+            </div>
+          </div>
         </div>
-        <div className="flex-[3] h-[100%] flex flex-col justify-center gap-[.6rem] py-2 items-center ">
+        <div className="flex-[3] h-[100%] flex flex-col justify-center gap-[.6rem] py-2 items-center px-3">
           <div
             className=" font-semibold text-[1.2rem]"
             style={{ color: "#B02227", fontFamily: "Abril Fatface" }}
@@ -32,7 +40,7 @@ const ArtistBigCard = ({ photoLink, name }) => {
             {name}
           </div>
           <div
-            className="text-[.45rem] text-center"
+            className="text-[.5rem] text-center"
             style={{ color: "#5F1516", fontFamily: "Alata" }}
           >
             {desc}
