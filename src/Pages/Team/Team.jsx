@@ -308,6 +308,26 @@ const Team = () => {
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
+    {
+      id: 2,
+      name: "Prokritish Nissan",
+      designation: "Photography & Videography Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711707886/WhatsApp_Image_2024-03-29_at_15_1_qmozy9.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 3,
+      name: "Rohan Deb",
+      designation: "Photography & Videography Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711707886/WhatsApp_Image_2024-03-29_at_15_tzj8gp.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
   ];
   const Marketing = [
     {

@@ -121,43 +121,43 @@ const Events = () => {
       <img
         src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711312009/posua/center-circle_vs9g1x.svg"
         alt="center rangoli"
-        className={styles.centreRangoli}
+        className={`${styles.centreRangoli}  select-none pointer-events-none  `}
       />
       <div className={styles.jaapiCont}>
         <div className={styles.jaapi2}>
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711282085/posua/jaapi-hanger2_wcjvap.svg"
             alt="hanger2"
-            className={styles.hanger2}
+            className={`${styles.hanger2}  select-none pointer-events-none`}
           />
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711284088/posua/jaapi2_r9war4.svg"
             alt="jaapi2"
-            className={styles.jaapiCircle2}
+            className={`${styles.jaapiCircle2}  select-none pointer-events-none `}
           />
         </div>
         <div className={styles.jaapi3}>
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711282087/posua/jaapi-hanger3_qrurkq.svg"
             alt="hanger3"
-            className={styles.hanger3}
+            className={`${styles.hanger3} select-none pointer-events-none `}
           />
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711284006/posua/jaapi3_xe04tl.svg"
             alt="jaapi3"
-            className={styles.jaapiCircle3}
+            className={`${styles.jaapiCircle3} select-none pointer-events-none `}
           />
         </div>
         <div className={styles.jaapi1}>
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711282083/posua/jaapi-hanger1_ftqzsn.svg"
             alt="hanger1"
-            className={styles.hanger1}
+            className={`${styles.hanger1} select-none pointer-events-none `}
           />
           <img
             src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711283928/posua/jaapi1_lrsip6.svg"
             alt="jaapi1"
-            className={styles.jaapiCircle1}
+            className={`${styles.jaapiCircle1} select-none pointer-events-none`}
           />
         </div>
       </div>
