@@ -70,6 +70,9 @@ const Footer = () => {
           <div>
             <a href="tel:+917086805215">Gyandeep Gogoi, +91 70868 05215</a>
           </div>
+          <div>
+            <a href="tel:+917099915091">Dhiraj Deka, +91 70999 15091</a>
+          </div>
         </div>
 
         {/* Address */}

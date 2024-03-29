@@ -122,6 +122,7 @@ const Hero = () => {
           <div
             className={`${styles.landing} h-[100vh] overflow-hidden flex justify-center absolute top-0`}
           >
+            <Leaves windowSize={windowSize} />
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711654537/foreground_land_n6iyl8.jpg?_s=public-apps"
               className={`${styles.land_bottom} absolute bottom-0 object-none md:object-contain min-h-[20vh] z-[90]`}
@@ -271,18 +272,18 @@ const Hero = () => {
             <div className={`${styles.crane_rhino} flex-col justify-center`}>
               <img
                 src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711654536/Mask_group_padgds.jpg?_s=public-apps"
-                className={`${styles.cranes} w-[40vw] scale-[20%] z-[70] absolute min-w-[140px]  ${windowSize > 360 ? " left-[48%] top-[58.5vh]" : "left-[58vw] top-[59vh]"} rotate-[-10deg] h-[15vh]`}
+                className={`${styles.cranes} w-[20vw] object-cover z-[71] absolute  ${windowSize > 360 ? " left-[63%] bottom-[28vh]" : "left-[63%] bottom-[28vh]"}  h-[auto]`}
                 alt=""
               />
               <img
                 src={rhino}
                 alt="rhino"
-                className={`${styles.rhino} z-[70] absolute top-[58vh] left-[45vw] w-[40vw] scale-[50%] min-w-[200px] h-[30vh]`}
+                className={`${styles.rhino}  z-[70] absolute bottom-[20vh] left-[45vw] w-[45vw]   h-[auto] object-cover`}
               />
             </div>
             <img
               src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711649097/rhino-kela_2rhino_Shadow_wcx9qw_v147ty.jpg?_s=public-apps"
-              className={`${styles.rhino_shadow} z-[70] absolute top-[68vh] left-[45vw] w-[40vw] scale-[50%] min-w-[200px] h-[30vh]`}
+              className={`${styles.rhino_shadow} z-[70] absolute bottom-[12.7vh] left-[45vw] w-[45vw]   h-[auto] object-cover`}
               alt=""
             />
           </div>
