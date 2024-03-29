@@ -336,7 +336,7 @@ const Team = () => {
     {
       id: 1,
       name: "Rituporna Das",
-      designation: "Chief Coordinator",
+      designation: "Convenor",
       photoLink:
         "https://res.cloudinary.com/dldebeast/image/upload/v1711702255/posua2024/WhatsApp_Image_2024-03-29_at_2.18.14_PM_eqaey0.jpg",
       // "https://res.cloudinary.com/dldebeast/image/upload/v1711697331/posua2024/pz2gxrehw61x1p9cqmxo.jpg",
@@ -346,47 +346,6 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Gyandeep Gogoi",
-      designation: "Chief Coordinator",
-      photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711699241/posua2024/tklograv19i4dcrefbrh.webp",
-      facebook: "https://www.facebook.com/michaeljohnson",
-      github: "https://github.com/michaeljohnson",
-      linkedin: "https://www.linkedin.com/in/michaeljohnson",
-    },
-    {
-      id: 3,
-      name: "Dhiraj deka",
-      designation: "Chief Coordinator",
-      photoLink:
-        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691755/WhatsApp_Image_2024-03-29_at_11.22.22-min-min_e5jx2m.webp",
-      facebook: "https://www.facebook.com/michaeljohnson",
-      github: "https://github.com/michaeljohnson",
-      linkedin: "https://www.linkedin.com/in/michaeljohnson",
-    },
-    {
-      id: 4,
-      name: "Shristi Goswami",
-      designation: "Executive Head",
-      photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711699245/posua2024/bmepnzwgtm2eksdukldm.webp",
-      facebook: "https://www.facebook.com/michaeljohnson",
-      github: "https://github.com/michaeljohnson",
-      linkedin: "https://www.linkedin.com/in/michaeljohnson",
-    },
-    {
-      id: 5,
-      name: "Mriganga Jyoti Chutia",
-      designation: "Chief Coordinator",
-      photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711700718/posua2024/mriganga_chutiya_sdifis.jpg",
-      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655462/posua/IMG-20240326-WA0021_-_CE_067_Amlandeep__Dutta_w52mmp.webp",
-      facebook: "https://www.facebook.com/michaeljohnson",
-      github: "https://github.com/michaeljohnson",
-      linkedin: "https://www.linkedin.com/in/michaeljohnson",
-    },
-    {
-      id: 6,
       name: "Hrishikesh Barpujari",
       designation: "Treasurer",
       photoLink:
@@ -396,7 +355,48 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 14,
+      id: 3,
+      name: "Gyandeep Gogoi",
+      designation: "Chief Coordinator",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699241/posua2024/tklograv19i4dcrefbrh.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 4,
+      name: "Dhiraj deka",
+      designation: "Chief Coordinator",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691755/WhatsApp_Image_2024-03-29_at_11.22.22-min-min_e5jx2m.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 5,
+      name: "Amlandeep Dutta",
+      designation: "Chief Coordinator",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711707094/amalan_myxtpk.jpg",
+      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655462/posua/IMG-20240326-WA0021_-_CE_067_Amlandeep__Dutta_w52mmp.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 6,
+      name: "Shristi Goswami",
+      designation: "Executive Head",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699245/posua2024/bmepnzwgtm2eksdukldm.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 7,
       name: "Sasanka Shayamol Saikia",
       designation: "Executive Head",
       photoLink:
@@ -406,7 +406,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 4,
+      id: 8,
       name: "Hrishikesh Choudhury",
       designation: "Executive Head",
       photoLink:
@@ -416,7 +416,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 23,
+      id: 9,
       name: "Debashish Konwar",
       designation: "Executive Head",
       photoLink:
@@ -426,7 +426,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 24,
+      id: 10,
       name: "Dhan Shree Nath",
       designation: "Executive Head",
       photoLink:
@@ -437,22 +437,33 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 25,
-      name: "Tropcilina Saikia",
+      id: 11,
+      name: "Miraj Deka",
       designation: "Student Advisor",
       photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711700843/posua2024/tropci_ybhv3n.jpg",
-      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655476/posua/WhatsApp_Image_2024-03-26_at_11.49.41_PM_-_CE_060_Hrishikesh__Choudhury_gagzba.webp",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700269/posua2024/miraj_nu0dq8.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 26,
-      name: "Miraj Deka",
+      id: 12,
+      name: "Mriganga Jyoti Chutia",
       designation: "Student Advisor",
       photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711700269/posua2024/miraj_nu0dq8.webp",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700718/posua2024/mriganga_chutiya_sdifis.jpg",
+      // "https://res.cloudinary.com/dldebeast/image/upload/v1711700269/posua2024/miraj_nu0dq8.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 13,
+      name: "Tropcilina Saikia",
+      designation: "Student Advisor",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700843/posua2024/tropci_ybhv3n.jpg",
+      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655476/posua/WhatsApp_Image_2024-03-26_at_11.49.41_PM_-_CE_060_Hrishikesh__Choudhury_gagzba.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
