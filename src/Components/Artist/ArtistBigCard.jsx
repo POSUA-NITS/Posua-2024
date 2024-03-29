@@ -22,10 +22,10 @@ const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
             className="absolute h-full w-full object-cover"
           />
           <div className="absolute flex flex-col justify-center items-center bottom-[.8rem] z-[20000] leading-[.6rem]">
-            <div className="text-[.7rem] font-semibold" style={{ color: "#B02227" }}>
+            <div className="text-[1.78vw] font-semibold" style={{ color: "#B02227" }}>
               {name}
             </div>
-            <div className="text-[.4rem]" style={{ color: "#B02227" }}>
+            <div className="text-[1.2vw]" style={{ color: "#B02227" }}>
               {profession}
             </div>
           </div>
