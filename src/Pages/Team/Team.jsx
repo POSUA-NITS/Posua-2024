@@ -60,6 +60,36 @@ const Team = () => {
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
+    {
+      id: 4,
+      name: "Syed Intekhab Hussain",
+      designation: "Hospitality Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711715776/SyedIntekhab_posua-SYEDINTEKHABHUSSAIN-min-ezgif.com-jpg-to-webp-converter_vlcbma.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 5,
+      name: "Ashish Handique",
+      designation: "Hospitality Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716150/AshishHandique-MEA028ASHISHHANDIQUE-min-ezgif.com-png-to-webp-converter_itxtaa.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 6,
+      name: "Suraj Saha",
+      designation: "Hospitality Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716857/ezgif.com-jpg-to-webp-converter_4_h9xwsx.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
   ];
   const decoration = [
     {
@@ -78,6 +108,26 @@ const Team = () => {
       designation: "Decoration Head",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711658765/posua/IMG-20240313-WA0248-ME-B-141-ALVINA-DAS_pz8yxe.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 4,
+      name: "Dhritishmita Dehingia",
+      designation: "Decoration Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716937/ezgif.com-jpg-to-webp-converter_5_h1txms.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 5,
+      name: "Akash Sonowal",
+      designation: "Decoration Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716013/ezgif.com-jpg-to-webp-converter_1_xju6wt.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -178,6 +228,16 @@ const Team = () => {
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
+    {
+      id: 6,
+      name: "Arnab Tamuly",
+      designation: "Infra & Logistics",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716395/ezgif.com-jpg-to-webp-converter_2_vjiwbe.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
   ];
   const Rally = [
     {
@@ -208,6 +268,16 @@ const Team = () => {
       designation: "Publicity Head",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655471/posua/A5F9ADFF-23DE-4B87-9BEA-70014F8D12C5_-_ME_A_007_Nabarun_Gathiri_hqzfbz.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 2,
+      name: "Ajanit Priyanubhab Bora",
+      designation: "Publicity Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711709628/WhatsApp_Image_2024-03-29_at_16_emjrxi.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -292,6 +362,16 @@ const Team = () => {
       designation: "Head (Food)",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655473/posua/IMG_20240325_124706_-_EI27_Agnibh_Rajkonwar_o58gfq.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 3,
+      name: "Archana Sonowal",
+      designation: "Head (Food)",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711715659/ezgif.com-jpg-to-webp-converter_nshtti.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -624,7 +704,7 @@ const Team = () => {
     },
     {
       id: 14,
-      name: "Kaustav Deb",
+      name: "Kaustav Dev",
       designation: "UI/UX",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662253/posua/IMG-20230731-WA0061_-_ME_026_Kaustav_ravlle.webp",
