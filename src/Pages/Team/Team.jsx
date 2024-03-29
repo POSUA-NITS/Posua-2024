@@ -704,7 +704,7 @@ const Team = () => {
     },
     {
       id: 14,
-      name: "Kaustav Deb",
+      name: "Kaustav Dev",
       designation: "UI/UX",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662253/posua/IMG-20230731-WA0061_-_ME_026_Kaustav_ravlle.webp",
