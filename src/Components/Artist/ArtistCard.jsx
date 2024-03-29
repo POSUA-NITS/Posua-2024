@@ -20,7 +20,7 @@ const ArtistCard = ({
   //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps";
   return (
     <div
-      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[60rem] h-[auto] border-[.5rem] shadow-md justify-between pb-8" : "w-[12.8rem] h-[16rem] justify-center"}`}
+      className={`flex items-center transition-all duration-[1000ms] ease-in-out ${clickk ? "w-[95vw] md:w-[50rem] lg:w-[60rem] h-[auto] border-[.5rem] shadow-md justify-between pb-8" : "w-[12.8rem] h-[16rem] justify-center"}`}
       style={{ borderColor: "#C7A158", backgroundColor: "#F1E4D0" }}
     >
       <div
@@ -29,7 +29,7 @@ const ArtistCard = ({
           setClickk(true);
         }}
       >
-        <div className="absolute w-[100%] h-[100%] flex justify-center items-center z-[10]">
+        <div className="w-[20rem] h-[100%] flex justify-center items-center z-[10]">
           <img src={backFrame} alt="Background" className="h-full w-full object-cover" />
         </div>
         <div className="absolute w-[100%] h-[100%] flex justify-center items-center z-[15]">
@@ -53,7 +53,7 @@ const ArtistCard = ({
         </div>
       </div>
       <div
-        className={`w-[45vw] flex flex-col gap-[1.5rem] flex-wrap h-full justify-center items-center px-[3rem] transition-all duration-500 ease-in-out ${clickk ? "opacity-100 relative" : "absolute opacity-0"}`}
+        className={`flex flex-col gap-[1.5rem] flex-wrap h-full justify-center items-center px-[1rem] md:px-[3rem] transition-all duration-500 ease-in-out ${clickk ? "opacity-100 relative" : "absolute opacity-0"}`}
       >
         <div
           className="text-[3rem] font-bold"

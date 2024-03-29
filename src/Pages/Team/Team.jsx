@@ -9,6 +9,14 @@ const Team = () => {
   useSetTitle("Team | Posua");
   const [active1, setActive1] = useState(1);
   const [active3, setActive3] = useState(1);
+  const [active4, setActive4] = useState(1);
+  const [active5, setActive5] = useState(1);
+  const [active2, setActive2] = useState(1);
+  const [active6, setActive6] = useState(1);
+  const [active7, setActive7] = useState(1);
+  const [active8, setActive8] = useState(1);
+  const [active9, setActive9] = useState(1);
+  const [active10, setActive10] = useState(1);
 
   const teamTopLogo =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711037538/team_fyxmgg.jpg?_s=public-apps";
@@ -23,7 +31,7 @@ const Team = () => {
 
   const hospitality = [
     {
-      id: 3,
+      id: 1,
       name: "Dibyajyoti Bora",
       designation: "Hospitality Head",
       photoLink:
@@ -33,7 +41,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 8,
+      id: 2,
       name: "Janarddan Borah",
       designation: "Hospitality Head",
       photoLink:
@@ -43,7 +51,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 21,
+      id: 3,
       name: "Preetima Das",
       designation: "Hospitality Head",
       photoLink:
@@ -55,7 +63,7 @@ const Team = () => {
   ];
   const decoration = [
     {
-      id: 9,
+      id: 1,
       name: "Jahnabi Devi",
       designation: "Decoration Head",
       photoLink:
@@ -65,7 +73,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 10,
+      id: 2,
       name: "Alvina Das",
       designation: "Decoration Head",
       photoLink:
@@ -77,7 +85,7 @@ const Team = () => {
   ];
   const design = [
     {
-      id: 5,
+      id: 1,
       name: "Nilabh Das",
       designation: "Design Head",
       photoLink:
@@ -99,7 +107,7 @@ const Team = () => {
   ];
   const content = [
     {
-      id: 18,
+      id: 1,
       name: "Srutishmita Das",
       designation: "Content Head",
       photoLink:
@@ -109,7 +117,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 23,
+      id: 2,
       name: "Gitartha Pratim Borah",
       designation: "Content Head",
       photoLink:
@@ -121,7 +129,7 @@ const Team = () => {
   ];
   const Infra = [
     {
-      id: 11,
+      id: 1,
       name: "Bikash Sharma",
       designation: "Infra & Logistics Head",
       photoLink:
@@ -131,7 +139,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 13,
+      id: 2,
       name: "Krishnav Choudhury",
       designation: "Infra & Logistics Head",
       photoLink:
@@ -141,7 +149,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 17,
+      id: 3,
       name: "Ranjan Kumar Mandal",
       designation: "Infra & Logistics Head",
       photoLink:
@@ -151,7 +159,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 30,
+      id: 4,
       name: "Hannan Afridi",
       designation: "Infra & Logistics",
       photoLink:
@@ -161,7 +169,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 30,
+      id: 5,
       name: "Sinaan Khanikar",
       designation: "Infra & Logistics",
       photoLink:
@@ -173,7 +181,7 @@ const Team = () => {
   ];
   const Rally = [
     {
-      id: 4,
+      id: 1,
       name: "Reetom Rana Dutta",
       designation: "Cultural Rally Head",
       photoLink:
@@ -183,7 +191,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 24,
+      id: 3,
       name: "Chiranjit Borah",
       designation: "Cultural Rally Head",
       photoLink:
@@ -195,7 +203,7 @@ const Team = () => {
   ];
   const Publicity = [
     {
-      id: 7,
+      id: 1,
       name: "Nabarun Gathiri",
       designation: "Publicity Head",
       photoLink:
@@ -217,7 +225,7 @@ const Team = () => {
   ];
   const eventManagement = [
     {
-      id: 12,
+      id: 1,
       name: "Mridusmita Choudhury",
       designation: "Event Management Head",
       photoLink:
@@ -227,7 +235,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 15,
+      id: 2,
       name: "Debalina Borah",
       designation: "Event Management Head",
       photoLink:
@@ -237,7 +245,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 19,
+      id: 3,
       name: "Amlan Jyoti Mahanta",
       designation: "Event Management Head",
       photoLink:
@@ -247,7 +255,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 25,
+      id: 4,
       name: "Uddipta Borah",
       designation: "Event Management Head",
       photoLink:
@@ -257,7 +265,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 28,
+      id: 5,
       name: "Nabasmita Borah",
       designation: "Event Management Head",
       photoLink:
@@ -269,7 +277,7 @@ const Team = () => {
   ];
   const Food = [
     {
-      id: 27,
+      id: 1,
       name: "Sudipto Dey",
       designation: "Head (Food)",
       photoLink:
@@ -279,7 +287,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 29,
+      id: 2,
       name: "Agnibh Rajkonwar",
       designation: "Head (Food)",
       photoLink:
@@ -291,7 +299,7 @@ const Team = () => {
   ];
   const photography = [
     {
-      id: 16,
+      id: 1,
       name: "Bishal Thakur",
       designation: "Photography & Videography Head",
       photoLink:
@@ -303,7 +311,7 @@ const Team = () => {
   ];
   const Marketing = [
     {
-      id: 20,
+      id: 1,
       name: "Mainur Islam Ahmed",
       designation: "Marketing Head",
       photoLink:
@@ -313,7 +321,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 26,
+      id: 2,
       name: "Chandan Mahato",
       designation: "Marketing Head",
       photoLink:
@@ -397,7 +405,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 22,
+      id: 4,
       name: "Hrishikesh Choudhury",
       designation: "Executive Head",
       photoLink:
@@ -600,7 +608,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/wi3bl44ct0cwa0ufpfhq.webp",
       email: "director@nits.ac.in",
-      designation: "Chief Patron",
+      designation: "President",
     },
     {
       id: 2,
@@ -609,7 +617,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/v1711700443/posua2024/sdhar_wh2c6h.webp",
       email: "pranjit@che.nits.ac.in",
-      designation: "Mentor",
+      designation: "President",
     },
     {
       id: 3,
@@ -627,7 +635,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689460/posua2024/bznscoyappwonquq8vbm.webp",
       email: "samir@cse.nits.ac.in",
-      designation: "Vice President",
+      designation: "Vice-President",
     },
     {
       id: 5,
@@ -636,26 +644,35 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ecvto7fc1ov6v20uswwh.webp",
       email: "nirmali@civil.nits.ac.in",
-      designation: "Vice President",
+      designation: "Vice-President",
     },
   ];
+  // console.log(active1);
 
   return (
-    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden mb-[4rem]">
+    <div className=" select-none  flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden mb-[4rem]">
       <div className="w-[100%] z-[2]">
-        <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
+        <img
+          src={topImage}
+          alt="Top img"
+          className=" pointer-events-none select-none w-full h-full object-fill"
+        />
       </div>
       <div
         className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem] z-[2]"
         style={{ overflowX: "unset" }}
       >
-        <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
-        <div className="absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
+        <img
+          src={teamTopLogo}
+          alt="Top logo"
+          className="w-full h-full object-fill select-none pointer-events-none "
+        />
+        <div className="select-none pointer-events-none  absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
           <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem]">
             <img
               src={jaapi2}
               alt="jaapi1"
-              className="w-full h-full object-fill animate-spin"
+              className="w-full h-full object-fill animate-spin select-none pointer-events-none "
               style={{ animationDuration: "4s" }}
             />
           </div>
@@ -686,7 +703,7 @@ const Team = () => {
         into its circle of gaiety and also ensures of breaking all the barriers among the
         crowd and bringing everyone together.
       </div>
-      <div className="mt-[7rem] sm:mt-[10rem] justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
+      <div className="mt-[7rem] sm:mt-[10rem] flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10]">
         {patronData.map((profile, i) => {
           return <PatronCard key={profile.id} {...profile} index={i} />;
         })}
@@ -697,7 +714,7 @@ const Team = () => {
       <LottieHeading title="UNION BODY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem]  z-[10] hidden">
         {UnionData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -715,7 +732,7 @@ const Team = () => {
               <SwiperSlide key={profile.id}>
                 {({ isActive }) => (
                   <div
-                    className="w-[100%] flex justify-center items-center"
+                    className="w-[100%] flex flex-wrap justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
                     {isActive ? setActive1(profile.id) : ""}
@@ -756,8 +773,18 @@ const Team = () => {
             style={{ backgroundColor: active1 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+            className={`${active1 === 3 ? "rounded-r-lg" : ""} ${active1 === 4 ? "rounded-l-lg" : ""} ${active1 !== 3 && active1 !== 4 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active1 === 4 || active1 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active1 === 4 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active1 === 4 ? "rounded-r-lg" : "rounded-lg"}  w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active1 === 4 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
@@ -765,7 +792,7 @@ const Team = () => {
       <LottieHeading title="TECH TEAM" />
 
       {/* *****************TeamCard for desktop view start5***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {developerData.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -818,8 +845,98 @@ const Team = () => {
             style={{ backgroundColor: active3 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active3 === 3 ? "white" : "#F2C18D" }}
+            className={`${active3 === 3 ? "rounded-r-lg" : ""} ${active3 === 4 ? "rounded-l-lg" : ""} ${active3 !== 3 && active3 !== 4 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 3 || active3 === 4 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 4 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 4 ? "rounded-r-lg" : ""} ${active3 === 5 ? "rounded-l-lg" : ""} ${active3 !== 4 && active3 !== 5 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 4 || active3 === 5 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 5 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 5 ? "rounded-r-lg" : ""} ${active3 === 6 ? "rounded-l-lg" : ""} ${active3 !== 5 && active3 !== 6 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 5 || active3 === 6 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 6 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 6 ? "rounded-r-lg" : ""} ${active3 === 7 ? "rounded-l-lg" : ""} ${active3 !== 6 && active3 !== 7 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 6 || active3 === 7 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 7 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 7 ? "rounded-r-lg" : ""} ${active3 === 8 ? "rounded-l-lg" : ""} ${active3 !== 7 && active3 !== 8 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 7 || active3 === 8 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 8 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 8 ? "rounded-r-lg" : ""} ${active3 === 9 ? "rounded-l-lg" : ""} ${active3 !== 8 && active3 !== 9 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 8 || active3 === 9 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 9 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 9 ? "rounded-r-lg" : ""} ${active3 === 10 ? "rounded-l-lg" : ""} ${active3 !== 9 && active3 !== 10 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 9 || active3 === 10 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 10 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 10 ? "rounded-r-lg" : ""} ${active3 === 11 ? "rounded-l-lg" : ""} ${active3 !== 10 && active3 !== 11 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 10 || active3 === 11 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 11 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 11 ? "rounded-r-lg" : ""} ${active3 === 12 ? "rounded-l-lg" : ""} ${active3 !== 11 && active3 !== 12 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active3 === 11 || active3 === 12 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active3 === 12 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 12 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active3 === 12 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
@@ -828,7 +945,7 @@ const Team = () => {
       <LottieHeading title="HOSPITALITY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {hospitality.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -849,7 +966,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive2(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -859,36 +976,36 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active2 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active2 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active2 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active2 === 1 ? "rounded-r-lg" : ""} ${active2 === 2 ? "rounded-l-lg" : ""} ${active2 !== 1 && active2 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active2 === 1 || active2 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active2 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active2 === 2 ? "rounded-r-lg" : ""} ${active2 === 3 ? "rounded-l-lg" : ""} ${active2 !== 2 && active2 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active2 === 2 || active2 === 3 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
+            style={{ backgroundColor: active2 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+            className={`${active2 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active2 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
@@ -897,7 +1014,7 @@ const Team = () => {
       <LottieHeading title="DECORATION" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {decoration.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -918,7 +1035,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive4(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -928,36 +1045,28 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active4 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active4 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active4 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active4 === 1 ? "rounded-r-lg" : ""} ${active4 === 2 ? "rounded-l-lg" : ""} ${active4 !== 1 && active4 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active4 === 1 || active4 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active4 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active4 === 2 ? "rounded-r-lg" : ""} ${active4 === 3 ? "rounded-l-lg" : ""} ${active4 !== 2 && active4 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active4 === 2 || active4 === 3 ? "white" : "#F2C18D",
             }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
@@ -965,7 +1074,7 @@ const Team = () => {
       <LottieHeading title="MANAGEMENT" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {eventManagement.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -986,7 +1095,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive5(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -996,43 +1105,63 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active5 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active5 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active5 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active5 === 1 ? "rounded-r-lg" : ""} ${active5 === 2 ? "rounded-l-lg" : ""} ${active5 !== 1 && active5 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active5 === 1 || active5 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active5 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active5 === 2 ? "rounded-r-lg" : ""} ${active5 === 3 ? "rounded-l-lg" : ""} ${active5 !== 2 && active5 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active5 === 2 || active5 === 3 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
+            style={{ backgroundColor: active5 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+            className={`${active5 === 3 ? "rounded-r-lg" : ""} ${active5 === 4 ? "rounded-l-lg" : ""} ${active5 !== 3 && active5 !== 4 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active5 === 4 || active5 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active5 === 4 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active5 === 4 ? "rounded-r-lg" : ""} ${active5 === 5 ? "rounded-l-lg" : ""} ${active5 !== 4 && active5 !== 5 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active5 === 4 || active5 === 5 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active5 === 5 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active5 === 5 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active5 === 5 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
       <LottieHeading title="CONTENT" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {content.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1053,7 +1182,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive6(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1063,36 +1192,28 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active6 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active6 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active6 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active6 === 1 ? "rounded-r-lg" : ""} ${active6 === 2 ? "rounded-l-lg" : ""} ${active6 !== 1 && active6 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active6 === 1 || active6 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active6 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active6 === 2 ? "rounded-r-lg" : ""} ${active6 === 3 ? "rounded-l-lg" : ""} ${active6 !== 2 && active6 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active6 === 2 || active6 === 3 ? "white" : "#F2C18D",
             }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
@@ -1100,7 +1221,7 @@ const Team = () => {
       <LottieHeading title="DESIGN" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {design.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1121,7 +1242,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive7(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1129,46 +1250,12 @@ const Team = () => {
             );
           })}
         </Swiper>
-        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
-          <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
-          ></div>
-        </div>
       </div>
 
       <LottieHeading title="LOGISTICS" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {Infra.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1189,7 +1276,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive7(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1199,43 +1286,63 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active7 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active7 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active7 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active7 === 1 ? "rounded-r-lg" : ""} ${active7 === 2 ? "rounded-l-lg" : ""} ${active7 !== 1 && active7 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active7 === 1 || active7 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active7 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active7 === 2 ? "rounded-r-lg" : ""} ${active7 === 3 ? "rounded-l-lg" : ""} ${active7 !== 2 && active7 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active7 === 2 || active7 === 3 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
+            style={{ backgroundColor: active7 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+            className={`${active7 === 3 ? "rounded-r-lg" : ""} ${active7 === 4 ? "rounded-l-lg" : ""} ${active7 !== 3 && active7 !== 4 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active7 === 4 || active7 === 3 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active7 === 4 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active7 === 4 ? "rounded-r-lg" : ""} ${active7 === 5 ? "rounded-l-lg" : ""} ${active7 !== 4 && active7 !== 5 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            style={{
+              backgroundColor: active7 === 4 || active7 === 5 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.8rem] h-[.8rem]"
+            style={{ backgroundColor: active7 === 5 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active7 === 5 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active7 === 5 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
       <LottieHeading title="FOOD" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {Food.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1256,7 +1363,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive8(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1266,43 +1373,35 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active8 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active8 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active8 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active8 === 1 ? "rounded-r-lg" : ""} ${active8 === 2 ? "rounded-l-lg" : ""} ${active8 !== 1 && active8 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active8 === 1 || active8 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active8 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active8 === 2 ? "rounded-r-lg" : ""} ${active8 === 3 ? "rounded-l-lg" : ""} ${active8 !== 2 && active8 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active8 === 2 || active8 === 3 ? "white" : "#F2C18D",
             }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
       <LottieHeading title="MARKETING" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {Marketing.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1323,7 +1422,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive9(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1333,43 +1432,35 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active9 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active9 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active9 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active9 === 1 ? "rounded-r-lg" : ""} ${active9 === 2 ? "rounded-l-lg" : ""} ${active9 !== 1 && active9 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active9 === 1 || active9 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active9 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active9 === 2 ? "rounded-r-lg" : ""} ${active9 === 3 ? "rounded-l-lg" : ""} ${active9 !== 2 && active9 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active9 === 2 || active9 === 3 ? "white" : "#F2C18D",
             }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
       <LottieHeading title="PHOTOGRAPHY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {photography.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1390,7 +1481,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive6(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1398,45 +1489,11 @@ const Team = () => {
             );
           })}
         </Swiper>
-        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
-          <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
-          ></div>
-        </div>
       </div>
       <LottieHeading title="RALLY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {Rally.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1457,7 +1514,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive10(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1467,43 +1524,43 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
+            className={`${active10 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active10 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
+            style={{ backgroundColor: active10 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active10 === 1 ? "rounded-r-lg" : ""} ${active10 === 2 ? "rounded-l-lg" : ""} ${active10 !== 1 && active10 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
+              backgroundColor: active10 === 1 || active10 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
+            style={{ backgroundColor: active10 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active10 === 2 ? "rounded-r-lg" : ""} ${active10 === 3 ? "rounded-l-lg" : ""} ${active10 !== 2 && active10 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
             style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
+              backgroundColor: active10 === 2 || active10 === 3 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
             className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
+            style={{ backgroundColor: active10 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
+            className={`${active10 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            style={{ backgroundColor: active10 === 3 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
       <LottieHeading title="PUBLICITY" />
 
       {/* *****************TeamCard for desktop view start1***************** */}
-      <div className="my-[4rem] md:grid sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10] hidden">
+      <div className="my-[4rem] md:flex flex-wrap w-[70%] items-center justify-center gap-x-[6rem] gap-y-[4rem] z-[10] hidden">
         {Publicity.map((profile, i) => {
           return <TeamCard key={profile.id} {...profile} index={i} />;
         })}
@@ -1524,7 +1581,7 @@ const Team = () => {
                     className="w-[100%] flex justify-center items-center"
                     style={{ overflowX: "unset" }}
                   >
-                    {isActive ? setActive1(profile.id) : ""}
+                    {isActive ? setActive6(profile.id) : ""}
                     <TeamCard {...profile} />
                   </div>
                 )}
@@ -1532,40 +1589,6 @@ const Team = () => {
             );
           })}
         </Swiper>
-        <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
-          <div
-            className={`${active1 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 1 ? "white" : "#F2C18D" }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 1 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 1 ? "rounded-r-lg" : ""} ${active1 === 2 ? "rounded-l-lg" : ""} ${active1 !== 1 && active1 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 1 || active1 === 2 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 2 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 2 ? "rounded-r-lg" : ""} ${active1 === 3 ? "rounded-l-lg" : ""} ${active1 !== 2 && active1 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
-            style={{
-              backgroundColor: active1 === 2 || active1 === 3 ? "white" : "#F2C18D",
-            }}
-          ></div>
-          <div
-            className="w-[.8rem] h-[.8rem]"
-            style={{ backgroundColor: active1 === 3 ? "white" : "" }}
-          ></div>
-          <div
-            className={`${active1 === 3 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active1 === 3 ? "white" : "#F2C18D" }}
-          ></div>
-        </div>
       </div>
       {/* *****************TeamCard for desktop view end3***************** */}
 
@@ -1573,16 +1596,32 @@ const Team = () => {
 
       {/** *********flower section ************* */}
       <div className="absolute z-[1] top-[20rem] left-[-4rem] md:top-[45rem] md:left-[-25rem] w-[10rem] h-[10rem] md:w-[40rem] md:h-[40rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className=" select-none pointer-events-none h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[50rem] right-[-4rem] md:top-[100rem] md:right-[-9rem] w-[8rem] h-[8rem] md:w-[20rem] md:h-[20rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className=" select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[90rem] left-[-3rem] md:top-[150rem] md:left-[-10rem] w-[11rem] h-[11rem] md:w-[25rem] md:h-[25rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[170rem] right-[-3rem] md:top-[180rem] md:right-[-10rem] w-[13rem] h-[13rem] md:w-[30rem] md:h-[30rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       {/** *********flower section ************* */}
     </div>

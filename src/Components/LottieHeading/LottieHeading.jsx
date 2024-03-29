@@ -5,7 +5,7 @@ import musicalnoteslottie from "../../assets/lottie/musicalnotes.json";
 
 const LottieHeading = ({ title }) => {
   return (
-    <div id={styles.maintop}>
+    <div id={styles.maintop} className="pointer-events-none select-none">
       <div id={styles.flexholder}>
         <Player
           className={styles.butterfly}
