@@ -470,24 +470,48 @@ const Team = () => {
   const patronData = [
     {
       id: 1,
-      name: "Rob Jackson",
+      name: "Prof. Dilip Kumar Baidya",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-      email: "DIRECTOR@NITS.AC.IN",
+        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/wi3bl44ct0cwa0ufpfhq.webp",
+      email: "director@nits.ac.in",
+      designation: "Chief Patron",
     },
     {
       id: 2,
-      name: "Rob Jackson",
+      name: "Dr. Pranjit Barman",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-      email: "DIRECTOR@NITS.AC.IN",
+        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ri7by48dleimvh3qmflf.webp",
+      email: "pranjit@che.nits.ac.in",
+      designation: "Mentor",
     },
     {
       id: 3,
-      name: "Rob Jackson",
+      name: "Dr. Ujjwala Baruah",
       photoLink:
-        "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-      email: "DIRECTOR@NITS.AC.IN",
+        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/inn4pz65sfyfdcgddo5h.webp",
+      email: "ujwala@cse.nits.ac.in",
+      designation: "President",
+    },
+    {
+      id: 4,
+      name: "Dr. Samir Kumar Borgohain",
+      photoLink:
+        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689460/posua2024/bznscoyappwonquq8vbm.webp",
+      email: "samir@cse.nits.ac.in",
+      designation: "President",
+    },
+    {
+      id: 5,
+      name: "Dr. Nirmali Borthakur",
+      photoLink:
+        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
+        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ecvto7fc1ov6v20uswwh.webp",
+      email: "nirmali@civil.nits.ac.in",
+      designation: "President",
     },
   ];
 
@@ -537,7 +561,7 @@ const Team = () => {
         into its circle of gaiety and also ensures of breaking all the barriers among the
         crowd and bringing everyone together.
       </div>
-      <div className="mt-[7rem] sm:mt-[10rem] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
+      <div className="mt-[7rem] sm:mt-[10rem] justify-center grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 md:gap-x-[7rem] gap-y-[3rem] z-[10]">
         {patronData.map((profile, i) => {
           return <PatronCard key={profile.id} {...profile} index={i} />;
         })}

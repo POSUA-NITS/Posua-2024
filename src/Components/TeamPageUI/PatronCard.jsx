@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const PatronCard = ({ name, email, photoLink }) => {
+const PatronCard = ({ name, email, photoLink, designation }) => {
   const [hover, sethover] = useState(false);
 
   return (
@@ -21,13 +21,13 @@ const PatronCard = ({ name, email, photoLink }) => {
       />
       <div className="absolute w-full h-full flex flex-col items-center justify-end bottom-[3.6rem] leading-4 z-[54]">
         <div
-          className="text-[1.1rem] font-semibold"
+          className="text-[.85rem] font-semibold"
           style={{ color: "#BC0404", fontFamily: "DM Serif Display" }}
         >
           {name}
         </div>
-        <div className="text-[.7rem]" style={{ color: "#E8AC36", fontFamily: "Alata" }}>
-          CHIEF PATRON
+        <div className="text-[.65rem]" style={{ color: "#E8AC36", fontFamily: "Alata" }}>
+          {designation}
         </div>
       </div>
       <div
