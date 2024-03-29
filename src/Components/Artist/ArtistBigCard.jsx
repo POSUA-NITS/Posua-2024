@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
   const frame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps";
+
+  const [windowSize, setWindowSize] = useState(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowSize(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    // Initial setup
+    handleResize();
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
     <div>
@@ -10,7 +27,9 @@ const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
         className="w-[90vw] py-4 gap-[1rem] flex items-center px-2 border-[.4rem]"
         style={{ backgroundColor: "#F1E4D0", borderColor: "#C7A158" }}
       >
-        <div className="w-[6.5rem] h-[75%] flex items-center justify-center relative">
+        <div
+          className={`${windowSize > 365 ? "min-w-[6.5rem]" : "min-w-[4rem]"} h-[75%] flex items-center justify-center relative`}
+        >
           <img
             src={frame}
             alt="Artist frame"
@@ -21,16 +40,24 @@ const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
             alt="Artist img"
             className="absolute h-full w-full object-cover"
           />
-          <div className="absolute flex flex-col justify-center items-center bottom-[.8rem] z-[20000] leading-[.6rem]">
-            <div className="text-[.7rem] font-semibold" style={{ color: "#B02227" }}>
+          <div
+            className={`absolute flex flex-col justify-center items-center z-[20000] ${windowSize > 365 ? "leading-[.55rem] bottom-[.9rem]" : "bottom-[.5rem]"}`}
+          >
+            <div
+              className={` ${windowSize > 365 ? "text-[.6rem]" : "text-[.4rem]"} font-semibold`}
+              style={{ color: "#B02227" }}
+            >
               {name}
             </div>
-            <div className="text-[.4rem]" style={{ color: "#B02227" }}>
+            <div
+              className={` ${windowSize > 365 ? "text-[.4rem]" : "text-[.2rem]"}`}
+              style={{ color: "#B02227" }}
+            >
               {profession}
             </div>
           </div>
         </div>
-        <div className="flex-[3] h-[100%] flex flex-col justify-center gap-[.6rem] py-2 items-center px-3">
+        <div className="flex flex-col justify-center gap-[.6rem] items-center">
           <div
             className=" font-semibold text-[1.2rem]"
             style={{ color: "#B02227", fontFamily: "Abril Fatface" }}
