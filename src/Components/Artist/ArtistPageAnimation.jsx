@@ -45,13 +45,13 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
     "https://res.cloudinary.com/dp92qug2f/image/upload/v1711635199/Runway-2024-03-28T14_07_15.809Z-Upscale-Image-Upscaled-Image-2396-x-1920-min_gvp6bp.webp";
   return (
     <div
-      className={`relative w-[100%] transition-all duration-[1000ms] ease-in-out ${first || second || third ? "h-[55rem]" : " h-[25rem]"}`}
+      className={`relative w-[100%] transition-all duration-[1000ms] ease-in-out ${first || second || third ? "h-[60rem]" : " h-[25rem]"}`}
     >
       <div
-        className={`flex w-[100%] justify-center gap-[8rem] transition-all duration-[1500] ease-in-out ${first || second || third ? "top-[37rem]" : "top-[0rem]"} absolute`}
+        className={`flex w-[100%] justify-center gap-[8rem] transition-all duration-[1500] ease-in-out ${first || second || third ? "top-[40rem]" : "top-[0rem]"} absolute`}
       >
         <div
-          className={`transition-all duration-[1500ms] ease-in-out ${first ? "absolute top-[-37rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-[1500ms] ease-in-out ${first ? "absolute top-[-38rem] md:top-[-40rem] lg:top-[-37rem]" : "top-[0rem]"}`}
           onClick={() => {
             setsecond(false);
             setthird(false);
@@ -72,7 +72,7 @@ const ArtistPageAnimation = ({ first, second, third, setfirst, setsecond, setthi
           />
         </div>
         <div
-          className={`transition-all duration-[1500ms] ease-in-out ${second ? "absolute top-[-37rem]" : "top-[0rem]"}`}
+          className={`transition-all duration-[1500ms] ease-in-out ${second ? "absolute top-[-42rem] md:top-[-45rem] lg:top-[-40rem]" : "top-[0rem]"}`}
           onClick={() => {
             setfirst(false);
             setthird(false);

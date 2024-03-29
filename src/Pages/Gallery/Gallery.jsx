@@ -142,14 +142,14 @@ const Gallery = () => {
           /> */}
 
           <LottieHeading title="GALLERY" />
-          <div id={styles.rangoliholder}>
+          <div id={styles.rangoliholder} className="pointer-events-none select-none">
             <img
               src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711288702/rangoli_404_posua_d0je3u.png"
               alt=""
             />
           </div>
 
-          <div id={styles.bothimgholder}>
+          <div id={styles.bothimgholder} className="pointer-events-none select-none">
             <div id={styles.sideflowerholder}>
               <img
                 src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711483479/sideflower_stcy99.png"
