@@ -330,7 +330,7 @@ const Team = () => {
       name: "Dhiraj deka",
       designation: "Chief Coordinator",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711657351/posua/IMG_20240328_185159_-_ME_A_077_Dhiraj_deka_b6duvt.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691755/WhatsApp_Image_2024-03-29_at_11.22.22-min-min_e5jx2m.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -434,7 +434,7 @@ const Team = () => {
       name: "Pragya Prabir Ranjan Deka",
       designation: "Developer",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662980/posua/Profile_Pragya_-_CSE_130_PRAGYAPRABIR_j39ks8.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691855/WhatsApp_Image_2024-03-29_at_11.26.40_g6magf.webp",
       facebook: "https://www.facebook.com/johndoe",
       github: "https://github.com/johndoe",
       linkedin: "https://www.linkedin.com/in/johndoe",
@@ -474,7 +474,7 @@ const Team = () => {
       name: "Gracie G Rabha",
       designation: "UI/UX",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662290/posua/IMG-20240328-WA0031_-_CSE_012__Gracie_xjvqg3.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691990/WhatsApp_Image_2024-03-29_at_11.28.11-min_dj9vpu.webp",
       facebook: "https://www.facebook.com/johndoe",
       github: "https://github.com/johndoe",
       linkedin: "https://www.linkedin.com/in/johndoe",
