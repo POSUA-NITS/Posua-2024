@@ -198,7 +198,7 @@ const Hero = () => {
       {stopAnimation && (
         <div className="animation_slideInto flex justify-center items-start">
           <img
-            src="https://res.cloudinary.com/dy55sllug/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711649099/posua_logo_1_to45u1_llupko.jpg?_s=public-apps"
+            src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711694217/ezgif-1-f0bbdc6570_qyfn2w.webp"
             className={`${windowSize < 800 ? `${styles.posua_logo_mobile} top-[5%] ` : `${styles.posua_logo} top-[1.5%]`} absolute flex justify-center items-start object-contain overflow-hidden h-[40vh] w-[100vw] z-[99] left-5 `}
             alt=""
           />
