@@ -57,7 +57,7 @@ const SponsorPage = () => {
             </div> */}
           </div>
         </div>
-        <div className="second relative">
+        <div className="second relative select-none pointer-events-none">
           <div className="w-[100%] z-[2]">
             <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
           </div>

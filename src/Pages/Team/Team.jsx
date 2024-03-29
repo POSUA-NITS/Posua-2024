@@ -529,21 +529,29 @@ const Team = () => {
   ];
 
   return (
-    <div className="flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden mb-[4rem]">
+    <div className=" select-none  flex flex-col justify-center items-center m-0 p-0 relative overflow-x-hidden overflow-y-hidden mb-[4rem]">
       <div className="w-[100%] z-[2]">
-        <img src={topImage} alt="Top img" className="w-full h-full object-fill" />
+        <img
+          src={topImage}
+          alt="Top img"
+          className=" pointer-events-none select-none w-full h-full object-fill"
+        />
       </div>
       <div
         className="w-[100%] md:h-[9rem] mb-[2rem] md:mb-[3rem] relative bottom-[.2rem] md:bottom-[1rem] z-[2]"
         style={{ overflowX: "unset" }}
       >
-        <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" />
-        <div className="absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
+        <img
+          src={teamTopLogo}
+          alt="Top logo"
+          className="w-full h-full object-fill select-none pointer-events-none "
+        />
+        <div className="select-none pointer-events-none  absolute w-[100%] top-[-.9rem] sm:top-[-.6rem] md:top-[-.9rem] flex justify-center gap-[9rem] sm:gap-[15rem] md:gap-[20rem] lg:gap-[30rem]">
           <div className=" w-[4rem] sm:w-[5rem] md:w-[11rem]">
             <img
               src={jaapi2}
               alt="jaapi1"
-              className="w-full h-full object-fill animate-spin"
+              className="w-full h-full object-fill animate-spin select-none pointer-events-none "
               style={{ animationDuration: "4s" }}
             />
           </div>

@@ -23,7 +23,7 @@ const Leaves = () => {
     >
       {/* <Player autoplay loop src={leaveslottie}></Player> */}
       <img
-        className="w-[100%] h-[100%] object-cover"
+        className="w-[100%] h-[100%] object-cover pointer-events-none"
         src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711660065/f5d3bf2a0bfea972bd72a40e0a7fb3fe_1_wz9ipz.gif"
         alt=""
       />
