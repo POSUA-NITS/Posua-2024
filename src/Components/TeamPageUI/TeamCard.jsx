@@ -22,7 +22,7 @@ const TeamCard = ({ name, photoLink, designation }) => {
         <img
           src={photoLink}
           alt="hero"
-          className={`object-cover rounded-[100%] border-2 transition-all duration-500 ease-in-out mx-auto ${hover ? "w-[80%] h-[80%]" : "w-full h-full"}`}
+          className={`object-cover rounded-[100%] border-2 transition-all duration-500 ease-in-out mx-auto ${hover ? "w-[90%] h-[90%]" : "w-full h-full"}`}
           style={{ borderColor: "#BC0404" }}
         />
         <div

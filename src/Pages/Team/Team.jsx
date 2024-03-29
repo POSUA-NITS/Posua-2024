@@ -103,7 +103,7 @@ const Team = () => {
       name: "Gitartha Pratim Borah",
       designation: "Content Head",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655482/posua/8ce76305-4a11-4e05-91a8-7ba10267555e_-_ME_A_064_Gitartha_Pratim_Borah_jsttpi.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711690073/Screenshot_4569_-min_dgnonk.webp",
       facebook: "https://www.facebook.com/johndoe",
       github: "https://github.com/johndoe",
       linkedin: "https://www.linkedin.com/in/johndoe",
@@ -330,7 +330,7 @@ const Team = () => {
       name: "Dhiraj deka",
       designation: "Chief Coordinator",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711657351/posua/IMG_20240328_185159_-_ME_A_077_Dhiraj_deka_b6duvt.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691755/WhatsApp_Image_2024-03-29_at_11.22.22-min-min_e5jx2m.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -363,6 +363,7 @@ const Team = () => {
       name: "Manish Sarmah",
       photoLink:
         "https://res.cloudinary.com/draptrzrc/image/upload/v1708265097/techTeam2/gojaldydoehwty1i3tiz.webp",
+      designation: "Technical Head",
       facebook: "https://www.facebook.com/manish.sarmah.9",
       github: "https://github.com/manisarmah",
       linkedin: "https://www.linkedin.com/in/manish-sarmah/",
@@ -370,6 +371,7 @@ const Team = () => {
     {
       id: 2,
       name: "Himangshu Sarma",
+      designation: "Technical Co-Head",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711661232/posua/My_PFP_1_-_ECE_013_Himangshu_Sarma_dzv28b.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -378,16 +380,8 @@ const Team = () => {
     },
     {
       id: 3,
-      name: "Aditya Ranjan",
-      photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711661209/posua/1679759309003_-_CE070_Aditya_Ranjan_hfavuz.webp",
-      facebook: "https://www.facebook.com/janesmith",
-      github: "https://github.com/janesmith",
-      linkedin: "https://www.linkedin.com/in/janesmith",
-    },
-    {
-      id: 4,
       name: "Pragya Annesha Baruah",
+      designation: "Technical Co-Head",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711661249/posua/IMG_20240302_020246_170_-_132_Pragya_Annesha_Baruah_cwgfs2.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
@@ -395,8 +389,20 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
+      id: 4,
+      name: "Aditya Ranjan",
+      designation: "Technical Co-Head",
+      photoLink:
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711661209/posua/1679759309003_-_CE070_Aditya_Ranjan_hfavuz.webp",
+      facebook: "https://www.facebook.com/janesmith",
+      github: "https://github.com/janesmith",
+      linkedin: "https://www.linkedin.com/in/janesmith",
+    },
+
+    {
       id: 5,
       name: "Arindom Sarmah",
+      designation: "Developer",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662554/posua/Screenshot_20240328_213350_Gallery_-_ECE_106_ARINDOM_SARMAH_twg7ag.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -406,6 +412,7 @@ const Team = () => {
     {
       id: 6,
       name: "Satya Prakash Upadhyaya",
+      designation: "Developer",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662228/posua/IMG-20240226-WA0001_-_CSE_104_Satya_mgtrbx.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -415,6 +422,7 @@ const Team = () => {
     {
       id: 7,
       name: "Debisma Priya Borah",
+      designation: "Developer",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662234/posua/IMG-20240328-WA0099_-_CSE_116__Debisma_wuklaz.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -424,14 +432,16 @@ const Team = () => {
     {
       id: 8,
       name: "Pragya Prabir Ranjan Deka",
+      designation: "Developer",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662980/posua/Profile_Pragya_-_CSE_130_PRAGYAPRABIR_j39ks8.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691855/WhatsApp_Image_2024-03-29_at_11.26.40_g6magf.webp",
       facebook: "https://www.facebook.com/johndoe",
       github: "https://github.com/johndoe",
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
       id: 9,
+      designation: "Developer",
       name: "Barnil Sarma",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711665742/posua/barnil_sarma_photo_rkuclc.webp",
@@ -442,6 +452,7 @@ const Team = () => {
     {
       id: 10,
       name: "Anurag Tamuli",
+      designation: "UI/UX",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662257/posua/IMG_20240211_212609_042_-_EE_081_AnuragTamuli_h5znma.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -451,6 +462,7 @@ const Team = () => {
     {
       id: 11,
       name: "Kaustav Deb",
+      designation: "UI/UX",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662253/posua/IMG-20230731-WA0061_-_ME_026_Kaustav_ravlle.webp",
       facebook: "https://www.facebook.com/johndoe",
@@ -460,8 +472,9 @@ const Team = () => {
     {
       id: 12,
       name: "Gracie G Rabha",
+      designation: "UI/UX",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711662290/posua/IMG-20240328-WA0031_-_CSE_012__Gracie_xjvqg3.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691990/WhatsApp_Image_2024-03-29_at_11.28.11-min_dj9vpu.webp",
       facebook: "https://www.facebook.com/johndoe",
       github: "https://github.com/johndoe",
       linkedin: "https://www.linkedin.com/in/johndoe",
@@ -502,7 +515,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689460/posua2024/bznscoyappwonquq8vbm.webp",
       email: "samir@cse.nits.ac.in",
-      designation: "President",
+      designation: "Vice President",
     },
     {
       id: 5,
@@ -511,7 +524,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ecvto7fc1ov6v20uswwh.webp",
       email: "nirmali@civil.nits.ac.in",
-      designation: "President",
+      designation: "Vice President",
     },
   ];
 
