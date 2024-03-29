@@ -370,12 +370,20 @@ const ArtistPage = () => {
       <div
         className={`absolute transition-all duration-[1000ms] ease-in-out w-[15rem] h-[15rem] top-[20rem] left-[-10rem] ${first || second || third ? "md:top-[30rem] md:left-[-12rem] md:w-[25rem] md:h-[25rem] rotate-45" : "md:top-[20rem] md:left-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
       >
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="h-full w-full object-fill  select-none pointer-events-none "
+        />
       </div>
       <div
         className={`absolute transition-all duration-[1000ms] ease-in-out w-[12rem] h-[12rem] top-[50rem] right-[-5rem] ${first || second || third ? "md:top-[30rem] md:right-[-12rem] md:w-[25rem] md:h-[25rem] rotate-90" : "md:top-[20rem] md:right-[-20rem] md:w-[40rem] md:h-[40rem]"}`}
       >
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="select-none pointer-events-none h-full w-full object-fill"
+        />
       </div>
       {/* *************Flower section end************** */}
     </main>

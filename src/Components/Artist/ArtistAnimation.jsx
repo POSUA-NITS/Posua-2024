@@ -9,7 +9,7 @@ const ArtistAnimation = ({ imgUrl, jaapi, text }) => {
           <img
             src={jaapi}
             alt="jaapi"
-            className="h-full w-full object-cover animate-spin"
+            className="h-full w-full object-cover animate-spin  select-none pointer-events-none "
             style={{ animationDuration: "6s" }}
           />
         </div>
@@ -17,7 +17,7 @@ const ArtistAnimation = ({ imgUrl, jaapi, text }) => {
           <img
             src={jaapi}
             alt="jaapi"
-            className="h-full w-full object-cover animate-spin"
+            className="h-full w-full object-cover animate-spin select-none pointer-events-none"
             style={{ animationDuration: "6s" }}
           />
         </div>
