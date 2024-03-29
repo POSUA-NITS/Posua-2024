@@ -1469,16 +1469,32 @@ const Team = () => {
 
       {/** *********flower section ************* */}
       <div className="absolute z-[1] top-[20rem] left-[-4rem] md:top-[45rem] md:left-[-25rem] w-[10rem] h-[10rem] md:w-[40rem] md:h-[40rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className=" select-none pointer-events-none h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[50rem] right-[-4rem] md:top-[100rem] md:right-[-9rem] w-[8rem] h-[8rem] md:w-[20rem] md:h-[20rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className=" select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[90rem] left-[-3rem] md:top-[150rem] md:left-[-10rem] w-[11rem] h-[11rem] md:w-[25rem] md:h-[25rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       <div className="absolute z-[1] top-[170rem] right-[-3rem] md:top-[180rem] md:right-[-10rem] w-[13rem] h-[13rem] md:w-[30rem] md:h-[30rem]">
-        <img src={flower} alt="flower1" className="h-full w-full object-fill" />
+        <img
+          src={flower}
+          alt="flower1"
+          className="select-none pointer-events-none  h-full w-full object-fill"
+        />
       </div>
       {/** *********flower section ************* */}
     </div>
