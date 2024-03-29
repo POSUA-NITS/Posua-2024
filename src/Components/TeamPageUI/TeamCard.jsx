@@ -53,7 +53,7 @@ const TeamCard = ({ name, photoLink, designation }) => {
       </div>
       <div className="absolute w-full h-full flex flex-col justify-end items-center bottom-[3rem]">
         <div
-          className="text-[1.1rem] font-semibold"
+          className={`${name.length > 24 && " mt-2 "} text-[1rem] font-bold max-w-[80%] text-center`}
           style={{ color: "#BC0404", fontFamily: "DM serif Display" }}
         >
           {name}
