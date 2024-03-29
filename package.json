@@ -1,5 +1,5 @@
 {
-  "name": "uc_website",
+  "name": "posua",
   "private": true,
   "version": "1.0.0",
   "type": "module",
@@ -14,20 +14,22 @@
     "prepare": "simple-git-hooks"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@vitejs/plugin-react": "^4.0.4",
     "axios": "^1.6.2",
     "js-cookie": "^3.0.5",
     "lottie-react": "^2.4.0",
-    "pnpm": "^8.14.1",
+    "pnpm": "^8.15.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.12.0",
+    "react-lottie-player": "^2.0.0",
     "react-query": "^3.39.3",
-    "react-router-dom": "^6.16.0",
+    "react-router-dom": "^6.21.3",
     "react-top-loading-bar": "^2.3.1",
     "sonner": "^1.3.1",
-    "swiper": "^11.0.5",
+    "swiper": "^11.0.7",
     "vite": "^4.4.9"
   },
   "devDependencies": {

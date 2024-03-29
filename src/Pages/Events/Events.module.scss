@@ -1,0 +1,1055 @@
+.superParent {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_bottom_ap5ova.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
+    url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+    linear-gradient(40deg, #e54927, #ffdc97);
+  background-blend-mode: soft-light, normal, soft-light, normal, soft-light, normal,
+    normal;
+  background-position:
+    bottom right,
+    125% 100%,
+    20% 100%,
+    -10% bottom,
+    -22% 0%,
+    155% -60%,
+    center;
+  background-size:
+    60% 60%,
+    50% 80%,
+    20% 20%,
+    40% 40%,
+    40% 40%,
+    60% 60%,
+    100% 100%;
+  background-repeat: no-repeat;
+  min-height: 100%;
+
+  .centreRangoli {
+    position: absolute;
+    margin: 0 auto;
+    left: 40%;
+    top: 20%;
+    scale: 1;
+    opacity: 0.3;
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 1490px) {
+    .centreRangoli {
+      left: 40%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1443px) {
+    .centreRangoli {
+      left: 38%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1225px) {
+    .centreRangoli {
+      left: 35%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 1085px) {
+    .centreRangoli {
+      left: 32%;
+      top: 20%;
+    }
+  }
+
+  @media screen and (max-width: 905px) {
+    .centreRangoli {
+      left: 25%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 695px) {
+    .centreRangoli {
+      left: 25%;
+      top: 10%;
+      scale: 0.5;
+    }
+  }
+
+  @media screen and (max-width: 645px) {
+    .centreRangoli {
+      left: 20%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 522px) {
+    .centreRangoli {
+      left: 18%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 442px) {
+    .centreRangoli {
+      left: 8%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+    .centreRangoli {
+      left: 8%;
+      top: 10%;
+    }
+  }
+
+  @media screen and (max-width: 385px) {
+    .centreRangoli {
+      left: 2%;
+      top: 10%;
+    }
+  }
+
+  .pokhila {
+    position: absolute;
+    scale: 0.05;
+    top: -25rem;
+    left: -30rem;
+    z-index: 0;
+  }
+
+  @media screen and (max-width: 640px) {
+    .pokhila {
+      top: -20rem;
+      left: -25rem;
+    }
+  }
+
+  @media screen and (max-width: 630px) {
+    .pokhila {
+      top: -25rem;
+      left: -27rem;
+    }
+  }
+
+  @media screen and (max-width: 615px) {
+    .pokhila {
+      top: -25rem;
+      left: -22rem;
+    }
+  }
+
+  @media screen and (max-width: 580px) {
+    .pokhila {
+      top: -22rem;
+      left: -22rem;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .pokhila {
+      top: -20rem;
+      left: -20rem;
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .pokhila {
+      top: -18rem;
+      left: -20rem;
+    }
+  }
+
+  @media screen and (max-width: 405px) {
+    .pokhila {
+      top: -15rem;
+      left: -20rem;
+    }
+  }
+
+  @media screen and (max-width: 390px) {
+    .pokhila {
+      top: -15rem;
+      left: -20rem;
+    }
+  }
+
+  @media screen and (max-width: 355px) {
+    .pokhila {
+      top: -12rem;
+      left: -15rem;
+    }
+  }
+
+  .jaapiCont {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // overflow: hidden;
+    left: 70%;
+    width: 15rem;
+    height: 18rem;
+    z-index: 0;
+    scale: 1;
+
+    .jaapi1,
+    .jaapi2,
+    .jaapi3 {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .jaapi1 {
+      .hanger1 {
+        height: 6rem;
+      }
+
+      .jaapiCircle1 {
+        animation-name: rotate1;
+        animation-iteration-count: infinite;
+        animation-duration: 17s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+    }
+
+    .jaapi2 {
+      .hanger2 {
+        height: 4rem;
+      }
+
+      .jaapiCircle2 {
+        animation-name: rotate1;
+        animation-iteration-count: infinite;
+        animation-duration: 17s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+    }
+
+    .jaapi3 {
+      .hanger3 {
+        height: 8rem;
+      }
+
+      .jaapiCircle3 {
+        animation-name: rotate1;
+        animation-iteration-count: infinite;
+        animation-duration: 34s;
+        animation-fill-mode: forwards;
+        animation-timing-function: linear;
+      }
+    }
+
+    @keyframes rotate1 {
+      0% {
+        transform: rotateZ(0deg);
+      }
+
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .jaapiCont {
+      scale: 0.5;
+      top: 0%;
+      left: 60%;
+    }
+  }
+
+  @media screen and (max-width: 775px) {
+    .jaapiCont {
+      scale: 0.5;
+      top: -5%;
+    }
+  }
+
+  @media screen and (max-width: 602px) {
+    .jaapiCont {
+      scale: 0.6;
+      top: 0%;
+      left: 50%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .jaapiCont {
+      scale: 0.6;
+      top: 0%;
+      left: 40%;
+    }
+  }
+
+  @media screen and (max-width: 365px) {
+    .jaapiCont {
+      scale: 0.55;
+      top: -2%;
+      left: 20%;
+    }
+  }
+
+  .parent {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 0vh;
+    padding-left: 10vw;
+    overflow-x: hidden;
+    min-height: 100vh;
+
+    .innerCont {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-around;
+      row-gap: 0.7rem;
+
+      .heading {
+        font-size: 3rem;
+        font-family: "DM Serif Text", serif;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+      }
+
+      .description {
+        font-size: 1rem;
+        font-family: "Alata", sans-serif;
+        font-weight: 100;
+        font-style: italic;
+        text-align: left;
+      }
+
+      .arrowCont {
+        background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_japi_2_x4thas.svg");
+        background-position: 0% 0%;
+        background-repeat: no-repeat;
+        background-size: 60% 60%;
+        background-blend-mode: hard-light;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        scale: 0.9;
+
+        .viewDetails {
+          color: #ffffff;
+          margin-top: 0.5rem;
+        }
+      }
+
+      @media screen and (max-width: 700px) {
+        .heading {
+          font-size: 1.8rem;
+        }
+
+        .description {
+          font-size: 0.8rem;
+
+          text-align: left;
+        }
+      }
+
+      @media screen and (max-width: 500px) {
+        .heading {
+          font-size: 1.4rem;
+        }
+
+        .description {
+          font-size: 0.8rem;
+          text-align: left;
+        }
+      }
+    }
+
+    @media screen and (max-width: 700px) {
+      .innerCont {
+        align-items: start;
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .innerCont {
+        align-items: start;
+        width: 80%;
+
+        .description {
+          text-align: left;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .parent {
+      justify-content: center;
+      padding-left: 0vw;
+    }
+  }
+
+  .ExtendedView {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    min-height: 100vh;
+    color: #ffffff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    z-index: 2;
+
+    .imgExit {
+      transform: rotateY(180deg);
+      position: absolute;
+      top: 10vh;
+      left: 0vw;
+      z-index: 3;
+      scale: 0.6;
+    }
+
+    .innerFilter {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+      min-height: 100vh;
+
+      .carouselParent {
+        position: absolute;
+        top: 0%;
+        right: 0vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        // height: 100vh;
+        width: 70vw;
+        z-index: -1;
+        overflow: hidden;
+        gap: 0.1vw;
+
+        .eachItem {
+          height: 15vw;
+          width: 15vw;
+        }
+
+        @media screen and (max-width: 700px) {
+          .eachItem {
+            height: 10rem;
+            width: 10rem;
+          }
+        }
+
+        @media screen and (max-width: 635px) {
+          .eachItem {
+            height: 8rem;
+            width: 8rem;
+          }
+        }
+
+        @media screen and (max-width: 492px) {
+          .eachItem {
+            height: 7rem;
+            width: 7rem;
+          }
+        }
+
+        @media screen and (max-width: 492px) {
+          .eachItem {
+            height: 6.5rem;
+            width: 6.5rem;
+          }
+        }
+      }
+
+      .writtenContent {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-around;
+        width: 30%;
+        margin: 35vh 4rem;
+        z-index: 1;
+
+        .h1 {
+          font-family: "Abril Fatface", sans-serif;
+          font-weight: 400;
+          font-size: 3.2rem;
+        }
+
+        .description {
+          font-family: "Alata", sans-serif;
+          font-weight: 400;
+          font-size: 1rem;
+        }
+
+        .sliderBtn {
+          scale: 0.5;
+          z-index: 8;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 20vh auto;
+          align-items: center;
+          width: 50%;
+
+          .h1 {
+            font-size: 1.6rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 440px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 20vh auto;
+          align-items: center;
+          width: 50%;
+
+          .h1 {
+            font-size: 2rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .ExtendedView {
+      .innerFilter {
+        .carouselParent {
+          padding-top: 50vh;
+          justify-content: space-around;
+          gap: 2rem;
+        }
+
+        .writtenContent {
+          margin: 20vh auto;
+          align-items: center;
+
+          .h1 {
+            font-size: 1.6rem;
+          }
+
+          .description {
+            text-align: center;
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1315px) {
+  .superParent {
+    background-position:
+      100% 100%,
+      120% 100%,
+      10% 105%,
+      -10% bottom,
+      -25% 0%,
+      155% -30%,
+      center;
+    background-size:
+      50% 50%,
+      50% 90%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1210px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
+      center;
+    background-size:
+      50% 50%,
+      50% 90%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1165px) {
+  .superParent {
+    background-position:
+      100% 120%,
+      120% 100%,
+      10% 105%,
+      -10% bottom,
+      -35% 0%,
+      155% -30%,
+      center;
+    background-size:
+      55% 55%,
+      50% 90%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
+      center;
+    background-size:
+      55% 55%,
+      50% 90%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 105%,
+      -10% bottom,
+      -20% 0%,
+      155% -30%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 105%,
+      -20% bottom,
+      -22% 0%,
+      155% -40%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .superParent {
+    background-position:
+      100% 110%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -20% 0%,
+      155% -60%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .superParent {
+    background-position:
+      100% 115%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -20% 0%,
+      155% -60%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 835px) {
+  .superParent {
+    background-position:
+      100% 115%,
+      120% 100%,
+      10% 110%,
+      0% bottom,
+      -20% 0%,
+      115% -30%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      30% 30%,
+      30% 30%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 755px) {
+  .superParent {
+    background-position:
+      100% 118%,
+      120% 100%,
+      10% 106%,
+      -20% bottom,
+      -20% 0%,
+      105% -60%,
+      center;
+    background-size:
+      45% 45%,
+      50% 90%,
+      20% 20%,
+      50% 50%,
+      40% 40%,
+      55% 55%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 710px) {
+  .superParent {
+    background-position:
+      100% 120%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      105% -30%,
+      center;
+    background-size:
+      45% 45%,
+      50% 80%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .superParent {
+    background-position:
+      100% 185%,
+      120% 100%,
+      10% 115%,
+      -20% bottom,
+      -10% 0%,
+      105% -20%,
+      center;
+    background-size:
+      75% 75%,
+      50% 80%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .superParent {
+    background-image: url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752499/posua/events_bg_right_bottom_g4esfr.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752495/posua/events_bg_right_b3obln.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752496/posua/events_bg_rangghar_icvwt5.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_bottom_ap5ova.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752494/posua/events_bg_left_top_nqnwo0.svg"),
+      url("https://res.cloudinary.com/dhry5xscm/image/upload/v1710752498/posua/events_bg_right_top_bmb8za.svg"),
+      linear-gradient(130deg, #e54927, #ffdc97);
+    background-position:
+      100% 190%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      105% -50%,
+      center;
+    background-size:
+      75% 75%,
+      50% 70%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .superParent {
+    background-position:
+      100% 190%,
+      120% 100%,
+      10% 125%,
+      -20% bottom,
+      -10% 0%,
+      105% -40%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .superParent {
+    background-position:
+      100% 195%,
+      120% 100%,
+      10% 110%,
+      -20% bottom,
+      -10% 0%,
+      100% -40%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      25% 25%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .superParent {
+    background-position:
+      100% 205%,
+      120% 100%,
+      10% 125%,
+      -20% bottom,
+      -10% 0%,
+      105% -30%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      50% 50%,
+      45% 45%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .superParent {
+    background-position:
+      100% 205%,
+      120% 100%,
+      10% 120%,
+      -20% bottom,
+      0% 0%,
+      100% -60%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .superParent {
+    background-position:
+      100% 205%,
+      120% 100%,
+      10% 122%,
+      -20% bottom,
+      -10% 0%,
+      105% -30%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      40% 40%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .superParent {
+    background-position:
+      100% 215%,
+      120% 100%,
+      30% 115%,
+      -20% bottom,
+      -10% 0%,
+      105% -30%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      35% 35%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .superParent {
+    background-position:
+      100% 215%,
+      120% 100%,
+      30% 113%,
+      -20% bottom,
+      -10% 0%,
+      100% -30%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      25% 25%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 330px) {
+  .superParent {
+    background-position:
+      100% 215%,
+      120% 100%,
+      30% 115%,
+      -20% bottom,
+      -10% 0%,
+      100% -30%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      30% 30%,
+      50% 50%,
+      40% 40%,
+      40% 40%,
+      100% 100%;
+  }
+}
+
+@media screen and (max-width: 290px) {
+  .superParent {
+    background-position:
+      100% 220%,
+      120% 100%,
+      10% 100%,
+      -20% bottom,
+      -10% 0%,
+      155% 0%,
+      center;
+    background-size:
+      75% 75%,
+      50% 50%,
+      10% 10%,
+      50% 50%,
+      40% 40%,
+      60% 60%,
+      100% 100%;
+  }
+}

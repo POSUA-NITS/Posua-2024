@@ -1,0 +1,53 @@
+#maintop {
+  width: 80%;
+  margin: 0 auto !important;
+  text-align: center;
+  position: relative;
+
+  #flexholder {
+    display: flex;
+    width: 100%;
+    // background-color: red;
+    justify-content: center;
+  }
+
+  #lottie {
+    width: 32vw;
+    @media (max-width: 660px) {
+      width: 50vw;
+    }
+    height: 100%;
+    margin: 0 auto;
+    object-fit: cover;
+  }
+
+  #lottie1 {
+    width: 32vw;
+    height: 100%;
+    // background-color: red;
+    @media (max-width: 660px) {
+      width: 50vw;
+    }
+    margin: 0 auto;
+    object-fit: cover;
+    transform: scaleX(-1);
+  }
+
+  #titletext {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #cd2129;
+    // background-color: #c52123;
+    border-radius: 10px;
+    h1 {
+      color: white;
+      font-size: 2.835vw;
+      @media (max-width: 660px) {
+        font-size: 4.5vw;
+      }
+      font-family: "DM Serif Text", serif;
+    }
+  }
+}

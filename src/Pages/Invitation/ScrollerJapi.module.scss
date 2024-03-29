@@ -1,0 +1,37 @@
+.ImgLine {
+  position: relative;
+  top: 0;
+  transition: 1s;
+  left: 1.55rem;
+  top: 1rem;
+  z-index: 1;
+}
+.ScrollerJapiClass {
+  @media (max-width: 660px) {
+    display: none;
+  }
+  margin: 3rem auto;
+  padding: 3rem;
+  overflow: hidden;
+}
+.ScrollerJapiClass:hover {
+  .ImgLine {
+    top: 6rem;
+    overflow: hidden;
+  }
+  .ImgCircle {
+    transform: rotate(90deg);
+    overflow: hidden;
+  }
+}
+
+.ImgCircle {
+  width: fit-content;
+  border-radius: 1rem;
+  transition: 1s;
+}
+@media screen and (max-width: 600px) {
+  .ScrollerJapiClass {
+    display: none;
+  }
+}

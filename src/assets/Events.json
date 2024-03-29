@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Bordoisila",
+    "description": "The NITS campus gets alive with captivating performances by the stunning 'Gabhorus', adorned in exquisite golden silk. It resembles the seasonal wind rushing back to her familial abode, bustling with fervor.",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711607068/event_1_1_oisdi6.webp"
+  },
+  {
+    "id": 2,
+    "name": "Manthan",
+    "description": "Manthan is the highlight of POSUA, as it showcases the best performers from Assam to enthral everyone on the campus In previous years, famous artists such as Zubeen Garg, Priyanka Bharali, Dikshu, and Simanta Shekhar have blessed the Manthan stage with their amazing performances.",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691101/event_2_1_wj47v4-min_j34osv.webp"
+  },
+  {
+    "id": 3,
+    "name": "Abhijatri",
+    "description": "The true measure of our society's strength lies in our ability to embrace diversity and foster unity. Over the years, 'Bor-Axom' has embraced numerous communities and tribes, enriching the tapestry of the Greater Assamese Culture.",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711607067/event_3_1_bzv7wz.webp"
+  },
+  {
+    "id": 4,
+    "name": "Rongili",
+    "description": "The art of dance conjures an exhilarating trance for both spectators and performers alike. Among the array of events hosted by Posua is 'Rongili', the Female Bihu Dance Competition, offering a platform for participants to exhibit their dancing skills and convey their adoration for Bihu.",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711607067/event_4_1_h18snd.webp"
+  },
+  {
+    "id": 5,
+    "name": "Paatkair Ipare",
+    "description": "Patkair Ipare is a quiz to embark on an enchanting journey through Assam's vibrant culture, mesmerizing traditions, and breathtaking landscapes! ",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711607068/event_5_1_jdfhue.webp"
+  },
+  {
+    "id": 6,
+    "name": "Krishti",
+    "description": "The festival of Krishti gives a unique chance to see the beauty of time and to feel the complex cultural mix of the people who have lived in this land for ages, creating a splendid society that shows the combination of these different cultures. No matter where we live along the Barak or Brahmaputra rivers, we are all connected by a lovely fabric made of the golden threads of our cultural legacy.",
+    "src": "https://res.cloudinary.com/dp92qug2f/image/upload/v1711607068/event_6_1_midhea.webp"
+  }
+]
