@@ -1,8 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const PatronCard = ({ name, email, photoLink, designation }) => {
   const [hover, sethover] = useState(false);
+  const [windowSize, setWindowSize] = useState(null);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleSize = () => {
+        setWindowSize(window.innerWidth);
+      };
 
+      window.addEventListener("resize", handleSize);
+      handleSize();
+
+      return () => {
+        window.removeEventListener("resize", handleSize);
+      };
+    }
+    return () => {};
+  }, []);
   return (
     <div
       className="w-[15rem] h-[20rem] relative"
@@ -21,7 +36,7 @@ const PatronCard = ({ name, email, photoLink, designation }) => {
       />
       <div className="absolute w-full h-full flex flex-col items-center justify-end bottom-[3.6rem] leading-4 z-[54]">
         <div
-          className={`${name.length > 12 ? "text-[2.7vw]" : "text-[.85rem]"} font-semibold`}
+          className={`${windowSize < 660 && name.length > 12 ? "text-[2.9vw]" : windowSize > 660 ? "text-[.77vw]" : "text-[.85rem]"} font-semibold`}
           style={{ color: "#BC0404", fontFamily: "DM Serif Display" }}
         >
           {name}
