@@ -515,7 +515,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689460/posua2024/bznscoyappwonquq8vbm.webp",
       email: "samir@cse.nits.ac.in",
-      designation: "President",
+      designation: "Vice President",
     },
     {
       id: 5,
@@ -524,7 +524,7 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ecvto7fc1ov6v20uswwh.webp",
       email: "nirmali@civil.nits.ac.in",
-      designation: "President",
+      designation: "Vice President",
     },
   ];
 
