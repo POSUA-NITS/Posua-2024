@@ -1,6 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
+  const [windowSize, setWindowSize] = useState();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const handleSize = () => {
+        setWindowSize(window.innerWidth);
+      };
+
+      window.addEventListener("resize", handleSize);
+      handleSize();
+
+      return () => {
+        window.removeEventListener("resize", handleSize);
+      };
+    }
+    return () => {};
+  }, []);
+
   const frame =
     "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711056519/Group_2608667_reshtk.jpg?_s=public-apps";
 
@@ -21,7 +38,9 @@ const ArtistBigCard = ({ photoLink, name, desc, profession = "Singer" }) => {
             alt="Artist img"
             className="absolute h-full w-full object-cover"
           />
-          <div className="absolute flex flex-col justify-center items-center bottom-[.8rem] z-[20000] leading-[.6rem]">
+          <div
+            className={`absolute flex flex-col justify-center items-center  z-[20000] leading-[.6rem] ${windowSize < 400 ? "bottom-[2vw]" : "bottom-[3.5vw]"}`}
+          >
             <div className="text-[1.78vw] font-semibold" style={{ color: "#B02227" }}>
               {name}
             </div>
