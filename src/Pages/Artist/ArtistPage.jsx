@@ -29,6 +29,7 @@ const ArtistPage = () => {
   const UpArtistData = [
     {
       id: 1,
+      profession: "Singer",
       name: "Nilotpal Bora",
       desc11: `ঐ গধূলি গধূলি
       ফুৰো ৰহিমলা
@@ -58,6 +59,9 @@ const ArtistPage = () => {
     },
     {
       id: 2,
+      profession: "Band",
+      // photoLink:
+      //   "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
       name: "Xomonnoy Gushti",
       photoLink:
         "https://res.cloudinary.com/dp92qug2f/image/upload/v1711635199/Runway-2024-03-28T14_07_15.809Z-Upscale-Image-Upscaled-Image-2396-x-1920-min_gvp6bp.webp",
@@ -171,6 +175,7 @@ const ArtistPage = () => {
                     <ArtistBigCard
                       photoLink={profile.photoLink}
                       name={profile.name}
+                      profession={profile.profession}
                       desc={profile.desc}
                     />
                   </div>

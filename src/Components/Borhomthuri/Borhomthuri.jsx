@@ -113,13 +113,13 @@ const Borhomthuri = () => {
               <img
                 alt="Camera"
                 src=""
-                data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607582/camera_posua24_l7ndyp-min_o41997.webp"
+                data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711653138/Projectorkela-2-ezgif.com-crop_r8g8ee.gif"
                 className={loaded ? "loadedClass" : "loadingClass"}
                 onLoad={() => setIsLoaded(true)}
               />
             </div>
 
-            <div id={styles.camerafoucs}>
+            {/* <div id={styles.camerafoucs}>
               <img
                 src=""
                 data-src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711607671/camera_focus_posua24_orhnta-min_o0quzy.webp"
@@ -127,7 +127,7 @@ const Borhomthuri = () => {
                 onLoad={() => setIsLoaded(true)}
                 alt=""
               />
-            </div>
+            </div> */}
           </div>
         </div>
 
