@@ -10,7 +10,7 @@ import useSetTitle from "../../Hooks/SetTitle";
 const Carousel = ({ active }) => {
   const MAX_VISIBILITY = 1;
   return (
-    <div className={styles2.outerParent}>
+    <div className={styles2.outerParent} style={{ userSelect: "none" }}>
       <div className={styles2.carouselCont}>
         <div className={styles2.carousel}>
           {data.map((d, i) => (
@@ -51,6 +51,7 @@ const ExtendedView = ({ mode, setExtended, extended }) => {
         // transitionDelay: `${mode === 0 ? "500ms" : "0ms"}`,
         backgroundColor: "#000000",
         width: `${mode === 1 ? "0vw" : "100vw"}`,
+        userSelect: "none",
       }}
     >
       <div className={styles.innerFilter}>
@@ -115,7 +116,7 @@ const Events = () => {
   const [extended, setExtended] = useState(1);
   useSetTitle("Events | Posua");
   return (
-    <div className={styles.superParent}>
+    <div className={styles.superParent} style={{ userSelect: "none" }}>
       <Lottie animationData={Pokhila} className={styles.pokhila} />
       <img
         src="https://res.cloudinary.com/dhry5xscm/image/upload/v1711312009/posua/center-circle_vs9g1x.svg"
