@@ -199,7 +199,7 @@ const Hero = () => {
         <div className="animation_slideInto flex justify-center items-start">
           <img
             src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711694217/ezgif-1-f0bbdc6570_qyfn2w.webp"
-            className={`${windowSize < 800 ? `${styles.posua_logo_mobile} top-[5%] pointer-events-none` : `${styles.posua_logo} top-[1.5%] pointer-events-none`} pointer-events-none absolute flex justify-center items-start object-contain overflow-hidden h-[40vh] w-[100vw] z-[99] left-5 `}
+            className={`${windowSize < 800 ? `${styles.posua_logo_mobile} top-[3%] ` : `${styles.posua_logo} top-[0.6%]`}  pointer-events-none absolute flex justify-center items-start object-contain overflow-hidden h-[40vh] w-[100vw] z-[99] left-5 `}
             alt=""
           />
           <div
