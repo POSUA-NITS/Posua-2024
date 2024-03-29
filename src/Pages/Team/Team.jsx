@@ -338,7 +338,8 @@ const Team = () => {
       name: "Rituporna Das",
       designation: "Chief Coordinator",
       photoLink:
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711697331/posua2024/pz2gxrehw61x1p9cqmxo.jpg",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711702255/posua2024/WhatsApp_Image_2024-03-29_at_2.18.14_PM_eqaey0.jpg",
+      // "https://res.cloudinary.com/dldebeast/image/upload/v1711697331/posua2024/pz2gxrehw61x1p9cqmxo.jpg",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -608,15 +609,6 @@ const Team = () => {
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
         "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/wi3bl44ct0cwa0ufpfhq.webp",
       email: "director@nits.ac.in",
-      designation: "President",
-    },
-    {
-      id: 2,
-      name: "Prof. Siddhartha S Dhar",
-      photoLink:
-        // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-        "https://res.cloudinary.com/dldebeast/image/upload/v1711700443/posua2024/sdhar_wh2c6h.webp",
-      email: "pranjit@che.nits.ac.in",
       designation: "President",
     },
     {
