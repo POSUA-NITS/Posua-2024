@@ -459,6 +459,17 @@ const Team = () => {
     },
     {
       id: 10,
+      designation: "Developer",
+      name: "Milan Sarmah",
+      photoLink:
+        "https://res.cloudinary.com/dlyo7ec6c/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711692608/WhatsApp_Image_2024-03-29_at_11.33.11_AM_tmdupe.jpg?_s=public-apps.webp",
+      facebook: "https://www.facebook.com/johndoe",
+      github: "https://github.com/johndoe",
+      linkedin: "https://www.linkedin.com/in/johndoe",
+    },
+
+    {
+      id: 11,
       name: "Anurag Tamuli",
       designation: "UI/UX",
       photoLink:
@@ -468,7 +479,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 11,
+      id: 12,
       name: "Kaustav Deb",
       designation: "UI/UX",
       photoLink:
@@ -478,7 +489,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 12,
+      id: 13,
       name: "Gracie G Rabha",
       designation: "UI/UX",
       photoLink:
@@ -705,126 +716,136 @@ const Team = () => {
         </Swiper>
         <div className="flex w-[100%] justify-center items-center absolute bottom-[-2rem]">
           <div
-            className={`${active3 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 1 ? "rounded-l-lg" : "rounded-lg"} w-[.7rem] h-[.7rem]`}
             style={{ backgroundColor: active3 === 1 ? "white" : "#F2C18D" }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 1 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 1 ? "rounded-r-lg" : ""} ${active3 === 2 ? "rounded-l-lg" : ""} ${active3 !== 1 && active3 !== 2 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 1 ? "rounded-r-lg" : ""} ${active3 === 2 ? "rounded-l-lg" : ""} ${active3 !== 1 && active3 !== 2 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 1 || active3 === 2 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 2 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 2 ? "rounded-r-lg" : ""} ${active3 === 3 ? "rounded-l-lg" : ""} ${active3 !== 2 && active3 !== 3 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 2 ? "rounded-r-lg" : ""} ${active3 === 3 ? "rounded-l-lg" : ""} ${active3 !== 2 && active3 !== 3 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 2 || active3 === 3 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 3 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 3 ? "rounded-r-lg" : ""} ${active3 === 4 ? "rounded-l-lg" : ""} ${active3 !== 3 && active3 !== 4 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 3 ? "rounded-r-lg" : ""} ${active3 === 4 ? "rounded-l-lg" : ""} ${active3 !== 3 && active3 !== 4 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 3 || active3 === 4 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 4 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 4 ? "rounded-r-lg" : ""} ${active3 === 5 ? "rounded-l-lg" : ""} ${active3 !== 4 && active3 !== 5 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 4 ? "rounded-r-lg" : ""} ${active3 === 5 ? "rounded-l-lg" : ""} ${active3 !== 4 && active3 !== 5 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 4 || active3 === 5 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 5 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 5 ? "rounded-r-lg" : ""} ${active3 === 6 ? "rounded-l-lg" : ""} ${active3 !== 5 && active3 !== 6 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 5 ? "rounded-r-lg" : ""} ${active3 === 6 ? "rounded-l-lg" : ""} ${active3 !== 5 && active3 !== 6 ? "rounded-lg" : ""} w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 5 || active3 === 6 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 6 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 6 ? "rounded-r-lg" : ""} ${active3 === 7 ? "rounded-l-lg" : ""} ${active3 !== 6 && active3 !== 7 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 6 ? "rounded-r-lg" : ""} ${active3 === 7 ? "rounded-l-lg" : ""} ${active3 !== 6 && active3 !== 7 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 6 || active3 === 7 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 7 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 7 ? "rounded-r-lg" : ""} ${active3 === 8 ? "rounded-l-lg" : ""} ${active3 !== 7 && active3 !== 8 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 7 ? "rounded-r-lg" : ""} ${active3 === 8 ? "rounded-l-lg" : ""} ${active3 !== 7 && active3 !== 8 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 7 || active3 === 8 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 8 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 8 ? "rounded-r-lg" : ""} ${active3 === 9 ? "rounded-l-lg" : ""} ${active3 !== 8 && active3 !== 9 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 8 ? "rounded-r-lg" : ""} ${active3 === 9 ? "rounded-l-lg" : ""} ${active3 !== 8 && active3 !== 9 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 8 || active3 === 9 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 9 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 9 ? "rounded-r-lg" : ""} ${active3 === 10 ? "rounded-l-lg" : ""} ${active3 !== 9 && active3 !== 10 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 9 ? "rounded-r-lg" : ""} ${active3 === 10 ? "rounded-l-lg" : ""} ${active3 !== 9 && active3 !== 10 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 9 || active3 === 10 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 10 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 10 ? "rounded-r-lg" : ""} ${active3 === 11 ? "rounded-l-lg" : ""} ${active3 !== 10 && active3 !== 11 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 10 ? "rounded-r-lg" : ""} ${active3 === 11 ? "rounded-l-lg" : ""} ${active3 !== 10 && active3 !== 11 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 10 || active3 === 11 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 11 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 11 ? "rounded-r-lg" : ""} ${active3 === 12 ? "rounded-l-lg" : ""} ${active3 !== 11 && active3 !== 12 ? "rounded-lg" : ""} w-[.8rem] h-[.8rem]`}
+            className={`${active3 === 11 ? "rounded-r-lg" : ""} ${active3 === 12 ? "rounded-l-lg" : ""} ${active3 !== 11 && active3 !== 12 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
             style={{
               backgroundColor: active3 === 11 || active3 === 12 ? "white" : "#F2C18D",
             }}
           ></div>
           <div
-            className="w-[.8rem] h-[.8rem]"
+            className="w-[.7rem] h-[.7rem]"
             style={{ backgroundColor: active3 === 12 ? "white" : "" }}
           ></div>
           <div
-            className={`${active3 === 12 ? "rounded-r-lg" : "rounded-lg"} w-[.8rem] h-[.8rem]`}
-            style={{ backgroundColor: active3 === 12 ? "white" : "#F2C18D" }}
+            className={`${active3 === 12 ? "rounded-r-lg" : ""} ${active3 === 13 ? "rounded-l-lg" : ""} ${active3 !== 12 && active3 !== 13 ? "rounded-lg" : ""}  w-[.7rem] h-[.7rem]`}
+            style={{
+              backgroundColor: active3 === 12 || active3 === 13 ? "white" : "#F2C18D",
+            }}
+          ></div>
+          <div
+            className="w-[.7rem] h-[.7rem]"
+            style={{ backgroundColor: active3 === 13 ? "white" : "" }}
+          ></div>
+          <div
+            className={`${active3 === 13 ? "rounded-r-lg" : "rounded-lg"} w-[.7rem] h-[.7rem]`}
+            style={{ backgroundColor: active3 === 13 ? "white" : "#F2C18D" }}
           ></div>
         </div>
       </div>
