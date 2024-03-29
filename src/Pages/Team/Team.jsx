@@ -213,6 +213,16 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
+      id: 2,
+      name: "Ajanit Priyanubhab Bora",
+      designation: "Publicity Head",
+      photoLink:
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711709628/WhatsApp_Image_2024-03-29_at_16_emjrxi.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
       id: 8,
       name: "Jubilee Deka",
       designation: "Publicity Head",
