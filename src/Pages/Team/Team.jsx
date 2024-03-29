@@ -86,6 +86,16 @@ const Team = () => {
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
+    {
+      id: 6,
+      name: "Partha Pratim Bhuyan",
+      designation: "Design Head",
+      photoLink:
+        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655479/posua/IMG_0149_-_EI44_Parthapratim_Bhuyan_pm5ja2.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
   ];
   const content = [
     {
@@ -173,16 +183,6 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 6,
-      name: "Partha Pratim Bhuyan",
-      designation: "Design Head",
-      photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655479/posua/IMG_0149_-_EI44_Parthapratim_Bhuyan_pm5ja2.webp",
-      facebook: "https://www.facebook.com/michaeljohnson",
-      github: "https://github.com/michaeljohnson",
-      linkedin: "https://www.linkedin.com/in/michaeljohnson",
-    },
-    {
       id: 24,
       name: "Chiranjit Borah",
       designation: "Cultural Rally Head",
@@ -200,6 +200,16 @@ const Team = () => {
       designation: "Publicity Head",
       photoLink:
         "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655471/posua/A5F9ADFF-23DE-4B87-9BEA-70014F8D12C5_-_ME_A_007_Nabarun_Gathiri_hqzfbz.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 8,
+      name: "Jubilee Deka",
+      designation: "Publicity Head",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699237/posua2024/zbaa1wimdqp7c1qkcosq.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -241,7 +251,7 @@ const Team = () => {
       name: "Uddipta Borah",
       designation: "Event Management Head",
       photoLink:
-        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711681895/Screenshot_2024-03-27-15-59-08-516_com.miui.gallery_-_CE_035_Uddipta_Borah_2_ydxzd0.webp",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711701122/posua2024/Screenshot_2024-03-27-15-59-08-516_com.miui.gallery_-_CE_035_Uddipta_Borah_xogmbe.jpg",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -317,20 +327,61 @@ const Team = () => {
   const UnionData = [
     {
       id: 1,
-      name: "Amlandeep Dutta",
+      name: "Rituporna Das",
       designation: "Chief Coordinator",
       photoLink:
-        "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655462/posua/IMG-20240326-WA0021_-_CE_067_Amlandeep__Dutta_w52mmp.webp",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711697331/posua2024/pz2gxrehw61x1p9cqmxo.jpg",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
       id: 2,
+      name: "Gyandeep Gogoi",
+      designation: "Chief Coordinator",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699241/posua2024/tklograv19i4dcrefbrh.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 3,
       name: "Dhiraj deka",
       designation: "Chief Coordinator",
       photoLink:
         "https://res.cloudinary.com/dp92qug2f/image/upload/v1711691755/WhatsApp_Image_2024-03-29_at_11.22.22-min-min_e5jx2m.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 4,
+      name: "Shristi Goswami",
+      designation: "Executive Head",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699245/posua2024/bmepnzwgtm2eksdukldm.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 5,
+      name: "Mriganga Jyoti Chutia",
+      designation: "Chief Coordinator",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700718/posua2024/mriganga_chutiya_sdifis.jpg",
+      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655462/posua/IMG-20240326-WA0021_-_CE_067_Amlandeep__Dutta_w52mmp.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 6,
+      name: "Hrishikesh Barpujari",
+      designation: "Treasurer",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711699243/posua2024/zjsflig2gyzrc9o6deaj.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -355,6 +406,48 @@ const Team = () => {
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
+    {
+      id: 23,
+      name: "Debashish Konwar",
+      designation: "Executive Head",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700267/posua2024/debashis_kfioet.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 24,
+      name: "Dhan Shree Nath",
+      designation: "Executive Head",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700932/posua2024/dhanShree_lwd5q9.jpg",
+      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655476/posua/WhatsApp_Image_2024-03-26_at_11.49.41_PM_-_CE_060_Hrishikesh__Choudhury_gagzba.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 25,
+      name: "Tropcilina Saikia",
+      designation: "Student Advisor",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700843/posua2024/tropci_ybhv3n.jpg",
+      // "https://res.cloudinary.com/dhry5xscm/image/upload/v1711655476/posua/WhatsApp_Image_2024-03-26_at_11.49.41_PM_-_CE_060_Hrishikesh__Choudhury_gagzba.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
+    {
+      id: 26,
+      name: "Miraj Deka",
+      designation: "Student Advisor",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700269/posua2024/miraj_nu0dq8.webp",
+      facebook: "https://www.facebook.com/michaeljohnson",
+      github: "https://github.com/michaeljohnson",
+      linkedin: "https://www.linkedin.com/in/michaeljohnson",
+    },
   ];
 
   const developerData = [
@@ -370,6 +463,26 @@ const Team = () => {
     },
     {
       id: 2,
+      name: "Princhi Pawan Saikia",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711695949/posua2024/s5ywrkt1jkqo8ztayaj8.jpg",
+      designation: "Technical Head",
+      facebook: "https://www.facebook.com/johndoe",
+      github: "https://github.com/johndoe",
+      linkedin: "https://www.linkedin.com/in/johndoe",
+    },
+    {
+      id: 3,
+      name: "Biju Borah",
+      photoLink:
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711696438/posua2024/kyab4bkflifaxgcw7dwp.jpg",
+      designation: "Technical Head",
+      facebook: "https://www.facebook.com/johndoe",
+      github: "https://github.com/johndoe",
+      linkedin: "https://www.linkedin.com/in/johndoe",
+    },
+    {
+      id: 4,
       name: "Himangshu Sarma",
       designation: "Technical Co-Head",
       photoLink:
@@ -379,7 +492,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 3,
+      id: 5,
       name: "Pragya Annesha Baruah",
       designation: "Technical Co-Head",
       photoLink:
@@ -389,7 +502,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
     },
     {
-      id: 4,
+      id: 6,
       name: "Aditya Ranjan",
       designation: "Technical Co-Head",
       photoLink:
@@ -398,9 +511,8 @@ const Team = () => {
       github: "https://github.com/janesmith",
       linkedin: "https://www.linkedin.com/in/janesmith",
     },
-
     {
-      id: 5,
+      id: 7,
       name: "Arindom Sarmah",
       designation: "Developer",
       photoLink:
@@ -410,7 +522,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 6,
+      id: 8,
       name: "Satya Prakash Upadhyaya",
       designation: "Developer",
       photoLink:
@@ -420,7 +532,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 7,
+      id: 9,
       name: "Debisma Priya Borah",
       designation: "Developer",
       photoLink:
@@ -430,7 +542,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 8,
+      id: 10,
       name: "Pragya Prabir Ranjan Deka",
       designation: "Developer",
       photoLink:
@@ -440,7 +552,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 9,
+      id: 11,
       designation: "Developer",
       name: "Barnil Sarma",
       photoLink:
@@ -450,7 +562,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 10,
+      id: 12,
       name: "Anurag Tamuli",
       designation: "UI/UX",
       photoLink:
@@ -460,7 +572,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 11,
+      id: 13,
       name: "Kaustav Deb",
       designation: "UI/UX",
       photoLink:
@@ -470,7 +582,7 @@ const Team = () => {
       linkedin: "https://www.linkedin.com/in/johndoe",
     },
     {
-      id: 12,
+      id: 14,
       name: "Gracie G Rabha",
       designation: "UI/UX",
       photoLink:
@@ -492,10 +604,10 @@ const Team = () => {
     },
     {
       id: 2,
-      name: "Dr. Pranjit Barman",
+      name: "Prof. Siddhartha S Dhar",
       photoLink:
         // "https://res.cloudinary.com/dhpqjrbha/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1710876326/sf7py4kekiyxmzcndxqp.jpg?_s=public-apps",
-        "https://res.cloudinary.com/dldebeast/image/upload/c_pad,b_auto:predominant,fl_preserve_transparency/v1711689040/posua2024/ri7by48dleimvh3qmflf.webp",
+        "https://res.cloudinary.com/dldebeast/image/upload/v1711700443/posua2024/sdhar_wh2c6h.webp",
       email: "pranjit@che.nits.ac.in",
       designation: "Mentor",
     },
