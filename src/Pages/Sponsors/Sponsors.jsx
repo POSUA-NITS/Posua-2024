@@ -66,7 +66,7 @@ const SponsorPage = () => {
             style={{ overflowX: "unset" }}
           >
             <img
-              src="https://res.cloudinary.com/dp92qug2f/image/upload/v1711612597/prev_sponsors_ing8pt.svg"
+              src="https://res.cloudinary.com/dnh1vcvtq/image/upload/v1711697148/previous_sponsors_kceghr.webp"
               alt=""
             />
             {/* <img src={teamTopLogo} alt="Top logo" className="w-full h-full object-fill" /> */}
