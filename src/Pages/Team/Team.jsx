@@ -85,7 +85,7 @@ const Team = () => {
       name: "Suraj Saha",
       designation: "Hospitality Head",
       photoLink:
-        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716290/Screenshot_2024-03-29-13-20-41-20_99c04817c0de5652397fc8b56c3b3817-EE-A030SurajSaha-min-ezgif.com-jpg-to-webp-converter_a2dtaa.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716857/ezgif.com-jpg-to-webp-converter_4_h9xwsx.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
@@ -117,7 +117,7 @@ const Team = () => {
       name: "Dhritishmita Dehingia",
       designation: "Decoration Head",
       photoLink:
-        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711715907/IMG-20240329-WA0006-ECE-A034DhritishmitaDehingia-ezgif.com-jpg-to-webp-converter_qjyism.webp",
+        "https://res.cloudinary.com/dp92qug2f/image/upload/v1711716937/ezgif.com-jpg-to-webp-converter_5_h1txms.webp",
       facebook: "https://www.facebook.com/michaeljohnson",
       github: "https://github.com/michaeljohnson",
       linkedin: "https://www.linkedin.com/in/michaeljohnson",
